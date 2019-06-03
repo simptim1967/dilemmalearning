@@ -1,0 +1,19 @@
+{
+  "name": "dilemmalearning",
+  "version": "1.0.0",
+  "description": "DilemmaLearning blog site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simptim1967/dilemmalearning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simptim1967/dilemmalearning/issues"
+  },
+  "homepage": "https://github.com/simptim1967/dilemmalearning#readme"
+}
