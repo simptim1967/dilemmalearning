@@ -1,0 +1,71 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks')
+    meta(name='description', content="Hints and tips to help overcome the continuous learning dilemma faced by individuals.")
+    title New Tricks For Personal Learning
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    .container
+      .row
+        // Main content block
+        .col-md-9
+          h1 New Tricks For Personal Learning
+          hr.featurette-divider
+
+          p
+            | The list of new tricks for personal learning will be updated regularly.
+            | Follow 
+            a(href='https://twitter.com/DilemmaLearning', title="@DilemmaLearning", target="_blank") @DilemmaLearning
+            |  on Twitter to be notified of updates.
+
+          table.table
+            thead
+              th Item
+              th Title / Description
+            tbody
+              tr
+                td
+                  span(style="color: white; background-color: steelblue;") &nbsp;#01&nbsp;
+                td
+                  h2
+                    a(href="personal/01-make-time-for-personal-learning.html", title="Make Time For Personal Learning") Make Time For Personal Learning
+                  p
+                    | Failing to make time for personal learning is like planning to fail.  
+
+        .col-md-3.hidden-print
+          hr.featurette-divider.hidden-md.hidden-lg
+          .rightsidebar
+            // <rightsidebar>
+            h3 See Also
+
+            h4 
+              a(href="../blog/prologue.html", title="Prologue") Prologue
+            p
+              | About me, who I work for and how this blog came about.  
+
+            h4 
+              a(href="../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+            p
+              | The biggest problem facing the IT industry today, namely continuous learning.  
+
+            h4 
+              a(href="../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+            p
+              | Formulating the approach to rise up and attack the continuous learning dilemma.
+              | Introduction to the continuous learning spectrum.
+          // </rightsidebar>
+      // /row
+    // /container
+    include ../includes/page_footer.pug

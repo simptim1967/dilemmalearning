@@ -1,0 +1,115 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="About Dilemma Learning. Learn about the continuous learning dilemma facing the IT industry.")
+    title About Dilemma Learning
+    // Bootstrap
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/site.css', rel='stylesheet')
+  body()
+    include ./includes/page_menu.pug
+    include ./includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    .container
+      .row
+        // Main content block
+        #about.col-md-9
+          h1 About Dilemma Learning
+          hr.featurette-divider
+
+          .alert.alert-info.text-center
+            | This website, along with my use of Twitter, are an expression of my personal views and do not represent those of my employer. 
+
+          h2#welcome Welcome
+  
+          p
+            img#mugshot.img-thumbnail.img-responsive(src='images/mugshot_tim.jpg', alt='Website Author: Tim Simpson', title='Website Author: Tim Simpson', width='151', height='220')
+            | Hi, my name is Tim Simpson. 
+            | I’m a Senior Solution Architect within the Architecture Practice at Capgemini UK working mainly on the HMRC account 
+            | which is Capgemini’s largest UK account.
+
+          p 
+            | I’ve worked on the account for more than 12 years and am currently assigned 
+            | to the Digital Delivery Group (DDG) which has over 750 people in offices at multiple locations across the UK. 
+            | It’s a very busy and exciting place to work! 
+
+          p
+            | Please read my opening blog article entitled 
+            a(href='blog/prologue.html') "Prologue"
+            |  to find out more about my role and work within the DDG.
+            
+          h2#twitter Tweets
+          p
+            img.img-circle(src='images/twitter.svg', width='60', height='60', align='left', alt='Twitter Logo', id='tweet')
+            | You can contact or follow 
+            a(href='https://twitter.com/DilemmaLearning', title="@DilemmaLearning", target="_blank") @DilemmaLearning
+            |  on Twitter to learn about blog updates as well as 
+            a(href="tricks/old-dog-new-tricks.html", title="Old Dog New Tricks") new tricks
+            |  to tackle the continuous learning
+            | dilemma faced by 
+            a(href="blog/the-continuous-learning-dilemma.html#individualdilemma", title="The Individual Learning Dilemma") individuals
+            |  and 
+            a(href="blog/the-continuous-learning-dilemma.html#corporatedilemma", title="The Corporate Learning Dilemma") organisations
+            | . Feedback is always most welcome.
+          p
+            | I often share photographs and links to articles and videos 
+            | I found helpful as well as some of the things I get up to in my 
+            span.badge.hashtag #LifeAtCapgemini
+            | .
+          
+          h2#workinprogress Work In Progress
+          p
+            | This website is a work in progress and is continually being updated as I progress and share more
+            | of my learning and working life at Capgemini. It also changes as I learn about new tools and
+            | technologies and experiment with them.
+
+          // List web technologies and tools used here 
+          h2#tech Technical Stuff
+          p
+            | The following tools and technologies were used to build this website:
+            ul
+              li HTML5 generated from pug templates using pug-cli
+              li CSS3 with the help of Bootstrap 3
+              li JavaScript with some help from jQuery (because Bootstrap 3 uses it)
+              li
+                | SVG free icons made by 
+                a(href="https://www.freepik.com/", title="Freepik", target="_blank") Freepik
+                |  from 
+                a(href="https://www.flaticon.com/", title="Flaticon", target="_blank") www.flaticon.com
+                |  licensed by 
+                a(href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank") CC 3.0 BY
+              li Visual Code editor
+              li Chrome browser
+              li bootlint
+              li broken-link-checker
+              li npm
+              li git / github.com
+              li
+                a(href="https://www.pluralsight.com", title="Pluralsight", target="_blank") Pluralsight
+              li AWS S3, Route 53
+              li Authy mobile app for 2FA
+
+        .col-md-3.hidden-print
+          hr.featurette-divider.hidden-md.hidden-lg
+          .rightsidebar
+            // <rightsidebar>
+            h3 News
+
+            h4 29th May, 2019 
+            p
+              | Moved from my free blog host to a static website (www.dilemmalearning.com) in the AWS cloud.  
+
+            h4 29th March, 2019 
+            p
+              | Joined Twitter and published first weekly blog article entitled "Prologue".  
+          // </rightsidebar>
+      // /row
+    // /container
+    include ./includes/page_footer.pug

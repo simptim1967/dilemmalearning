@@ -1,0 +1,371 @@
+/* site.css */
+
+.alert-info {
+   color: silver;
+   font-size: 1.2rem;
+   border-color: silver;
+   background-color: #496f92;
+}
+
+/* right hand sidebar related styling */
+
+.rightsidebar {
+    background-color: rgb(92, 194, 212); 
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: steelblue 5px solid;
+}
+
+.rightsidebar p {
+     color:black;
+     font-size:0.9rem;
+     line-height: 125%;
+     margin-top: 5px;
+}
+
+.rightsidebar a {
+    color: darkslategrey;
+}
+
+.rightsidebar h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-top:solid 1px darkslategrey;
+    border-bottom:solid 1px darkslategrey;
+    color: darkslategrey;
+    padding: 2px;
+}
+
+.rightsidebar h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: darkslategrey;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+h1 {
+    margin-top: 16px;
+    margin-bottom:  16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color:cornflowerblue;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:silver;
+    margin-top:18px;
+    margin-bottom:15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: gray;
+    padding: 2px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+table h2 {
+    margin-top: 0px;   
+    margin-bottom: 5px;
+    font-size: 1.2rem; 
+}
+
+#mugshot {
+    margin-left: 5px;
+    margin-bottom: 3px;
+    float: right;
+    vertical-align: text-top;
+}
+
+#tweet {
+    margin-left: 5px;
+    margin-bottom: 3px;
+    float: right;
+}
+
+/* common.css - Stylesheet to override bootstrap defaults and share styling common to all website pages */
+
+html {
+    /* set font defaults */
+/*    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; */
+    font-size: 18px; 
+}
+
+body {
+    /* set font defaults */
+/*    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; */
+    font-size: 18px; 
+    /* set default colours */
+    background-color: #314f6b; 
+    color: lightgrey;
+}
+
+/* image header beneath menu */
+
+.headerblock {
+    background-image: url("../images/page-header-dogs.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height:250px;
+    width: 100%;
+    display: inline-table;
+}
+
+.headerblock2 {
+    background-image: url("../images/pluralsight-background2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height:250px;
+    width: 100%;
+    display: inline-table;
+}
+
+.logoverse {
+    padding:5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-shadow: 0 0 0.2rem black, 0 0 0.2rem black,0 0 0.2rem black,0 0 0.2rem black;
+    font-weight: bold;
+    height: 250px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.logoverse p {
+    font-style: italic;
+    color: cornflowerblue;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+    line-height: 1.1rem;
+    text-align: right;
+}
+
+.logoverse a {
+    text-decoration: none;
+    color: violet;
+    font-size: 0.9rem;
+}
+
+.logoverse a:hover {
+    text-decoration: none;
+    color: violet;
+}
+
+.panel {
+    margin-bottom: 1px;
+}
+.panel-heading  {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.3rem;
+}
+.panel-heading a {
+    display: block;
+}
+.jumbotron {
+    background-image: url(../images/old-dog-poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover auto;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 0 0 0.3em black, 0 0 0.3em black, 0 0 0.3em black, 0 0 0.3em black;
+}
+
+/*
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: cornflowerblue;
+}
+
+a:visited {
+    color: silver;
+}
+*/
+
+footer a:visited {
+    color:cornflowerblue;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: #518cb8;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 18px;
+    margin-bottom: 18px;  
+}
+
+.img-thumbnail {
+    border-color: purple; 
+}
+
+.featurette-divider {
+    border-color: cornflowerblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* navbar */
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar-default {
+    background-color: steelblue; 
+    border-color: steelblue; 
+    margin-bottom: 10px;
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    color: white; 
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white; 
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white; /* #777; */
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: lightskyblue; /* #333; */
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white; 
+    background-color: steelblue; 
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: rgb(10, 78, 204); 
+    background-color: #D5D5D5;
+    text-decoration: none;
+}
+
+/* caret initial color */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white; 
+    border-bottom-color: white; 
+}
+
+/* caret color to use when hover/focus on navbar drop-down option */
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: lightskyblue;
+    border-bottom-color: lightskyblue;
+}
+
+/* color to use when open navbar drop-down option */
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: steelblue; 
+    border-bottom-color: steelblue; 
+}
+
+/* mobile version - hamburger menu button */
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: lightskyblue;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white; 
+}
+
+.dropdown-menu {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white; /* #777;*/
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: lightskyblue; 
+    }
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: lightskyblue;
+}
+
+.hashtag {
+    background-color: cornflowerblue;
+    color: purple;
+    /* used monospaced font size for A-Z link buttons */
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 1rem;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 3px;
+    line-height: 1.4285;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3px;
+}
+
+.tooltip {
+    text-indent: 0; 
+}
+
+.ttw {
+    /* style for tooltip word explanations */
+    border-bottom-style: dotted; 
+    border-bottom-width: 2px; 
+    border-bottom-color:purple
+}

@@ -1,0 +1,49 @@
+//
+// Page menu bar definition
+// ==================================================
+.navbar-wrapper
+  .container
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.disabled
+            strong
+              span(style='color: darkblue;') Dilemma
+              span(style='color: lightskyblue;') Learning
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/index.html') Home
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Blog 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='/blog/blog-history.html') Blog History
+                li.divider(role='separator')
+                li
+                  a(href='/blog/prologue.html') Prologue
+                li
+                  a(href='/blog/the-continuous-learning-dilemma.html') The Continuous Learning Dilemma
+                li
+                  a(href='/blog/rising-to-the-challenge-of-continuous-learning.html') Rising To The Challenge
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Tricks 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='/tricks/old-dog-new-tricks.html') Old Dog New Tricks
+                li.divider(role='separator')
+                li
+                  a(href='/tricks/personal-new-trick-list.html') New Tricks (Personal)
+                li
+                  a(href='/tricks/corporate-new-trick-list.html') New Tricks (Corporate)
+            li
+              a(href='/about.html') About

@@ -1,0 +1,77 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks')
+    meta(name='description', content="Hints and tips to overcome the continuous learning dilemma faced by individuals and organisations.")
+    title Old Dog New Tricks
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    .container
+      .row
+        // Main content block
+        .col-md-9
+          h1 Old Dog New Tricks
+          hr.featurette-divider
+
+          h2 Old Dogs Can Learn New Tricks!
+
+          p
+            | They say "you can't teach an old dog new tricks" but is this true for the IT industry
+            | where we are forever being told we need to learn new skills? At Capgemini, we believe
+            | this is not true. After recently celebrating 50 years in the IT industry I personally think 
+            | Capgemini has proved that!
+
+          h3 Continuous Learning - A Must
+
+          p
+            | As a result of permanent change, the accelerating rate of change, more things commanding
+            | our attention, so (too) many choices, great expectations (demands) from our customers and
+            | growing learning curves there is now a demand on IT people to continuously learn and improve
+            | their skills. This means learning must be a part of our daily work commitment rather
+            | than an occasional planned activity. 
+            
+          p
+            | The old dog must learn new tricks. Daily!
+
+          .text-center
+            a.btn.btn-lg.btn-primary(href='personal-new-trick-list.html', role='button') New Tricks For Personal Learning »
+            hr.featurette-divider.hidden-md.hidden-lg
+            | &nbsp;&nbsp;
+            a.btn.btn-lg.btn-primary(href='corporate-new-trick-list.html', role='button') New Tricks For Corporate Learning »
+
+        .col-md-3.hidden-print
+          hr.featurette-divider.hidden-md.hidden-lg
+          .rightsidebar
+            // <rightsidebar>
+            h3 See Also
+
+            h4 
+              a(href="../blog/prologue.html", title="Prologue") Prologue
+            p
+              | About me, who I work for and how this blog came about.  
+
+            h4 
+              a(href="../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+            p
+              | The biggest problem facing the IT industry today, namely continuous learning.  
+
+            h4 
+              a(href="../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+            p
+              | Formulating the approach to rise up and attack the continuous learning dilemma.
+              | Introduction to the continuous learning spectrum.
+          // </rightsidebar>
+      // /row
+    // /container
+    include ../includes/page_footer.pug
