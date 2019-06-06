@@ -8,4 +8,5 @@ rem Personal
 call Pug .\pug\tricks\personal\01-make-time-for-personal-learning.pug --pretty --out ..\live\tricks\personal
 
 rem Corporate
-call Pug .\pug\tricks\corporate\01-make-time-for-corporate-learning.pug --pretty --out ..\live\tricks\corporate
+call Pug .\pug\tricks\corporate\01-technical-skills-are-strategic.pug --pretty --out ..\live\tricks\corporate
+call Pug .\pug\tricks\corporate\02-make-time-for-corporate-learning.pug --pretty --out ..\live\tricks\corporate

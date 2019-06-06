@@ -16,6 +16,7 @@ call pug-all.bat
 echo Copying root files ...
 copy .\sitemap.xml ..\live
 copy .\robots.txt ..\live
+rem copy .\favicon.ico ..\live
 
 echo Running bootlint against HTML files ...
 call bootlint ..\live\about.html
