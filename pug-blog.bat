@@ -9,3 +9,5 @@ call Pug .\pug\blog\continuous-learning-initiatives-technical-communities.pug --
 call Pug .\pug\blog\overcoming-obstacles-to-build-a-learning-culture.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\pluralsight-live-europe-2019.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\crazy-busy.pug --pretty --out ..\live\blog
+call Pug .\pug\blog\beyond-training.pug --pretty --out ..\live\blog
+call Pug .\pug\blog\how-does-a-successful-manager-act.pug --pretty --out ..\live\blog
