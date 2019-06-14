@@ -1,0 +1,212 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='training budget, learning budget, new ways of learning, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Training is not the same as learning and the existing training budget is too limiting for continuous learning.")
+    title Beyond Training
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    .container
+      .row
+        // Main content block
+        .col-md-9
+          h1 Beyond Training
+          hr.featurette-divider
+
+          h2 Training Is Not The Same As Learning
+
+          p
+            | Some people think that “training” and “learning” are the same thing but there is a big difference.
+            | Training should be viewed as an occasional formal event that will facilitate learning whereas as learning is
+            | something that is happening all the time both formally and informally. 
+
+          h2 The Training Budget Is Too Limiting
+
+          p
+            | The problem with confusing training and learning as being the same thing often leads to the
+            | assumption that the small amount of time allocated to individuals each year for training,
+            | a.k.a. the training budget, will also be sufficient for any other learning activities
+            | individuals might participate in. This assumption often proves to be invalid. People who
+            | book their learning time to a training code can rapidly exhaust their allocation because
+            | learning occurs far more frequently than training.
+
+          h2 Beyond The Training Budget
+
+          p
+            | If we are to achieve a learning culture then we need to get beyond the training budget.
+            | It’s simply too limiting! Almost all organisations have a training budget but how many have
+            | a learning budget?
+
+          p
+            | We all know that SMEs  (Subject Matter Experts) didn’t become experts overnight or after a three-day training course.
+            | They earned their “wings” by spending time steadily learning over a long period of time,
+            | often years.
+
+          h2 Learning Time Is Undervalued But Highly Necessary
+
+          p
+            | Whilst SME knowledge and skills are highly valued, the value of
+            | learning (especially continuous learning) is greatly undervalued. No one wants to invest
+            | in the cost or duration of learning but everyone wants to dip into the earned value of it.
+            | Some learning delivers a massive return on investment, especially learning that improves
+            | our everyday work. 
+          
+          p
+            | Unfortunately, the digital skills gap prevents us from buying in that learning at a
+            | reasonable price (by hiring new talent) and forces us to start investing in growing our
+            | own talent or to fall further behind.
+
+          h2 False Economies
+
+          p
+            | “Bean-counter mentality” can introduce many false economies that stifle creativity,
+            | productivity, efficiency, quality and innovation for knowledge workers.
+
+          p
+            | The false economy of “managing by cost” really brings out the worst in people. It
+            | causes people to ask about budgets and time codes instead of discussing and realising
+            | the value that might be achieved. It’s like saying “we can’t afford to act on good
+            | ideas” or “we can’t afford to change”.
+
+          p
+            | “One size fits all” is another false economy. I say let the workers choose!
+
+          h2 Learning Through Knowledge Sharing
+
+          p
+            | Knowledge sharing is a way of shortening learning curves. It helps to build and
+            | empower people more efficiently. Role-based or technical communities are an excellent
+            | vehicle for this.
+
+          p
+            | Because knowledge sharing takes time to do, there is a cost associated with it.
+            | Short-sighted organisations would question and discourage that cost even though it
+            | offers excellent value for money and a great return on investment.
+
+          h2 Time Spent On Learning Pays For Itself
+
+          p
+            | We’ve all heard about continuous improvement and how it needs to be baked into
+            | everything we do so that we can do things faster, cheaper and better. We all know
+            | that the time we spend on improvements pays for itself. (Some contracts even take
+            | continuous improvement into account forcing suppliers to reduce their costs over time.)
+
+          p
+            | Decades ago Microsoft had a concept of “the 20% tax” for developers (documented in
+            | the book Microsoft Secrets) that assumed they would spend 20% of their time re-factoring
+            | code to keep the codebase for their products as healthy as possible.
+
+          p
+            | Spotify “hack days” (where engineers can spend 10% of their time working on almost
+            | anything they want) delivered such great returns that they introduced an annual
+            | company-wide “hack week” too.
+
+          p
+            | It’s probably no surprise that organisations who don’t take continuous improvement
+            | seriously also don’t take continuous learning seriously either. These are the
+            | “laggards” on the adoption curve.
+
+          h2 Tech Challenge
+ 
+          p
+            | At Capgemini, on my account the Architecture Group sponsors “Tech Challenge” events
+            | where teams from across the account discuss and turn an idea of their choice into a
+            | demonstrable product.
+
+          video(id="player553519304", poster="//marcoms.capgemini.com/bam/filestore/3/7/1/2/7_39e93a687e61bf7/37127pre_e0568aa4cd4c017.jpg", title="TechChallenge Video" width="100%",controls,controlsList="nodownload")
+            source(src="https://marcoms.capgemini.com/bam/filestore/3/7/1/2/7_39e93a687e61bf7/37127pre_e0568aa4cd4c017.mp4", type="video/mp4")
+            p(style="padding: 2rem 0rem;color: white;")
+              | Your browser does not support the HTML5 video tag.
+              | Use this link to launch the
+              a(href="https://marcoms.capgemini.com/bam/filestore/3/7/1/2/7_39e93a687e61bf7/37127pre_e0568aa4cd4c017.mp4", title="Tech Challenge Video", target="_blank") Tech Challenge Video
+          script.
+            var paused = [];
+            $("#player553519304").on("play", function(){
+                var filePath = "https://marcoms.capgemini.com/bam/filestore/3/7/1/2/7_39e93a687e61bf7/37127pre_e0568aa4cd4c017.mp4";
+                filePath = filePath.split("|").shift();
+                filePath = "TechChallenge video - "+filePath;
+                trackVideosEvents("Play",filePath);
+                paused["553519304"] = 0;
+            });
+            $("#player553519304").on("pause", function(){
+                paused["553519304"] = 1;
+            });
+            $("#player553519304").on("ended", function(){
+                var filePath = "https://marcoms.capgemini.com/bam/filestore/3/7/1/2/7_39e93a687e61bf7/37127pre_e0568aa4cd4c017.mp4";
+                filePath = filePath.split("|").shift();
+                filePath = "TechChallenge video - "+filePath;
+                trackVideosEvents("Complete",filePath);
+            });
+
+          p
+            | Anyone can form a team and enter the event – you just need a whacky team name, an
+            | idea and the shared motivation and commitment to build it. 
+          
+          p
+            | Entries for our 10th edition recently closed on 23rd May. On a given day, the different
+            | teams will each demonstrate the fruits of their labours to a panel of judges and prizes
+            | will be awarded. Past experience has shown that some of the ideas and products demonstrated
+            | are amazing with no holds barred on what technologies are employed. This is a great
+            | opportunity to do something different with new technology and a motivated bunch of people.
+          
+          p
+            | I’m always impressed by what was achieved in so little time. Every day I’m reminded that
+            | I work with some really clever people but Tech Challenge just takes that to a new level
+            | of respect for people. Awesome!
+
+          p
+            | I look forward to sharing the results of the challenge in a future post.
+
+          p.text-right
+            b Tim Simpson
+            br 
+            | 7th June, 2019
+            br 
+            span.badge.hashtag #LifeAtCapgemini
+
+          p
+            a.btn.btn-lg.btn-primary(href='how-does-a-successful-manager-act.html', role='button') Next Blog Post »
+          
+        .col-md-3.hidden-print
+          hr.featurette-divider.hidden-md.hidden-lg
+          .rightsidebar
+            // <rightsidebar>
+            h3 See Also
+
+            h4 
+              a(href="prologue.html", title="Prologue") Prologue
+            p
+              | About me, who I work for and how this blog came about.  
+
+            h4 
+              a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+            p
+              | The biggest problem facing the IT industry today, namely continuous learning.  
+
+            h4 
+              a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+            p
+              | Formulating the approach to rise up and attack the continuous learning dilemma.
+              | Introduction to the continuous learning spectrum.
+
+            h4 
+              a(href="../tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
+            p
+              | Hints and tips to help with personal and corporate learning.  
+          // </rightsidebar>
+      // /row
+    // /container
+    include ../includes/page_footer.pug

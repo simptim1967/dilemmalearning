@@ -347,6 +347,22 @@ p {
     font-size: 1rem;
 }
 
+.goldstrapline {
+    background-color: goldenrod;
+    color: purple;
+    /* used monospaced font size for A-Z link buttons */
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 1rem;
+}
+
+.greenstrapline {
+    background-color: green;
+    color: purple;
+    /* used monospaced font size for A-Z link buttons */
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 1rem;
+}
+
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
     padding: 3px;
     line-height: 1.4285;
