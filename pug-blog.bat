@@ -11,3 +11,5 @@ call Pug .\pug\blog\pluralsight-live-europe-2019.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\crazy-busy.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\beyond-training.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\how-does-a-successful-manager-act.pug --pretty --out ..\live\blog
+call Pug .\pug\blog\birmingham-meetup-18062019.pug --pretty --out ..\live\blog
+rem call Pug .\pug\blog\xxx.pug --pretty --out ..\live\blog
