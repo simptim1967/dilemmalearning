@@ -1,0 +1,139 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='personal learning, learning routine, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks')
+    meta(name='description', content="Find a place to learn that suits you - even if it means hiding away from your colleagues!")
+    title Hide Away / Change The Scenery
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+
+    h2.text-center
+      a(href="../personal-new-trick-list.html", title="New Tricks For Personal Learning") New Tricks For Personal Learning
+    
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    .container
+      .row
+        // Main content block
+        .col-md-9
+          h1 #03 Hide Away / Change The Scenery
+          hr.featurette-divider
+
+          h2 Far From The Madding Crowd
+          
+          p
+            | Not all environments are suitable for learning, especially if you work in
+            | a busy office. Sometimes a change of scenery is called for in order to find
+            | somewhere more ambient to learning.
+            
+          p
+            | Think of the list of your requirements for the
+            | perfect learning environment and then go find it.
+          
+          p
+            | It might look like this:
+            ul
+              li Quiet
+              li Hidden away from or out of sight of colleagues
+              li Free from distractions
+              li WiFi enabled
+              li Good coffee / snacks available
+
+          h2 Secret Hideaway Learning Environment
+
+          p
+            | At Capgemini we have a flexible policy around seating that you might know as the term
+            | “hot desking”. We have a mobile app that lets us find and book a desk. It even has an
+            | Alexa skill to command it – so cool! (Imagine me eating my breakfast and saying
+            | “Alexa, book me a desk”.)
+
+          p
+            | I’m not personally a fan of “hot desking” but I make it work to my advantage when
+            | needed as I’m able to hide myself away in a different location to avoid interruptions
+            | and to also change the
+            | scenery once in a while. You could call it a "secret hideaway" learning environment.
+
+          p
+            | Some of my software engineering team colleagues hired a place in the country for a week
+            | in order to conduct a Hack Week to learn new skills. The place had wonderful views, my
+            | kind of local cuisine and even had a hot tub! 😊
+
+          h2 Space To Think
+
+          p
+            | I’m one of those people who makes time for thinking. If you’re a 
+            a(href="https://wikipedia.org/wiki/Knowledge_worker", target="_blank", title="Knowledge Worker") Knowledge Worker
+            |  then you probably should too. Go on, give me ten good ideas right now! It's not
+            | that easy is it? 
+
+          p
+            | Most of my ideas come from research but that doesn't mean that every idea I have is a
+            | good idea. Some ideas don't make it after you've had time to think them through,
+            | sleep on them or bounce them off colleagues.
+            
+          p
+            | Having space to think is the important thing and often on your personal learning
+            | journey you will have to appraise your progress and perhaps adjust your plans and
+            | priorities.
+
+          h2 Fresh Location - Fresh Ideas - Fresh Approach
+          
+          img.img-thumbnail.img-responsive(src='../../images/phoenix-canteen.jpg', alt='@Phoenix Canteen - One of my secret hieaways.', title='@Phoenix Canteen - One of my secret hieaways.')
+
+          p
+            | The office I work in is pretty big so there are lots of “hiding places” that are not
+            | too far away (such as our office canteen) but when I really want a change of scenery I work from a totally different office
+            | or at home. I find this can really help energise approaching a new or challenging piece of work or
+            | inspiring some fresh thinking. Try it once in a while and see if it works for you too.
+
+          p.text-right
+            b Tim Simpson
+            br 
+            span.badge.hashtag #OldDogNewTrick
+
+          p
+            a.btn.btn-lg.btn-primary(href='02-make-time-for-personal-learning.html', role='button') &laquo; Previous Trick
+            | &nbsp;
+            a.btn.btn-lg.btn-primary(href='04-avoid-distractions-and-occasional-interruptions.html', role='button') Next Trick »
+
+        .col-md-3.hidden-print
+          hr.featurette-divider.hidden-md.hidden-lg
+          .rightsidebar
+            // <rightsidebar>
+            h3 See Also
+            
+            h4
+              a(href="../corporate-new-trick-list.html", title="New Tricks For Corporate Learning") New Tricks For Corporate Learning
+            p
+              | Tips and tricks to help your organisation on its learning journey.  
+
+            h4 
+              a(href="../../blog/prologue.html", title="Prologue") Prologue
+            p
+              | About me, who I work for and how this blog came about.  
+
+            h4 
+              a(href="../../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+            p
+              | The biggest problem facing the IT industry today, namely continuous learning.  
+
+            h4 
+              a(href="../../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+            p
+              | Formulating the approach to rise up and attack the continuous learning dilemma.
+              | Introduction to the continuous learning spectrum.
+          // </rightsidebar>
+      // /row
+    // /container
+    include ../../includes/page_footer.pug

@@ -7,6 +7,8 @@ del ..\live\images\*.svg
 copy .\images\*.jpg ..\live\images
 copy .\images\*.svg ..\live\images
 
+copy .\downloads ..\live\downloads
+
 call script-all.bat
 
 echo Copying HTML files ...
