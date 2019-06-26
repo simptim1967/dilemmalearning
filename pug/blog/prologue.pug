@@ -16,102 +16,110 @@ html(lang='en-GB')
   body()
     include ../includes/page_menu.pug
     include ../includes/page_header.pug
-    //
-      Main content
-      ==================================================
-    .container
-      .row
-        // Main content block
-        .col-md-9
-          h1 Prologue
-          hr.featurette-divider
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Prologue
+              hr.featurette-divider
 
-          p
-            | Hi, my name is Tim Simpson. 
-            | I’m a Senior Solution Architect within the Architecture Practice at Capgemini UK working mainly on the HMRC account 
-            | which is Capgemini’s largest UK account.
+              p
+                | Hi, my name is Tim Simpson. 
+                | I’m a Senior Solution Architect within the Architecture Practice at Capgemini UK working mainly on the HMRC account 
+                | which is Capgemini’s largest UK account.
 
-          p 
-            | I’ve worked on the account for more than 12 years and am currently assigned 
-            | to the Digital Delivery Group (DDG) which has over 750 people in offices at multiple locations across the UK. 
-            | It’s a very busy and exciting place to work! 
+              p 
+                | I’ve worked on the account for more than 13 years and am currently assigned 
+                | to the Digital Delivery Group (DDG) which has over 800 people in offices at multiple locations across the UK. 
+                | It’s a very busy and exciting place to work! 
 
-          p 
-            | The DDG works concurrently on many projects for many different customers (not just HMRC) both in the Public
-            | and Private sectors. We and our customers use virtually every tool, technology and technique you can think 
-            | of somewhere along the way. Almost all of the projects we undertake are agile projects which may vary in 
-            | duration from weeks, often months to sometimes years. The projects are almost always challenging whether that 
-            | be due to complexity, scale, timescales, risk or all of these.
-          
-          p
-            | I’m still convinced (after 3 decades in the IT industry including some time running my own software company)
-            | that Architecture is the best discipline if you want to see every aspect of the development life cycle. It’s
-            | a “go anywhere” pass!
+              p 
+                | The DDG works concurrently on many projects for many different customers (not just HMRC) both in the Public
+                | and Private sectors. We and our customers use virtually every tool, technology and technique you can think 
+                | of somewhere along the way. Almost all of the projects we undertake are agile projects which may vary in 
+                | duration from weeks, often months to sometimes years. The projects are almost always challenging whether that 
+                | be due to complexity, scale, timescales, risk or all of these.
+              
+              p
+                | I’m still convinced (after 3 decades in the IT industry including some time running my own software company)
+                | that Architecture is the best discipline if you want to see every aspect of the development life cycle. It’s
+                | a “go anywhere” pass!
 
-          p
-            | I’m also convinced that “building products” is way easier than “doing projects” (although both are great fun).
-            | I’ve never seen much forgiveness in the aggressive “fixed price, fixed functionality and fixed deadline world
-            | of projects” where you never get to do the same project twice. (Agile didn’t change much of that in the “large
-            | projects” world.)
+              p
+                | I’m also convinced that “building products” is way easier than “doing projects” (although both are great fun).
+                | I’ve never seen much forgiveness in the aggressive “fixed price, fixed functionality and fixed deadline world
+                | of projects” where you never get to do the same project twice. (Agile didn’t change much of that in the “large
+                | projects” world.)
 
-          p
-            | I’m a reluctant blogger but several colleagues encouraged me to share the journey for the role I was offered
-            | and took up over a year ago to spend 50% of my time as the “DDG Capabilities Lead”.
+              p
+                | I’m a reluctant blogger but several colleagues encouraged me to share the journey for the role I was offered
+                | and took up over a year ago to spend 50% of my time as the “DDG Capabilities Lead”.
 
-          p
-            | The Capabilities Lead role basically involves driving the people within the DDG (all 750+ of them) to
-            | continually enhance and learn new skills as well as share their knowledge so that as a business we can embrace
-            | the ever-changing demands of our customers and win new business in emerging markets whilst remaining highly
-            | capable and competitive.
+              p
+                | The Capabilities Lead role basically involves driving the people within the DDG (all 750+ of them) to
+                | continually enhance and learn new skills as well as share their knowledge so that as a business we can embrace
+                | the ever-changing demands of our customers and win new business in emerging markets whilst remaining highly
+                | capable and competitive.
 
-          p
-            | So how exactly do you go about doing that?! Where on earth do you start?! 
+              p
+                | So how exactly do you go about doing that?! Where on earth do you start?! 
 
-          p
-            | ¯\_(ツ)_/¯
+              p
+                | ¯\_(ツ)_/¯
 
-          p
-            | The biggest problem for me is the problem that the IT industry has always faced, namely 
-            a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") “The Continuous Learning Dilemma”
-            | . (More to follow on that in the next post.)
+              p
+                | The biggest problem for me is the problem that the IT industry has always faced, namely 
+                a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") “The Continuous Learning Dilemma”
+                | . (More to follow on that in the next post.)
 
-          p
-            | Fortunately, I work with some really clever people who are never short of advice (or opinions) and because
-            | Capgemini employs over 200,000 people across the globe I’m not alone in attacking this problem. There’s
-            | also a host of business partners to call upon.
+              p
+                | Fortunately, I work with some really clever people who are never short of advice (or opinions) and because
+                | Capgemini employs over 200,000 people across the globe I’m not alone in attacking this problem. There’s
+                | also a host of business partners to call upon.
 
-          p.text-right
-            b Tim Simpson
-            br 
-            | 29th March, 2019
-            br 
-            span.badge.hashtag #LifeAtCapgemini
+              p.text-right
+                b Tim Simpson
+                br 
+                | 29th March, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
 
-          p
-            a.btn.btn-lg.btn-primary(href='the-continuous-learning-dilemma.html', role='button') Next Blog Post »
-          
-        .col-md-3.hidden-print
-          hr.featurette-divider.hidden-md.hidden-lg
-          .rightsidebar
-            // <rightsidebar>
-            h3 See Also
+              p
+                a.btn.btn-lg.btn-primary(href='the-continuous-learning-dilemma.html', role='button') Next Blog Post »
+            
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
 
-            h4 
-              a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
-            p
-              | The biggest problem facing the IT industry today, namely continuous learning.  
+                h4 
+                  a(href="/tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
+                p
+                  | Hints and tips to help with personal and corporate learning.  
 
-            h4 
-              a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
-            p
-              | Formulating the approach to rise up and attack the continuous learning dilemma.
-              | Introduction to the continuous learning spectrum.
+                h4 
+                  a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
 
-            h4 
-              a(href="../about.html#tech" title="Technical Stuff") Technical Stuff 
-            p
-              | The development tools and technologies used to build this website.  
-          // </rightsidebar>
-      // /row
-    // /container
+                h4 
+                  a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+
+                h4 
+                  a(href="../about.html#tech" title="Technical Stuff") Technical Stuff 
+                p
+                  | The development tools and technologies used to build this website.  
+                // </rightsidebar>
+        // /row
+      // /container
     include ../includes/page_footer.pug

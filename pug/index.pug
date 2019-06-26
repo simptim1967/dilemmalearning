@@ -14,52 +14,56 @@ html(lang='en-GB')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/site.css', rel='stylesheet')
   body
-    include ./includes/page_menu.pug
-    //
-      Primary marketing message or call to action
-      ==================================================
-    .container.text-center
-      h1 
-        a(href="blog/the-continuous-learning-dilemma.html") The Continuous Learning Dilemma
+    header
+      include ./includes/page_menu.pug
+      //
+        Primary marketing message or call to action
+        ==================================================
+      .container.text-center
+        h1 
+          a(href="blog/the-continuous-learning-dilemma.html") The Continuous Learning Dilemma
 
-      .jumbotron.hidden-sm.hidden-xs
+        .jumbotron.hidden-sm.hidden-xs
+        img#olddog.img-thumbnail.img-responsive.visible-sm.visible-xs.hidden-md.hidden-lg(src='images/old-dog.jpg', alt='Old Dog New Tricks', title='Old Dog New Tricks')
 
-      h2 
-        | They say "you can't teach an old dog new tricks" but is this true for the IT industry
-        | where we are forever being told we need to learn new skills?
-      
-      hr.featurette-divider
-    //
-      Main content features
-      ==================================================
-    .container.text-center
-      // Three columns of text below the jumbotron / carousel
-      .row
-        .col-sm-4
-          img(src='images/blogging.svg', width='178', height='178', alt='Bible ToDo List', title='Bible ToDo List')
-          h2 Blog
-          p
-            | Life at Capgemini rising to the challenge of continuous learning.
-          p
-            a.btn.btn-lg.btn-primary(href='blog/blog-history.html', role='button') Blog »
-          hr.featurette-divider.hidden-sm.hidden-md.hidden-lg
-        // /.col-sm-4
-        .col-sm-4
-          img(src='images/prize-badge-with-paw-print.svg', width='178', height='178', alt='Old Dog New Tricks', title='Old Dog New Tricks')
-          h2 Old Dog New Tricks
-          p
-            | Discover new tricks to tackle the continuous learning dilemma.
-          p
-            a.btn.btn-lg.btn-primary(href='tricks/old-dog-new-tricks.html', role='button') Old Dog New Tricks »
-          hr.featurette-divider.hidden-sm.hidden-md.hidden-lg
-        // /.col-sm-4
-        .col-sm-4
-          img(src='images/twitter.svg', width='178', height='178', alt='Twitter Logo', title='Twitter Logo')
-          h2 Twitter
-          p
-            | Follow @DilemmaLearning for blog updates, new tricks and more.
-          p
-            a.btn.btn-lg.btn-primary(href='https://twitter.com/DilemmaLearning', role='button', target="_blank") @DilemmaLearning »
-        // /.col-sm-4
-      // /.row
+        h2 
+          | They say "you can't teach an old dog new tricks" but is this true for the IT industry
+          | where we are forever being told we need to learn new skills?
+        
+        hr.featurette-divider
+    
+    main
+      //
+        Main content features
+        ==================================================
+      .container.text-center
+        // Three columns of text below the jumbotron / carousel
+        .row
+          .col-sm-4
+            img(src='images/blogging.svg', width='178', height='178', alt='Blog', title='Blog')
+            h2 Blog
+            p
+              | Life at Capgemini rising to the challenge of continuous learning.
+            p
+              a.btn.btn-lg.btn-primary(href='blog/blog-history.html', role='button') Blog »
+            hr.featurette-divider.hidden-sm.hidden-md.hidden-lg
+          // /.col-sm-4
+          .col-sm-4
+            img(src='images/prize-badge-with-paw-print.svg', width='178', height='178', alt='Old Dog New Tricks', title='Old Dog New Tricks')
+            h2 Old Dog New Tricks
+            p
+              | Discover new tricks to tackle the continuous learning dilemma.
+            p
+              a.btn.btn-lg.btn-primary(href='tricks/old-dog-new-tricks.html', role='button') Old Dog New Tricks »
+            hr.featurette-divider.hidden-sm.hidden-md.hidden-lg
+          // /.col-sm-4
+          .col-sm-4
+            img(src='images/twitter.svg', width='178', height='178', alt='Twitter Logo', title='Twitter Logo')
+            h2 Twitter
+            p
+              | Follow @DilemmaLearning for blog updates, new tricks and more.
+            p
+              a.btn.btn-lg.btn-primary(href='https://twitter.com/DilemmaLearning', role='button', target="_blank") @DilemmaLearning »
+          // /.col-sm-4
+        // /.row
     include ./includes/page_footer.pug
