@@ -10,6 +10,7 @@ categorised
 counselling
 cosy
 colour
+costed
 calibre
 desking
 doddle
@@ -18,13 +19,16 @@ energise
 energised
 favourite
 flavour
-fulfil
 flaticon
+focussed
+fulfil
 github
 inbox
+incentivise
 labours
 learnt
 maximise
+meetup
 organisation
 organisations
 organisational
