@@ -98,9 +98,15 @@ http://dilemmalearning.com/blog/pluralsight-live-europe-2019.html
     </url>
     <url>
         <loc>http://dilemmalearning.com/blog/birmingham-meetup-18062019.html</loc>
-        <lastmod>2019-06-14T12:38:18+00:00</lastmod>
+        <lastmod>2019-06-21T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://dilemmalearning.com/blog/a-big-mistake-about-learning.html</loc>
+        <lastmod>2019-06-28T12:38:18+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
     </url>
     <url>
         <loc>
@@ -153,6 +159,22 @@ http://dilemmalearning.com/tricks/personal/03-hide-away-change-the-scenery.html
     <url>
         <loc>
 http://dilemmalearning.com/tricks/personal/04-avoid-distractions-and-occasional-interruptions.html
+        </loc>
+        <lastmod>2019-05-31T12:40:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>
+http://dilemmalearning.com/tricks/personal/05-create-a-personal-development-plan.html
+        </loc>
+        <lastmod>2019-05-31T12:40:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>
+http://dilemmalearning.com/tricks/personal/06-learn-to-manage-your-time-well.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
