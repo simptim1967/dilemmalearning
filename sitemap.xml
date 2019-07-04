@@ -109,6 +109,12 @@ http://dilemmalearning.com/blog/pluralsight-live-europe-2019.html
         <priority>0.64</priority>
     </url>
     <url>
+        <loc>http://dilemmalearning.com/blog/a-time-to-reflect.html</loc>
+        <lastmod>2019-07-04T12:38:18+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
+    </url>
+    <url>
         <loc>
 http://dilemmalearning.com/tricks/old-dog-new-tricks.html
         </loc>

@@ -1,15 +1,18 @@
+admin
 analysing
 andyburgin
 behaviour
 behaviours
 benefitted
 bootlint
+catalogue
 centre
 codebase
 categorised
 counselling
 cosy
 colour
+colours
 costed
 calibre
 desking
@@ -29,6 +32,7 @@ labours
 learnt
 maximise
 meetup
+nirvanahq
 organisation
 organisations
 organisational
@@ -45,6 +49,7 @@ recognise
 recognised
 roadmap
 rgee
+timesheet
 utilise
 utilisation
 visualise
