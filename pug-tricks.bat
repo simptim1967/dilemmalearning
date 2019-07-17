@@ -11,7 +11,7 @@ call Pug .\pug\tricks\personal\03-hide-away-change-the-scenery.pug --pretty --ou
 call Pug .\pug\tricks\personal\04-avoid-distractions-and-occasional-interruptions.pug --pretty --out ..\live\tricks\personal
 call Pug .\pug\tricks\personal\05-create-a-personal-development-plan.pug --pretty --out ..\live\tricks\personal
 call Pug .\pug\tricks\personal\06-learn-to-manage-your-time-well.pug --pretty --out ..\live\tricks\personal
-rem call Pug .\pug\tricks\personal\07-find-ways-of-learning-that-work-for-you.pug --pretty --out ..\live\tricks\personal
+call Pug .\pug\tricks\personal\07-find-ways-of-learning-that-work-for-you.pug --pretty --out ..\live\tricks\personal
 rem call Pug .\pug\tricks\personal\08-join-a-community.pug --pretty --out ..\live\tricks\personal
 rem call Pug .\pug\tricks\personal\09-join-a-mailing-list.pug --pretty --out ..\live\tricks\personal
 rem call Pug .\pug\tricks\personal\10-make-the-day-job-work-for-you.pug --pretty --out ..\live\tricks\personal
