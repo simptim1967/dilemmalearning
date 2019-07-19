@@ -17,6 +17,7 @@ call pug-all.bat
 
 echo Copying root files ...
 copy .\sitemap.xml ..\live
+copy .\BingSiteAuth.xml ..\live
 copy .\robots.txt ..\live
 rem copy .\favicon.ico ..\live
 
