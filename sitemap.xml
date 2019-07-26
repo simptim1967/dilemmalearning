@@ -1,38 +1,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://dilemmalearning.com/</loc>
+        <loc>https://dilemmalearning.com/</loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/index.html</loc>
+        <loc>https://dilemmalearning.com/index.html</loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/about.html</loc>
+        <loc>https://dilemmalearning.com/about.html</loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/blog-history.html</loc>
+        <loc>https://dilemmalearning.com/blog/blog-history.html</loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/prologue.html</loc>
+        <loc>https://dilemmalearning.com/blog/prologue.html</loc>
         <lastmod>2019-05-31T12:38:19+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/blog/the-continuous-learning-dilemma.html
+https://dilemmalearning.com/blog/the-continuous-learning-dilemma.html
         </loc>
         <lastmod>2019-05-31T12:38:19+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -40,7 +40,7 @@ http://dilemmalearning.com/blog/the-continuous-learning-dilemma.html
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/blog/rising-to-the-challenge-of-continuous-learning.html
+https://dilemmalearning.com/blog/rising-to-the-challenge-of-continuous-learning.html
         </loc>
         <lastmod>2019-05-31T12:38:19+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -48,7 +48,7 @@ http://dilemmalearning.com/blog/rising-to-the-challenge-of-continuous-learning.h
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/blog/continuous-learning-initiatives-learning-vehicles.html
+https://dilemmalearning.com/blog/continuous-learning-initiatives-learning-vehicles.html
         </loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -56,7 +56,7 @@ http://dilemmalearning.com/blog/continuous-learning-initiatives-learning-vehicle
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/blog/continuous-learning-initiatives-technical-communities.html
+https://dilemmalearning.com/blog/continuous-learning-initiatives-technical-communities.html
         </loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -64,7 +64,7 @@ http://dilemmalearning.com/blog/continuous-learning-initiatives-technical-commun
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/blog/overcoming-obstacles-to-build-a-learning-culture.html
+https://dilemmalearning.com/blog/overcoming-obstacles-to-build-a-learning-culture.html
         </loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -72,63 +72,69 @@ http://dilemmalearning.com/blog/overcoming-obstacles-to-build-a-learning-culture
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/blog/pluralsight-live-europe-2019.html
+https://dilemmalearning.com/blog/pluralsight-live-europe-2019.html
         </loc>
         <lastmod>2019-05-31T12:38:19+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/crazy-busy.html</loc>
+        <loc>https://dilemmalearning.com/blog/crazy-busy.html</loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/beyond-training.html</loc>
+        <loc>https://dilemmalearning.com/blog/beyond-training.html</loc>
         <lastmod>2019-06-07T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/how-does-a-successful-manager-act.html</loc>
+        <loc>https://dilemmalearning.com/blog/how-does-a-successful-manager-act.html</loc>
         <lastmod>2019-06-14T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/birmingham-meetup-18062019.html</loc>
+        <loc>https://dilemmalearning.com/blog/birmingham-meetup-18062019.html</loc>
         <lastmod>2019-06-21T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/a-big-mistake-about-learning.html</loc>
+        <loc>https://dilemmalearning.com/blog/a-big-mistake-about-learning.html</loc>
         <lastmod>2019-06-28T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/a-time-to-reflect.html</loc>
+        <loc>https://dilemmalearning.com/blog/a-time-to-reflect.html</loc>
         <lastmod>2019-07-04T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/opening-new-doors-to-new-possibilities.html</loc>
+        <loc>https://dilemmalearning.com/blog/opening-new-doors-to-new-possibilities.html</loc>
         <lastmod>2019-07-11T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>http://dilemmalearning.com/blog/continuous-curiosity.html</loc>
+        <loc>https://dilemmalearning.com/blog/continuous-curiosity.html</loc>
         <lastmod>2019-07-19T12:38:18+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
+        <loc>https://dilemmalearning.com/blog/blast-off-from-the-past.html</loc>
+        <lastmod>2019-07-26T12:38:18+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
+    </url>
+    <url>
         <loc>
-http://dilemmalearning.com/tricks/old-dog-new-tricks.html
+https://dilemmalearning.com/tricks/old-dog-new-tricks.html
         </loc>
         <lastmod>2019-05-31T12:40:52+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -136,7 +142,7 @@ http://dilemmalearning.com/tricks/old-dog-new-tricks.html
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal-new-trick-list.html
+https://dilemmalearning.com/tricks/personal-new-trick-list.html
         </loc>
         <lastmod>2019-05-31T12:40:52+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -144,7 +150,7 @@ http://dilemmalearning.com/tricks/personal-new-trick-list.html
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/corporate-new-trick-list.html
+https://dilemmalearning.com/tricks/corporate-new-trick-list.html
         </loc>
         <lastmod>2019-05-31T12:40:52+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -152,7 +158,7 @@ http://dilemmalearning.com/tricks/corporate-new-trick-list.html
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/01-decide-what-to-learn.html
+https://dilemmalearning.com/tricks/personal/01-decide-what-to-learn.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -160,7 +166,7 @@ http://dilemmalearning.com/tricks/personal/01-decide-what-to-learn.html
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/02-make-time-for-personal-learning.html
+https://dilemmalearning.com/tricks/personal/02-make-time-for-personal-learning.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -168,7 +174,7 @@ http://dilemmalearning.com/tricks/personal/02-make-time-for-personal-learning.ht
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/03-hide-away-change-the-scenery.html
+https://dilemmalearning.com/tricks/personal/03-hide-away-change-the-scenery.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -176,7 +182,7 @@ http://dilemmalearning.com/tricks/personal/03-hide-away-change-the-scenery.html
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/04-avoid-distractions-and-occasional-interruptions.html
+https://dilemmalearning.com/tricks/personal/04-avoid-distractions-and-occasional-interruptions.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -184,7 +190,7 @@ http://dilemmalearning.com/tricks/personal/04-avoid-distractions-and-occasional-
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/05-create-a-personal-development-plan.html
+https://dilemmalearning.com/tricks/personal/05-create-a-personal-development-plan.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -192,7 +198,7 @@ http://dilemmalearning.com/tricks/personal/05-create-a-personal-development-plan
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/06-learn-to-manage-your-time-well.html
+https://dilemmalearning.com/tricks/personal/06-learn-to-manage-your-time-well.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -200,7 +206,7 @@ http://dilemmalearning.com/tricks/personal/06-learn-to-manage-your-time-well.htm
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/personal/07-find-ways-of-learning-that-work-for-you.html
+https://dilemmalearning.com/tricks/personal/07-find-ways-of-learning-that-work-for-you.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -208,7 +214,7 @@ http://dilemmalearning.com/tricks/personal/07-find-ways-of-learning-that-work-fo
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/corporate/01-technical-skills-are-strategic.html
+https://dilemmalearning.com/tricks/corporate/01-technical-skills-are-strategic.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -216,7 +222,7 @@ http://dilemmalearning.com/tricks/corporate/01-technical-skills-are-strategic.ht
     </url>
     <url>
         <loc>
-http://dilemmalearning.com/tricks/corporate/02-make-time-for-corporate-learning.html
+https://dilemmalearning.com/tricks/corporate/02-make-time-for-corporate-learning.html
         </loc>
         <lastmod>2019-05-31T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>

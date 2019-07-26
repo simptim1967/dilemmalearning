@@ -7,7 +7,7 @@ html(lang='en-GB')
     // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
     meta(name='keywords', content='continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
     meta(name='description', content="About Dilemma Learning. Learn about the continuous learning dilemma facing the IT industry.")
-    title About Dilemma Learning
+    title About DilemmaLearning.com
     // Bootstrap
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/site.css', rel='stylesheet')
@@ -45,9 +45,19 @@ html(lang='en-GB')
                 | It’s a very busy and exciting place to work! 
 
               p
+                | Through my 
+                a(href="blog/blog-history.html", title="Blog") blog
+                |  I hope to give you a flavour of my working life at Capgemini, both as an architect
+                | and as DDG Capabilities Lead. I hope you find it informative and helpful.
+                | I also share a variety of hints and tips on corporate and personal learning in the belief that
+                | you can teach an 
+                a(href="tricks/old-dog-new-tricks.html", title="Old Dog New Tricks") old dog new tricks
+                |.
+
+              p
                 | Please read my opening blog article entitled 
                 a(href='blog/prologue.html') "Prologue"
-                |  to find out more about my role and work within the DDG.
+                |  to find out more about me and my work.
                 
               h2#twitter Tweets
               p
@@ -72,14 +82,14 @@ html(lang='en-GB')
               p
                 | This website is a work in progress and is continually being updated as I progress and share more
                 | of my learning and working life at Capgemini. It also changes as I learn about new tools and
-                | technologies and experiment with them.
+                | technologies and experiment with them hands-on.
 
               // List web technologies and tools used here 
               h2#tech Technical Stuff
               p
-                | The following tools and technologies were used to build this website:
+                | The following tools and technologies are used to build and host this website:
                 ul
-                  li AWS S3, Route 53, IAM
+                  li AWS ACM, CloudFront, IAM, Route 53, S3
                   li Authy mobile app for 2FA
                   li bootlint
                   li broken-link-checker
@@ -88,6 +98,9 @@ html(lang='en-GB')
                   li git / github.com
                   li Google Analytics, Search
                   li HTML5 generated from pug templates using pug-cli
+                  li
+                    a(href="https://iconifier.net/", title="Iconifier.net - Favicon generator", target="_blank") Iconifier.net
+                    |  - Favicon generator
                   li JavaScript with some help from jQuery (because Bootstrap 3 uses it)
                   li
                     a(href="https://developer.mozilla.org", title="MDN (Mozilla Developer Network)", target="_blank") MDN
@@ -116,6 +129,11 @@ html(lang='en-GB')
               .rightsidebar
                 // <rightsidebar>
                 h3 News
+
+                h4 24th July, 2019 
+                p
+                  | Switched website hosting to use AWS CloudFront and https.
+                  | Even added a browser favicon.
 
                 h4 4th June, 2019 
                 p

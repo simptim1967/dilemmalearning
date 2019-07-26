@@ -1,0 +1,164 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='xxx, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="xxx")
+    title Blast Off From The Past
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Blast Off From The Past
+              hr.featurette-divider
+
+              h2 Anniversary Of The First Moon Landing
+
+              p
+                | Recently on the TV (which I don’t usually watch) there has been a series of programmes
+                | celebrating the 50th anniversary of the first moon landing (20th July, 1969). These have
+                | been most interesting and, as I’ve been to the Space Centre in Florida a couple of times,
+                | I can really relate to the amazing work done back then culminating in the awesome
+                | achievement of walking on the moon and returning safely back to Earth.
+
+              p
+                | I can’t even begin to imagine the sheer complexity of building such a technical solution
+                | and coordinating all the different people (400K+) and organisations involved and then
+                | proving that it all had even the faintest chance of working. To then see it actually happen
+                | – wow! Now that’s what I call a career achievement, no wonder people are still talking
+                | about it.
+
+              p
+                | I know that some people just can’t relate to this. I feel so blessed to have been born into
+                | the era that I was, where I’ve been able to follow and later work with the technological
+                | advancements in computing over the past decades. Some ideas have come and gone (e.g.
+                | dial-up modems, 8-bit, 16-bit etc.) whilst others have changed beyond recognition (e.g.
+                | watches, personal computers, telephones etc.).
+
+              h2 Free Pluralsight Course – Geeks Only
+
+              img.img-thumbnail.img-responsive(src='/images/moon-landing-apollo-11.jpg', alt='For the 50th Anniversary of the Apollo 11 Moon Landing, take a tour of the code of the Apollo Guidance System.', title='For the 50th Anniversary of the Apollo 11 Moon Landing, take a tour of the code of the Apollo Guidance System.')
+              p
+                | Pluralsight released a free course called “
+                a(href="https://www.pluralsight.com/courses/moon-landing-apollo-11", title="For the 50th Anniversary of the Apollo 11 Moon Landing, take a tour of the code of the Apollo Guidance System.")
+                  | 1969 Moon Landing: The Code of the Apollo 11Guidance Computer (AGC)
+                | ” which I had to watch (and share with others at our Learning
+                | Cinema) and which proved to be probably the most “geeky” thing I’ve watched in a while.
+
+              p
+                | It talks about where to download the actual source code from in GitHub and then walks
+                | through some of the assembly language code and comments. 
+
+              p
+                | For me, as someone who spent a number of years writing (6502, Z80 and later 80x86) assembly
+                | language to peek and poke values into memory locations to make hardware do stuff, this all
+                | felt very nostalgic. To think that someone actually did this to start and stop rocket motors
+                | is pretty awesome!
+
+              h2 Women In Technology – Not A New Thing
+
+              p
+                | At Capgemini, we like to celebrate and encourage women in technology but it’s not like it’s
+                | a new thing.
+
+              p
+                img#mugshot.img-thumbnail.img-responsive(src='/images/apollo-agc-source-code.jpg', alt='Margaret Hamilton with the printed AGC source code.', title='Margaret Hamilton with the printed AGC source code.')
+                | Margaret Hamilton was the technical lead on the AGC project back in the day on the Apollo
+                | Programme and coined the term “software engineering”. 
+
+              p
+                | To see the printed AGC programme code piled nearly as tall as her is frightening and to
+                | think of the poor dot matrix printer (anyone remember them?) that produced it, including
+                | the many ribbon changes that were possibly needed, brings a wry smile.
+
+
+              p
+                | Reading some of the articles about Margaret’s work (see 
+                a(href="https://www.i-programmer.info/history/people/10030-margaret-hamilton-apollo-and-beyond.html?start=1", title="Apollo and Beyond", target="_blank") Apollo and Beyond
+                | ) also brought a wry smile – especially
+                | the bit about the astronauts not making mistakes so no need to code defensively. After
+                | Apollo 8, Margaret got to say “I told you so” and to make the subsequent defensive coding
+                | changes.
+
+              p
+                | Most of the women that I’ve worked with as programmers in my career over the years have
+                | always written really good code. They often wrote it quicker too.
+
+              h2 Assembly Language
+
+              p
+                | I do miss Assembly Language. Those were the best programming days, when you really had
+                | a struggle with the memory limits and the processing speed! It was all about the CPU
+                | registers and memory locations and remembering to turn off hardware interrupts before
+                | you changed a memory jump-table address to nest your own interrupt-handler code.
+
+              h2 Hardware Programming Is Making A Comeback
+
+              p
+                | Most of the hardware I programmed directly related to video controller chips or disc
+                | controller chips (won’t bore you with the chip numbers), nothing as exotic as a rocket
+                | motor. 
+
+              p
+                | For a few decades, thanks to the introduction of high level languages, I've personally
+                | not had a need to programme any hardware but the Internet of Things (IoT) looks set
+                | to change all that and bring hardware back to the foreground again, albeit for very
+                | specialised, miniature devices which often host their own OS and network connectivity.
+
+              p
+                | Hardware is now an Internet user too, and also set to sky rocket!
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 26th July, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+
+                h4 
+                  a(href="../tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
+                p
+                  | Hints and tips to help with personal and corporate learning.  
+
+                h4 
+                  a(href="prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+              // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug

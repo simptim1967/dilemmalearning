@@ -32,14 +32,18 @@ incentivise
 itemise
 labours
 learnt
+lifecycle
 maximise
 meetup
 nirvanahq
 organisation
 organisations
 organisational
+performant
+pluralsight
 prioritisation
 prioritise
+programme
 programmes
 publicise
 psjacques
@@ -50,8 +54,10 @@ realised
 realising
 recognise
 recognised
+recognising
 roadmap
 rgee
+specialised
 timesheet
 utilise
 utilisation
@@ -60,6 +66,3 @@ visualisation
 whacky
 whiteboard
 whiteboards
-lifecycle
-performant
-recognising
