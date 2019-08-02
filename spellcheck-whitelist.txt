@@ -21,6 +21,7 @@ dilemmalearning
 energise
 energised
 favourite
+fika
 flavour
 flaticon
 focussed
