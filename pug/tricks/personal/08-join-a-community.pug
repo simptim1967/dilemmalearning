@@ -1,0 +1,142 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='technical communities, learn together, learn from others, continuous curiosity, learning environment, learning preferences, learning approaches, learning styles, personal learning, IT industry, old dog new tricks')
+    meta(name='description', content="Exploit the benefits of joining a technical community to broaden your horizons and learn from others.")
+    title Join A Community
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+
+    h2.text-center
+      a(href="../personal-new-trick-list.html", title="New Tricks For Personal Learning") New Tricks For Personal Learning
+    
+    include ../../includes/page_header.pug
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 #08 Join A Community
+              hr.featurette-divider
+
+              h2 Become A Social Animal
+
+              p
+                | Learning doesn't have to be lonely and, as social interaction typically contributes to around
+                | 20% of our learning, it's a good idea to join with others along the way on your learning journey.
+                | Technical (and non-technical) communities can often offer an excellent opportunity to do just that.
+
+              h2 Community Benefits
+
+              p
+                | There are many benefits to joining a community. Here is a list of some of them:
+                ul
+                  li Go deeper into your topic of interest and grow your knowledge. 
+                  li Learn from the experience of others.
+                  li Short-cut your learning curves.
+                  li Learn about best practices.
+                  li Discover valuable resources.
+                  li Broaden your horizons by engaging with people from diverse organisations and backgrounds.
+                  li Find out about new tools, technologies and techniques. 
+                  li Find out about emerging industry trends. 
+                  li Extend your social network.
+                  li Gain valuable career advice.
+                  li Be inspired, inspire others.
+                  li Pose questions to experts and get answers to your questions.
+                  li Share your interest in a topic with like-minded people.
+                  li Gain respect from your peers for sharing your knowledge.
+
+              h2 Community Vibe
+
+              p
+                | There's nothing like the vibe of a thriving community. In such communities, arriving late
+                | means you won't get a seat and will have to stand for the duration of the meeting. There's
+                | also competition over time slots to present and a healthy respect amongst members.
+
+              p
+                | When you leave a meeting, you'll feel you've learned something (several things no doubt)
+                | and that it was worth attending.
+                | You'll feel inspired to action and proud to be a member of the community and the buzz
+                | that goes with it. 
+
+              p
+                | Thriving communities often get good executive sponsorship meaning food may be provided
+                | (like the bacon, sausage and egg baps at our early-start Architecture Group meetings)
+                | or even merchandise may be on offer like geeky T-shirts, mugs or stickers!
+
+              h2 Give And Take
+
+              p
+                | It's good to contribute back to the community, even if it may take you out of your comfort
+                | zone or cost you some serious research time in rder to prepare. If you decide to do a live
+                | demo, then good look with that!
+
+              p 
+                | Good communities cater for people at all levels and recognise that not everyone is at
+                | same point on the timeline or has the same level of experience. Make sure you take people with
+                | you on the journey and don't leave
+                | them sitting waiting for your presentation to finish or asking questions every five seconds.
+                | (Yes, I've seen that happen! 😊) 
+
+              h2 Community Gaps  
+
+              p
+                | If there isn't a community in place for the topic that you are passionate about then
+                | why not find some like-minded colleagues and start one yourself?
+              
+              p
+                | You could also look outside your own organisation - it could be a portal
+                | into a whole new world!
+
+              p.text-right
+                b Tim Simpson
+                br 
+                span.badge.hashtag #OldDogNewTrick
+
+              p
+                a.btn.btn-lg.btn-primary(href='07-find-ways-of-learning-that-work-for-you.html', role='button') &laquo; Previous Trick
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+                
+                h4
+                  a(href="../corporate-new-trick-list.html", title="New Tricks For Corporate Learning") New Tricks For Corporate Learning
+                p
+                  | Tips and tricks to help your organisation on its corporate learning journey.  
+
+                h4 
+                  a(href="../../blog/prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="../../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="../../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+                // </rightsidebar>
+        // /row
+      // /container
+    include ../../includes/page_footer.pug

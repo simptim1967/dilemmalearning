@@ -1,0 +1,78 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous curiosity, learning environment, learning preferences, learning approaches, learning styles, personal learning, IT industry, old dog new tricks')
+    meta(name='description', content="xxx.")
+    title xxx
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+
+    h2.text-center
+      a(href="../personal-new-trick-list.html", title="New Tricks For Personal Learning") New Tricks For Personal Learning
+    
+    include ../../includes/page_header.pug
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 #xx xxx
+              hr.featurette-divider
+
+              h2 xxx
+
+              p
+                | xxx
+
+              p.text-right
+                b Tim Simpson
+                br 
+                span.badge.hashtag #OldDogNewTrick
+
+              p
+                a.btn.btn-lg.btn-primary(href='xxx.html', role='button') &laquo; Previous Trick
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+                
+                h4
+                  a(href="../corporate-new-trick-list.html", title="New Tricks For Corporate Learning") New Tricks For Corporate Learning
+                p
+                  | Tips and tricks to help your organisation on its corporate learning journey.  
+
+                h4 
+                  a(href="../../blog/prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="../../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="../../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+                // </rightsidebar>
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
