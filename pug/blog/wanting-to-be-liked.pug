@@ -1,0 +1,169 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='learning through pet projects, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Having a pet project that you can keep working on progressively over a period of time will help you gain real skills.")
+    title Wanting To Be Liked
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Wanting To Be Liked
+              hr.featurette-divider
+
+              h2 Website Ambitions
+
+              p
+                img.img-thumbnail#mugshot(src="/images/like.svg", width="80", height="80", alt="Like Button", title="Like Button")
+                | As part of the website development for this blog, it’s always been my intention to add
+                | “Like button" functionality to blog pages and to each of the new tricks for personal and
+                | corporate learning. Pages will also display the “page like” statistics beside
+                | links to them. In effect, this transforms the website from being a purely static content
+                | site to having some pages with dynamic content via server-side functionality. 
+
+              h2 Design Decisions
+
+              p
+                | It took me a little while to figure out how the “page like” dynamic content might be
+                | implemented. At first, I thought of switching the hosting of the website over to nodeJS
+                | and dynamically running my existing pug scripts (from which I currently generate static
+                | HTML) to serve pages. This would take the website off AWS S3 and turn it into a fully
+                | dynamic web application. (Not sure what the performance would be like for this approach.)
+              
+              p
+                | I was also torn over the thought of continuing to host content via AWS S3 (and CloudFront)
+                | but with the dynamic content delivered by some client-side JavaScript calling into Lambda
+                | API functions to obtain / update page like statistics. 
+              
+              p
+                | I opted for the latter design approach as this suits my learning curve right now. (I 
+                | play with nodeJS a lot on a project I’m doing at home so I’m not missing out.)
+              
+              p
+                | Building an API Gateway and sample Lambda functions proved an experience. Trial and error
+                | is ok when you have the time but it didn’t work out on this occasion due to my having too
+                | little knowledge and too many technical choices with terminology I didn’t understand.
+
+              p
+                | Eventually, I called upon a Udemy course I’d bought a while back on special offer which
+                | proved really informative and helpful. I was able to understand more about what I was
+                | doing and follow the steps to complete the task with a fully working example.
+              
+              p
+                | The Lambda functions will eventually hook up to a MySQL database (hosted on AWS RDS
+                | free instance) where the page like statistics will be stored and updated.
+
+              h2 Living Experiment And Learning Journey
+              
+              p
+                | The blog website has always been a technology playground for me. A safe place where I
+                | can be creative and try out new tools and technologies. (Thanks to Capgemini for funding my cloud
+                | accounts and experiments.)
+              
+              p
+                | I have a list of planned content and features that I’m working through with the goal
+                | of eventually sharing the whole website building experience at some point (including
+                | the various tools and technologies involved). There are so many detailed facets to it
+                | that make for lots of learning curves (adjacent skills). It’s already been quite a
+                | learning journey which is one of the things I love about my job.
+
+              h2 Refactoring Required
+              
+              p
+                | My development approach (in terms of efficiency and productivity) has recently been
+                | under the microscope. The development of the page like functionality has exposed a
+                | few weaknesses. For a start, I need to automate a couple of aspects my development work. 
+              
+              p
+                | I’ve been a bit lazy with some things and left the i7 horse-power to deal with the
+                | grunt work but as the website has grown, things have slowed down for my lazy build approach.
+              
+              p
+                | The website has now reached 33 pages and is growing steadily. Having to re-visit
+                | multiple pages, manually or via clever search-and-replace activities, has shown the
+                | “DRY” principle (Don’t Repeat Yourself) has been ignored in some places and needs to
+                | be fixed. (There’s a “bad code smell” for you.)
+              
+              p
+                | I haven’t used pug mixin functionality as much as I could have, although I think I’ve
+                | used pug includes effectively. Using pug mixins will help me fix some of the DRY rot.
+                | I’m challenging myself to implement the page like functionality yet still end up with
+                | a smaller code base for the whole site.  
+
+              h2 Coming Soon
+              
+              p
+                | Like buttons and statistics will soon be visible on blog posts and the personal /
+                | corporate learning trick pages. The blog history and new tricks pages will also show
+                | page like statistics against page links too. It’s not that I want or need people to
+                | like me. It’s all a means to an end, a way of “making the day job work for me” in
+                | order to learn some valuable new technology skills. 
+
+              h2 Pet Projects
+              
+              p
+                | Learning by doing typically accounts for a huge 70% of our learning so “rolling your
+                | sleeves up” and getting “hands-on” is a big step in the right direction for boosting
+                | both your experience and your learning. 
+              
+              p
+                | Having a pet project that you can keep working on progressively over a period of time
+                | will help you gain real skills, especially when things don’t quite work out and you
+                | have to debug them for yourself and when you go beyond the sample code to create
+                | something more impressive. Rome wasn’t built in a day and nor should your pet project be.
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 9th August, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+
+                h4 
+                  a(href="../tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
+                p
+                  | Hints and tips to help with personal and corporate learning.  
+
+                h4 
+                  a(href="prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+              // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug

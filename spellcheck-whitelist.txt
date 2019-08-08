@@ -37,6 +37,8 @@ learnt
 lifecycle
 maximise
 meetup
+mixin
+mixins
 nirvanahq
 organisation
 organisations
