@@ -85,7 +85,7 @@ html(lang='en-GB')
                 | demo, then good look with that!
 
               p 
-                | Good communities cater for people at all levels and recognise that not everyone is at
+                | Good communities cater for people at all levels and recognise that not everyone is at the
                 | same point on the timeline or has the same level of experience. Make sure you take people with
                 | you on the journey and don't leave
                 | them sitting waiting for your presentation to finish or asking questions every five seconds.
@@ -101,11 +101,8 @@ html(lang='en-GB')
                 | You could also look outside your own organisation - it could be a portal
                 | into a whole new world!
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
-
+              include ../../includes/page_like_button.pug
+          
               p
                 a.btn.btn-lg.btn-primary(href='07-find-ways-of-learning-that-work-for-you.html', role='button') &laquo; Previous Trick
 
@@ -140,3 +137,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

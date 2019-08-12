@@ -108,10 +108,7 @@ html(lang='en-GB')
               P
                 | Good luck with whatever you choose to learn and remember to have fun along the way.
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
+              include ../../includes/page_like_button.pug
 
               p
                 a.btn.btn-lg.btn-primary(href='02-make-time-for-personal-learning.html', role='button') Next Trick »
@@ -147,3 +144,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

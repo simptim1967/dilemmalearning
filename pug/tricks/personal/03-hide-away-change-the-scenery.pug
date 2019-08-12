@@ -99,10 +99,7 @@ html(lang='en-GB')
                 | or at home. I find this can really help energise approaching a new or challenging piece of work or
                 | inspiring some fresh thinking. Try it once in a while and see if it works for you too.
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
+              include ../../includes/page_like_button.pug
 
               p
                 a.btn.btn-lg.btn-primary(href='02-make-time-for-personal-learning.html', role='button') &laquo; Previous Trick
@@ -140,3 +137,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

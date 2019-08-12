@@ -37,10 +37,7 @@ html(lang='en-GB')
               p
                 | xxx
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
+              include ../../includes/page_like_button.pug
 
               p
                 a.btn.btn-lg.btn-primary(href='xxx.html', role='button') &laquo; Previous Trick
@@ -76,3 +73,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

@@ -16,6 +16,11 @@ html(lang='en-GB')
   body()
     include ../includes/page_menu.pug
     include ../includes/page_header.pug
+    mixin PAGE_LIKE_LIST_ITEM(pageName)
+      .hidden(id="like"+pageName)
+        |  
+        img.img-thumbnail(src="/images/like.svg" width="22" height="22" style="margin-bottom: 3px")
+        small(id= pageName)
     main
       //
         Main content
@@ -30,89 +35,83 @@ html(lang='en-GB')
 
               h2 How To Become A Continuous Learner
 
+              table.table
+                thead
+                  th Item Title / Description
+                tbody
+                  tr
+                    td
+                      h2
+                        a(href="personal/01-decide-what-to-learn.html", title="Decide What To Learn")
+                          | #01 Decide What To Learn
+                      p
+                        | Once the realisation of the need for continuous learning has sunk in, the
+                        | personal learning journey can begin in earnest. The next step is to decide what to learn. 
+                        +PAGE_LIKE_LIST_ITEM("01-decide-what-to-learn")
+                  tr
+                    td
+                      h2
+                        a(href="personal/02-make-time-for-personal-learning.html", title="Make Time For Personal Learning") #02 Make Time For Personal Learning
+                      p
+                        | Failing to make time for personal learning is like planning to fail. Make learning
+                        | a priority by making a regular time commitment for it so that it becomes a routine habit. 
+                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-personal-learning")
+                  tr
+                    td
+                      h2
+                        a(href="personal/03-hide-away-change-the-scenery.html", title="Hide Away / Change The Scenery") #03 Hide Away / Change The Scenery
+                      p
+                        | Find a place to learn that suits you - even if it means hiding away from your colleagues!
+                        +PAGE_LIKE_LIST_ITEM("03-hide-away-change-the-scenery")
+                  tr
+                    td
+                      h2
+                        a(href="personal/04-avoid-distractions-and-occasional-interruptions.html", title="Avoid Distractions And Occasional Interruptions") #04 Avoid Distractions And Occasional Interruptions
+                      p
+                        | Discover the secret weapon enabling you to hide in plain sight to avoid distractions and
+                        | occasional interruptions to maximise your learning time and productivity.
+                        +PAGE_LIKE_LIST_ITEM("04-avoid-distractions-and-occasional-interruptions")
+                  tr
+                    td
+                      h2
+                        a(href="personal/05-create-a-personal-development-plan.html", title="Create A Personal Development Plan") #05 Create A Personal Development Plan
+                      p
+                        | Having a personal development plan will help you plan and progress your personal learning journey
+                        | helping you to turn good intentions into achievements.
+                        +PAGE_LIKE_LIST_ITEM("05-create-a-personal-development-plan")
+                  tr
+                    td
+                      h2
+                        a(href="personal/06-learn-to-manage-your-time-well.html", title="Learn To Manage Your Time Well") #06 Learn To Manage Your Time Well
+                      p
+                        | Learning to manage your time well will have a massive impact on your ability to learn,
+                        | to do the day job and to still have time for your life outside of work. It’s a life skill
+                        | worth investing heavily in - it's a game changer!
+                        +PAGE_LIKE_LIST_ITEM("06-learn-to-manage-your-time-well")
+                  tr
+                    td
+                      h2
+                        a(href="personal/07-find-ways-of-learning-that-work-for-you.html", title="Find Ways Of Learning That Work For You") #07 Find Ways Of Learning That Work For You
+                      p
+                        | Identifying your preferences for learning can make a huge difference to the effectiveness
+                        | with which you learn. It is therefore important to take time to identify the ways of learning
+                        | that work best for you.
+                        +PAGE_LIKE_LIST_ITEM("07-find-ways-of-learning-that-work-for-you")
+                  tr
+                    td
+                      h2
+                        a(href="personal/08-join-a-community.html", title="Join A Community") #08 Join A Community
+                      p
+                        | Exploit the benefits of joining a community to broaden your horizons and learn from others.
+                        +PAGE_LIKE_LIST_ITEM("08-join-a-community")
+
+              h2 Notifications
+
               p
                 | The list of new tricks and tips for personal learning will be updated periodically.
                 | Follow 
                 a(href='https://twitter.com/DilemmaLearning', title="@DilemmaLearning", target="_blank") @DilemmaLearning
                 |  on Twitter to be notified of updates.
-
-              table.table
-                thead
-                  th Item
-                  th Title / Description
-                tbody
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#01&nbsp;
-                    td
-                      h2
-                        a(href="personal/01-decide-what-to-learn.html", title="Decide What To Learn") Decide What To Learn
-                      p
-                        | Once the realisation of the need for continuous learning has sunk in, the
-                        | personal learning journey can begin in earnest. The next step is to decide what to learn. 
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#02&nbsp;
-                    td
-                      h2
-                        a(href="personal/02-make-time-for-personal-learning.html", title="Make Time For Personal Learning") Make Time For Personal Learning
-                      p
-                        | Failing to make time for personal learning is like planning to fail. Make learning
-                        | a priority by making a regular time commitment for it so that it becomes a routine habit. 
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#03&nbsp;
-                    td
-                      h2
-                        a(href="personal/03-hide-away-change-the-scenery.html", title="Hide Away / Change The Scenery") Hide Away / Change The Scenery
-                      p
-                        | Find a place to learn that suits you - even if it means hiding away from your colleagues!
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#04&nbsp;
-                    td
-                      h2
-                        a(href="personal/04-avoid-distractions-and-occasional-interruptions.html", title="Avoid Distractions And Occasional Interruptions") Avoid Distractions And Occasional Interruptions
-                      p
-                        | Discover the secret weapon enabling you to hide in plain sight to avoid distractions and
-                        | occasional interruptions to maximise your learning time and productivity.
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#05&nbsp;
-                    td
-                      h2
-                        a(href="personal/05-create-a-personal-development-plan.html", title="Create A Personal Development Plan") Create A Personal Development Plan
-                      p
-                        | Having a personal development plan will help you plan and progress your personal learning journey
-                        | helping you to turn good intentions into achievements.
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#06&nbsp;
-                    td
-                      h2
-                        a(href="personal/06-learn-to-manage-your-time-well.html", title="Learn To Manage Your Time Well") Learn To Manage Your Time Well
-                      p
-                        | Learning to manage your time well will have a massive impact on your ability to learn,
-                        | to do the day job and to still have time for your life outside of work. It’s a life skill
-                        | worth investing heavily in - it's a game changer!
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#07&nbsp;
-                    td
-                      h2
-                        a(href="personal/07-find-ways-of-learning-that-work-for-you.html", title="Find Ways Of Learning That Work For You") Find Ways Of Learning That Work For You
-                      p
-                        | Identifying your preferences for learning can make a huge difference to the effectiveness
-                        | with which you learn. It is therefore important to take time to identify the ways of learning
-                        | that work best for you.
-                  tr
-                    td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#08&nbsp;
-                    td
-                      h2
-                        a(href="personal/08-join-a-community.html", title="Join A Community") Join A Community
-                      p
-                        | Exploit the benefits of joining a community to broaden your horizons and learn from others.
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg
@@ -145,3 +144,6 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+
+    +PAGE_LIKE_INIT("personal")

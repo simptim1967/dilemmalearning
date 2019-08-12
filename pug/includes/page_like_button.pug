@@ -1,0 +1,16 @@
+p#likeButton.text-right
+  a.btn.btn-lg.btn-warning(role='button', onclick="incrementPageLikeCount()")
+    img(src="/images/like.svg" width="22" height="22")
+    |  Like 
+    span#likeCount
+
+#thankyou.hidden.alert.alert-info(role="alert")
+  img.img-thumbnail(src="/images/like.svg" width="30" height="30")
+  |  Thank you for liking this page. 
+  |  
+  span#newLikeCount
+
+p.text-right
+  b Tim Simpson
+  br 
+  span.badge.hashtag #OldDogNewTrick

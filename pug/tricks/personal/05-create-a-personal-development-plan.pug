@@ -42,7 +42,7 @@ html(lang='en-GB')
               h2 Personal Development Objectives
 
               p
-                | Think carefully about your development objectives and what it is exactly that you want
+                | Think carefully about your development objectives and exactly what it is that you want
                 | to achieve.
 
               p
@@ -175,10 +175,7 @@ html(lang='en-GB')
               p
                 | Until then, stay focussed on your personal development plan. Good luck.
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
+              include ../../includes/page_like_button.pug
 
               p
                 a.btn.btn-lg.btn-primary(href='04-avoid-distractions-and-occasional-interruptions.html', role='button') &laquo; Previous Trick
@@ -216,3 +213,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
