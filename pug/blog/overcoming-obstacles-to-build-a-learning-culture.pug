@@ -230,6 +230,8 @@ html(lang='en-GB')
                     li Create an environment of trust – people are rewarded for trying.
                     li Promote knowledge sharing as an expectation not a bonus. 
 
+                include ../includes/page_like_button.pug
+
                 p
                   a.btn.btn-lg.btn-primary(href='pluralsight-live-europe-2019.html', role='button') Next Blog Post »
             
@@ -264,3 +266,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

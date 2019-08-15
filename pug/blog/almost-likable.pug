@@ -1,0 +1,152 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='xxx, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="xxx")
+    title Almost Likable
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Almost Likable
+              hr.featurette-divider
+
+              h2 Progress Update
+
+              p
+                | Last week I talked about the “page like” functionality I intend to add to this blog and this week
+                | I’d like to follow on and provide an update on the progress of this work.
+              
+              p
+                | My intern Al recently downloaded the website source code from GitHub to help me with the work.
+                | I mentioned that I wanted to continue updating the blog while the new “page like” feature was under
+                | development. Al asked if he should create a new branch in the repo and was somewhat surprised when
+                | I said that branching was not an option and that we would be using the “feature toggle” approach
+                | instead.
+
+              h2 Feature Toggle Architecture
+
+              p
+                | Feature toggle architecture supports release on demand and enables multiple teams to work on a
+                | single source branch to implement different functionality in parallel. Toggle parameters determine
+                | what functionality is or isn’t enabled for the single build.
+
+              p
+                | This approach also avoids the need for separate feature-specific builds and deployments and avoids
+                | merging of completed features back into the “main” branch of old. Instead we just have the single
+                | “master” branch, a live configuration and various configurations for testing. 
+
+              p
+                | It takes a little effort and thinking to embrace the feature toggle approach but the extra effort
+                | is worth it.
+
+              p
+                | At time of writing, much of the front-end HTML and JavaScript are in place to display like totals,
+                | like buttons, increment a page like count, thank someone for liking a page and the various hook
+                | ups to the back-end AWS Lambda API functions - albeit all of this is switched off so you won’t see
+                | any of it. What is not in place is all of the back-end database stuff that powers the front-end,
+                | which is still being developed.
+
+              h2 At The speed Of Learning
+
+              p
+                | Blog site development is occurring at the speed of learning. As we prototype the new functionality
+                | (sometimes on a trial and error basis) and finally get it hooked up, we design the functionality so
+                | that it can be released switched off. This allows us to leave gaps in the code that we’ll complete
+                | later as we discover and learn how to do it properly and get time to finish it.
+
+              p
+                | In the mean time, the weekly blog post and any new learning trick posts can still go ahead unhindered
+                | and we can continue to be flexible on when the new “page like” functionality is released.
+
+              h2 Designing For Testability
+
+              p
+                | AWS API Gateway functionality allows for different stages of deployment (test, live etc.) and API
+                | versioning. Part of the learning exercise is to understand exactly how this works so it can be
+                | incorporated into the solution. This is part of the intentional “learning by doing” approach but
+                | ends up being backed by some studying if things aren’t obvious and by some SME oversight where
+                | security concerns need validating.
+
+              p
+                | We also want to test the user experience (both in happy-flow and unhappy-flow scenarios) and ensure
+                | things fail gracefully so users still have a good experience. As Al knows, good programmers test
+                | their error handling too.
+
+              h2 Monitoring And Alerting
+            
+              p
+                | No solution is complete without monitoring and alerting. This is another area where learning is
+                | required to find out how we log errors and get notified about them. It might be nice to know
+                | whenever someone likes a page too – perhaps AWS SNS could help with that.
+
+              h2 Visible Progress
+
+              p
+                | Page like functionality is making progress albeit not actually visible to end users yet. The
+                | progress is proof of learning and doing. It doesn’t matter if progress is made in great strides
+                | or small steps, ultimately progress is progress! 
+
+              p
+                | Continuous progress is the secret to successful learning. Those who make time to make things
+                | happen on their learning journey are ultimately the ones who succeed.
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 16th August, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+
+                h4 
+                  a(href="../tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
+                p
+                  | Hints and tips to help with personal and corporate learning.  
+
+                h4 
+                  a(href="prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+              // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

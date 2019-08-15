@@ -122,6 +122,8 @@ html(lang='en-GB')
                 | description when I eventually find out what they are. Doing this helps me move the detail into
                 | longer term memory for better recall - well that's the theory anyway.
 
+              include ../includes/page_like_button.pug
+
               p.text-right
                 b Tim Simpson
                 br 
@@ -163,3 +165,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

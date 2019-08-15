@@ -119,6 +119,8 @@ html(lang='en-GB')
               p
                 | Just noticed, it’s fika time. Mine's a large, skinny, cappuccino ...
 
+              include ../includes/page_like_button.pug
+
               p.text-right
                 b Tim Simpson
                 br 
@@ -160,3 +162,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

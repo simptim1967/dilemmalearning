@@ -75,10 +75,8 @@ html(lang='en-GB')
                 | to eventually arrive at your chosen destination. Discussing progress along the journey will help
                 | to maintain momentum before the opportunity finally arises to celebrate success.
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
+              include ../../includes/page_like_button.pug
+              include ../../includes/page_trick_sign_off.pug
 
               p
                 a.btn.btn-lg.btn-primary(href='02-make-time-for-corporate-learning.html', role='button') Next Trick »
@@ -114,3 +112,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

@@ -131,6 +131,8 @@ html(lang='en-GB')
                 | that will be baked into my blog website. It will serve as an intermediate stepping stone to my end goal
                 | and feels like a realistic plan. Time will tell.
 
+              include ../includes/page_like_button.pug
+
               p.text-right
                 b Tim Simpson
                 br 
@@ -172,3 +174,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

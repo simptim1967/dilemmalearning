@@ -1,4 +1,5 @@
-p#likeButton.text-right
+// TODO !!! remove hidden to enable page like functionality
+p#likeButton.hidden.text-right
   a.btn.btn-lg.btn-warning(role='button', onclick="incrementPageLikeCount()")
     img(src="/images/like.svg" width="22" height="22")
     |  Like 
@@ -9,8 +10,3 @@ p#likeButton.text-right
   |  Thank you for liking this page. 
   |  
   span#newLikeCount
-
-p.text-right
-  b Tim Simpson
-  br 
-  span.badge.hashtag #OldDogNewTrick

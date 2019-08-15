@@ -28,8 +28,12 @@ html(lang='en-GB')
               h1 xxx
               hr.featurette-divider
 
+              h2 xxx
+
               p
                 | xxx
+
+              include ../includes/page_like_button.pug
 
               p.text-right
                 b Tim Simpson
@@ -69,3 +73,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

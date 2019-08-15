@@ -130,12 +130,17 @@ html(lang='en-GB')
                 | have to debug them for yourself and when you go beyond the sample code to create
                 | something more impressive. Rome wasn’t built in a day and nor should your pet project be.
 
+              include ../includes/page_like_button.pug
+
               p.text-right
                 b Tim Simpson
                 br 
                 | 9th August, 2019
                 br 
                 span.badge.hashtag #LifeAtCapgemini
+
+                p
+                  a.btn.btn-lg.btn-primary(href='almost-likable.html', role='button') Next Blog Post »
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg
@@ -168,3 +173,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

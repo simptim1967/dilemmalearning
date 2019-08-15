@@ -92,10 +92,8 @@ html(lang='en-GB')
                 | more easily. Learning brings benefits in itself but is also a very effective means to an end.
                 | You'll soon also discover that staff morale improves and attrition is reduced.
 
-              p.text-right
-                b Tim Simpson
-                br 
-                span.badge.hashtag #OldDogNewTrick
+              include ../../includes/page_like_button.pug
+              include ../../includes/page_trick_sign_off.pug
 
               p
                 a.btn.btn-lg.btn-primary(href='01-technical-skills-are-strategic.html', role='button') &laquo; Previous Trick
@@ -131,3 +129,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

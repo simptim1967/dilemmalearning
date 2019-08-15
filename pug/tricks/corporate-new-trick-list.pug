@@ -16,6 +16,11 @@ html(lang='en-GB')
   body()
     include ../includes/page_menu.pug
     include ../includes/page_header.pug
+    mixin PAGE_LIKE_LIST_ITEM(pageName)
+      .hidden(id="like"+pageName)
+        |  
+        img.img-thumbnail(src="/images/like.svg" width="22" height="22" style="margin-bottom: 3px")
+        small(id= pageName)
     main
       //
         Main content
@@ -36,37 +41,41 @@ html(lang='en-GB')
                 | in your organisation, we all need help and advice to build a learning culture where
                 | continuous learning can emerge and flourish.
 
-              p
-                | The list of new tricks and tips for corporate learning presented here will be updated periodically.
-                | Follow 
-                a(href='https://twitter.com/DilemmaLearning', title="@DilemmaLearning", target="_blank") @DilemmaLearning
-                |  on Twitter to be notified of updates.
-
               table.table
                 thead
-                  th Item
-                  th Title / Description
+                  th Item  Title / Description
                 tbody
                   tr
                     td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#01&nbsp;
-                    td
                       h2
+                        .tip-number
+                          | #01
+                        |  
                         a(href="corporate/01-technical-skills-are-strategic.html", title="Technical Skills Are Strategic") Technical Skills Are Strategic
                       p
                         | Today, every company is a "Tech Company" and what differentiates them is their
                         | business agility based on their ability to learn and embrace new skills in order
                         | to innovate. 
+                        +PAGE_LIKE_LIST_ITEM("01-technical-skills-are-strategic")
                   tr
                     td
-                      span(style="color: white; background-color: steelblue;") &nbsp;#02&nbsp;
-                    td
                       h2
+                        .tip-number
+                          | #02
+                        |  
                         a(href="corporate/02-make-time-for-corporate-learning.html", title="Make Time For Corporate Learning") Make Time For Corporate Learning
                       p
                         | Failing to make time for corporate learning is like planning to fail. Make learning
                         | a priority by enabling your staff to make a regular time commitment for it. 
+                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-corporate-learning")
+              
+              h2 Notifications
 
+              p
+                | The list of new tricks and tips for corporate learning presented here will be updated periodically.
+                | Follow 
+                a(href='https://twitter.com/DilemmaLearning', title="@DilemmaLearning", target="_blank") @DilemmaLearning
+                |  on Twitter to be notified of updates.
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg
             aside
@@ -98,3 +107,6 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+
+    +PAGE_LIKE_INIT("corporate")

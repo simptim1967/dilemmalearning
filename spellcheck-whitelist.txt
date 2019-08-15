@@ -59,6 +59,7 @@ realising
 recognise
 recognised
 recognising
+repo
 roadmap
 rgee
 specialised
@@ -66,6 +67,7 @@ timeline
 timesheet
 utilise
 utilisation
+versioning
 visualise
 visualisation
 whacky

@@ -169,6 +169,8 @@ html(lang='en-GB')
                 | I work with some really clever people but Tech Challenge just takes that to a new level
                 | of respect for people. Awesome!
 
+              include ../includes/page_like_button.pug
+
               p.text-right
                 b Tim Simpson
                 br 
@@ -232,3 +234,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

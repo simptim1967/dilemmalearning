@@ -137,6 +137,8 @@ html(lang='en-GB')
               p
                 | Thankfully, training is always opening new doors to new possibilities …
 
+              include ../includes/page_like_button.pug
+
               p.text-right
                 b Tim Simpson
                 br 
@@ -178,3 +180,5 @@ html(lang='en-GB')
         // /row
       // /container
     include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
