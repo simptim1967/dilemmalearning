@@ -1,1 +1,5 @@
 BingSiteAuth.xml
+api/CreateDB/package-lock.json
+api/CreateDB/node_modules
+api/GetPageLikeCount/node_modules
+api/GetPageLikeCount/package-lock.json
