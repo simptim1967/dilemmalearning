@@ -1,0 +1,179 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous learning dilemma, personal learning journey, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks')
+    meta(name='description', content="Hints and tips to help overcome the personal continuous learning dilemma faced by individuals.")
+    title New Tricks For Personal Learning
+    // Bootstrap
+    link(href='../live/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../live/css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_header.pug
+    mixin PAGE_LIKE_LIST_ITEM(pageName)
+      .hidden(id="like"+pageName)
+        |  
+        img.img-thumbnail(src="/images/like.svg" width="22" height="22" style="margin-bottom: 3px")
+        small(id= pageName)
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 New Tricks For Personal Learning
+              hr.featurette-divider
+
+              h2 How To Become A Continuous Learner
+
+              table.table
+                thead
+                  th Item Title / Description
+                tbody
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #01
+                        |  
+                        a(href="01-decide-what-to-learn.html", title="Decide What To Learn")
+                          | Decide What To Learn
+                      p
+                        | Once the realisation of the need for continuous learning has sunk in, the
+                        | personal learning journey can begin in earnest. The next step is to decide what to learn. 
+                        +PAGE_LIKE_LIST_ITEM("01-decide-what-to-learn")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #02
+                        |  
+                        a(href="personal/02-make-time-for-personal-learning.html", title="Make Time For Personal Learning")
+                          | Make Time For Personal Learning
+                      p
+                        | Failing to make time for personal learning is like planning to fail. Make learning
+                        | a priority by making a regular time commitment for it so that it becomes a routine habit. 
+                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-personal-learning")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #03
+                        |  
+                        a(href="personal/03-hide-away-change-the-scenery.html", title="Hide Away / Change The Scenery")
+                          | Hide Away / Change The Scenery
+                      p
+                        | Find a place to learn that suits you - even if it means hiding away from your colleagues!
+                        +PAGE_LIKE_LIST_ITEM("03-hide-away-change-the-scenery")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #04
+                        |  
+                        a(href="personal/04-avoid-distractions-and-occasional-interruptions.html", title="Avoid Distractions And Occasional Interruptions")
+                          | Avoid Distractions And Occasional Interruptions
+                      p
+                        | Discover the secret weapon enabling you to hide in plain sight to avoid distractions and
+                        | occasional interruptions to maximise your learning time and productivity.
+                        +PAGE_LIKE_LIST_ITEM("04-avoid-distractions-and-occasional-interruptions")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #05
+                        |  
+                        a(href="personal/05-create-a-personal-development-plan.html", title="Create A Personal Development Plan")
+                          | Create A Personal Development Plan
+                      p
+                        | Having a personal development plan will help you plan and progress your personal learning journey
+                        | helping you to turn good intentions into achievements.
+                        +PAGE_LIKE_LIST_ITEM("05-create-a-personal-development-plan")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #06
+                        |  
+                        a(href="personal/06-learn-to-manage-your-time-well.html", title="Learn To Manage Your Time Well")
+                          | Learn To Manage Your Time Well
+                      p
+                        | Learning to manage your time well will have a massive impact on your ability to learn,
+                        | to do the day job and to still have time for your life outside of work. It’s a life skill
+                        | worth investing heavily in - it's a game changer!
+                        +PAGE_LIKE_LIST_ITEM("06-learn-to-manage-your-time-well")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #07
+                        |  
+                        a(href="personal/07-find-ways-of-learning-that-work-for-you.html", title="Find Ways Of Learning That Work For You")
+                          | Find Ways Of Learning That Work For You
+                      p
+                        | Identifying your preferences for learning can make a huge difference to the effectiveness
+                        | with which you learn. It is therefore important to take time to identify the ways of learning
+                        | that work best for you.
+                        +PAGE_LIKE_LIST_ITEM("07-find-ways-of-learning-that-work-for-you")
+                  tr
+                    td
+                      h2
+                        .tip-number
+                          | #08
+                        |  
+                        a(href="personal/08-join-a-community.html", title="Join A Community")
+                          | Join A Community
+                      p
+                        | Exploit the benefits of joining a community to broaden your horizons and learn from others.
+                        +PAGE_LIKE_LIST_ITEM("08-join-a-community")
+
+              h2 Notifications
+
+              p
+                | The list of new tricks and tips for personal learning will be updated periodically.
+                | Follow 
+                a(href='https://twitter.com/DilemmaLearning', title="@DilemmaLearning", target="_blank") @DilemmaLearning
+                |  on Twitter to be notified of updates.
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+                
+                h4
+                  a(href="corporate-new-trick-list.html", title="New Tricks For Corporate Learning") New Tricks For Corporate Learning
+                p
+                  | Tips and tricks to help your organisation on its corporate learning journey.  
+
+                h4 
+                  a(href="../blog/prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+                // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+
+    +PAGE_LIKE_INIT("personal")

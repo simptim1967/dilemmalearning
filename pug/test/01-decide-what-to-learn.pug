@@ -1,0 +1,148 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='personal learning, learning routine, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks')
+    meta(name='description', content="Deciding what to learn when there are so many choices.")
+    title Decide What To Learn
+    // Bootstrap
+    link(href='../live/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../live/css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    
+    h2.text-center
+      a(href="../personal-new-trick-list.html", title="New Tricks For Personal Learning") New Tricks For Personal Learning
+    
+    include ../includes/page_header.pug
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 #01 Decide What To Learn
+              hr.featurette-divider
+
+              h2 The Start Of The Personal Learning Journey
+
+              p
+                | Once the realisation of the need for continuous learning has sunk in, the
+                | personal learning journey can begin in earnest. The next step step is to decide what to learn. 
+
+              p
+                | With so many tools, techniques and technologies to choose from it can pose a serious dilemma
+                | when deciding how to invest your precious time so here are a few questions and pointers that
+                | may help you decide.
+
+              h2 Follow Your Interests / Passions
+
+              p
+                | What are you interested in or already passionate about?
+                
+              p
+                | What do you want to be famous for?
+                
+              p
+                | The answers to these questions might be a clue as to what you should pursue
+                | to learn more about. Following our interests and passions is half the battle of gaining
+                | the motivation to learn. Seeing ourselves making progress fuels the continued commitment.
+
+              h2 Role Model Ambitions
+
+              p
+                | Is there someone in whose footsteps you'd like to follow?
+
+              p
+                | Perhaps there is a different role that you have always wanted to embrace. Why not speak to
+                | someone already in that role and find out how they got started in it so that you gain
+                | some helpful advice to get started in it for yourself? Don't just ask one person, ask several
+                | as each will have a different story of the journey they took.
+                | There's nothing like ambition to drive an
+                | enthusiasm for learning.
+
+              h2 Build On Your Existing Strengths 
+
+              p
+                | What are your existing strengths?
+
+              p
+                | It may well be that you already possess a vast body of knowledge
+                | or a number of well-honed technical skills that you can build upon further. You don't need to
+                | go back to "square one".
+
+              h2 Become A Subject Matter Expert (SME)
+
+              p
+                | To grow in our jobs requires that we keep on growing and learning long
+                | after our formal schooling is done. The more we’re able to know and the more skills we acquire,
+                | the more value we can offer to our employers. Employers often make it very plain where they
+                | see their business heading and the skills they will likely need to get there. Why not become
+                | part of that plan?
+
+              p
+                | Becoming a SME is one way that you can gain recognition and respect from your colleagues
+                | as well as reward from your employer but this isn't something you can achieve overnight. It
+                | will likely take months and maybe even years but it's a guaranteed way to stand out from the
+                | crowd whilst following your interests / passion.
+
+              h2 Never Too Late To Change Direction
+
+              p
+                | In making a decision on what to learn it's never too late to change direction. You can always 
+                | change your mind and learn something else if what you chose turns out not to be what you expected. 
+
+              p
+                | Try to be realistic about the journey you are about to embark on and set yourself up with the right
+                | support and people around you to give yourself every opportunity for success. For some people it's
+                | just a matter of making the time for the journey in order to fulfil their potential.
+
+              P
+                | Good luck with whatever you choose to learn and remember to have fun along the way.
+
+              include page_like_button.pug
+              include ../includes/page_trick_sign_off.pug
+
+              p
+                a.btn.btn-lg.btn-primary(href='02-make-time-for-personal-learning.html', role='button') Next Trick »
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+                
+                h4
+                  a(href="../corporate-new-trick-list.html", title="New Tricks For Corporate Learning") New Tricks For Corporate Learning
+                p
+                  | Tips and tricks to help your organisation on its corporate learning journey.  
+
+                h4 
+                  a(href="../../blog/prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="../../blog/the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="../../blog/rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+                // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include page_like_script.pug
+    +PAGE_LIKE_INIT("page")
