@@ -145,9 +145,9 @@ html(lang='en-GB')
                 | 5th April, 2019
                 br 
                 span.badge.hashtag #LifeAtCapgemini
-              
-              p
-                a.btn.btn-lg.btn-primary(href='rising-to-the-challenge-of-continuous-learning.html', role='button') Next Blog Post »
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("prologue.html","rising-to-the-challenge-of-continuous-learning.html")
             
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

@@ -280,8 +280,8 @@ html(lang='en-GB')
 
                 include ../includes/page_like_button.pug
 
-                p
-                  a.btn.btn-lg.btn-primary(href='birmingham-meetup-18062019.html', role='button') Next Blog Post »
+                include ../includes/page_blog_navigate.pug
+                +BLOG_NAVIGATE("crazy-busy.html","birmingham-meetup-18062019.html")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

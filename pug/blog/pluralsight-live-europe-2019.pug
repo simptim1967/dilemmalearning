@@ -182,8 +182,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-              p
-                a.btn.btn-lg.btn-primary(href='crazy-busy.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("overcoming-obstacles-to-build-a-learning-culture.html","crazy-busy.html")
             
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

@@ -139,8 +139,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-                p
-                  a.btn.btn-lg.btn-primary(href='almost-likable.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("out-learn-the-competition.html","almost-likable.html")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

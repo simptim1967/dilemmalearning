@@ -133,8 +133,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-                p
-                  a.btn.btn-lg.btn-primary(href='out-learn-the-competition.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("continuous-curiosity.html","out-learn-the-competition.html")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

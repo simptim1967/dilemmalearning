@@ -20,4 +20,5 @@ call Pug .\pug\blog\blast-off-from-the-past.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\out-learn-the-competition.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\wanting-to-be-liked.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\almost-likable.pug --pretty --out ..\live\blog
+call Pug .\pug\blog\starters-and-finishers.pug --pretty --out ..\live\blog
 rem call Pug .\pug\blog\xxx.pug --pretty --out ..\live\blog

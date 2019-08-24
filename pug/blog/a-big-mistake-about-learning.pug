@@ -136,8 +136,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-                p
-                  a.btn.btn-lg.btn-primary(href='a-time-to-reflect.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("birmingham-meetup-18062019.html","a-time-to-reflect.html")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

@@ -38,9 +38,12 @@ html(lang='en-GB')
               p.text-right
                 b Tim Simpson
                 br 
-                | dd mmm, yyyy
+                | dd mmm, 2019
                 br 
                 span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("","")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg
