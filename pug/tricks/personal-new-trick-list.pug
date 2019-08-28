@@ -17,10 +17,11 @@ html(lang='en-GB')
     include ../includes/page_menu.pug
     include ../includes/page_header.pug
     mixin PAGE_LIKE_LIST_ITEM(pageName)
-      .hidden(id="like"+pageName)
-        |  
+      span.hidden(id="like"+pageName)
+        | &nbsp;
         img.img-thumbnail(src="/images/like.svg" width="22" height="22" style="margin-bottom: 3px")
-        small(id= pageName)
+        | &nbsp;
+        small(id= pageName, style="color:silver")
     main
       //
         Main content
@@ -47,10 +48,10 @@ html(lang='en-GB')
                         |  
                         a(href="personal/01-decide-what-to-learn.html", title="Decide What To Learn")
                           | Decide What To Learn
+                        +PAGE_LIKE_LIST_ITEM("01-decide-what-to-learn")
                       p
                         | Once the realisation of the need for continuous learning has sunk in, the
                         | personal learning journey can begin in earnest. The next step is to decide what to learn. 
-                        +PAGE_LIKE_LIST_ITEM("01-decide-what-to-learn")
                   tr
                     td
                       h2
@@ -59,10 +60,10 @@ html(lang='en-GB')
                         |  
                         a(href="personal/02-make-time-for-personal-learning.html", title="Make Time For Personal Learning")
                           | Make Time For Personal Learning
+                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-personal-learning")
                       p
                         | Failing to make time for personal learning is like planning to fail. Make learning
                         | a priority by making a regular time commitment for it so that it becomes a routine habit. 
-                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-personal-learning")
                   tr
                     td
                       h2
@@ -71,9 +72,9 @@ html(lang='en-GB')
                         |  
                         a(href="personal/03-hide-away-change-the-scenery.html", title="Hide Away / Change The Scenery")
                           | Hide Away / Change The Scenery
+                        +PAGE_LIKE_LIST_ITEM("03-hide-away-change-the-scenery")
                       p
                         | Find a place to learn that suits you - even if it means hiding away from your colleagues!
-                        +PAGE_LIKE_LIST_ITEM("03-hide-away-change-the-scenery")
                   tr
                     td
                       h2
@@ -82,10 +83,10 @@ html(lang='en-GB')
                         |  
                         a(href="personal/04-avoid-distractions-and-occasional-interruptions.html", title="Avoid Distractions And Occasional Interruptions")
                           | Avoid Distractions And Occasional Interruptions
+                        +PAGE_LIKE_LIST_ITEM("04-avoid-distractions-and-occasional-interruptions")
                       p
                         | Discover the secret weapon enabling you to hide in plain sight to avoid distractions and
                         | occasional interruptions to maximise your learning time and productivity.
-                        +PAGE_LIKE_LIST_ITEM("04-avoid-distractions-and-occasional-interruptions")
                   tr
                     td
                       h2
@@ -94,10 +95,10 @@ html(lang='en-GB')
                         |  
                         a(href="personal/05-create-a-personal-development-plan.html", title="Create A Personal Development Plan")
                           | Create A Personal Development Plan
+                        +PAGE_LIKE_LIST_ITEM("05-create-a-personal-development-plan")
                       p
                         | Having a personal development plan will help you plan and progress your personal learning journey
                         | helping you to turn good intentions into achievements.
-                        +PAGE_LIKE_LIST_ITEM("05-create-a-personal-development-plan")
                   tr
                     td
                       h2
@@ -106,11 +107,11 @@ html(lang='en-GB')
                         |  
                         a(href="personal/06-learn-to-manage-your-time-well.html", title="Learn To Manage Your Time Well")
                           | Learn To Manage Your Time Well
+                        +PAGE_LIKE_LIST_ITEM("06-learn-to-manage-your-time-well")
                       p
                         | Learning to manage your time well will have a massive impact on your ability to learn,
                         | to do the day job and to still have time for your life outside of work. It’s a life skill
                         | worth investing heavily in - it's a game changer!
-                        +PAGE_LIKE_LIST_ITEM("06-learn-to-manage-your-time-well")
                   tr
                     td
                       h2
@@ -119,11 +120,11 @@ html(lang='en-GB')
                         |  
                         a(href="personal/07-find-ways-of-learning-that-work-for-you.html", title="Find Ways Of Learning That Work For You")
                           | Find Ways Of Learning That Work For You
+                        +PAGE_LIKE_LIST_ITEM("07-find-ways-of-learning-that-work-for-you")
                       p
                         | Identifying your preferences for learning can make a huge difference to the effectiveness
                         | with which you learn. It is therefore important to take time to identify the ways of learning
                         | that work best for you.
-                        +PAGE_LIKE_LIST_ITEM("07-find-ways-of-learning-that-work-for-you")
                   tr
                     td
                       h2
@@ -132,9 +133,9 @@ html(lang='en-GB')
                         |  
                         a(href="personal/08-join-a-community.html", title="Join A Community")
                           | Join A Community
+                        +PAGE_LIKE_LIST_ITEM("08-join-a-community")
                       p
                         | Exploit the benefits of joining a community to broaden your horizons and learn from others.
-                        +PAGE_LIKE_LIST_ITEM("08-join-a-community")
 
               h2 Notifications
 

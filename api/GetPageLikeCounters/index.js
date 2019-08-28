@@ -10,43 +10,43 @@ const mysql = require('serverless-mysql')({
 
 // Main handler function
 exports.handler = async (event, context) => {
-  // Extract required page name
-  let pagename = event.queryStringParameters.pagename;
+  // Extract required group name
+  let groupname = event.queryStringParameters.groupname;
   
-  // Check if page name has any invalid characters such as space or any of ?{}[]+_!()%*,
-  // Must match a-z0-9 and "-" characters only
+  // Check if group name has any invalid characters such as space or any of ?{}[]+_!()%*,
+  // Must match a-z characters only
   // TODO !!!
 
-  // Check that page name was specified
-  if (pagename === undefined) {
-    console.log("GetPageLikeCount pagename URL parameter not specified.");
-    // throw a 400 bad request if pagename is not defined
+  // Check that group name was specified
+  if (groupname === undefined) {
+    console.log("GetPageLikeCount groupname URL parameter not specified.");
+    // throw a 400 bad request if groupname is not defined
     const response = {
       statusCode: 400,
       headers: {
         "Access-Control-Allow-Origin": process.env.CORS_ORIGIN,
         "Content-Type": "application/json"
       },
-      body: "400 Bad request: pagename URL parameter not specified."
+      body: "400 Bad request: groupname URL parameter not specified."
     };
     return response;
   }
 
   console.log("event: " + JSON.stringify(event));
-  console.log("GetPageLikeCount selected page name: " + pagename);
+  console.log("GetPageLikeCounters selected group name: " + groupname);
 
   // construct sql statement
-  let sql = "select pagename, likecount from pagelike where pagename = ?;"
+  let sql = "select pagename, likecount from pagelike where pagegroup = ?;"
 
-  // list get page name and like count
-  let results = await mysql.query(sql, pagename)
+  // list page name and like count
+  let results = await mysql.query(sql, groupname)
 
   // Run clean up function
   await mysql.end()
 
   // throw a 404 page not found if results empty
   if (!results.length) {
-    console.log("404 GetPageLikeCount page not found: " + pagename);
+    console.log("404 GetPageLikeCounters page group not found: " + groupname);
     // throw a 404 page not found if no results returned
     const response = {
       statusCode: 404,
@@ -54,7 +54,7 @@ exports.handler = async (event, context) => {
         "Access-Control-Allow-Origin": process.env.CORS_ORIGIN,
         "Content-Type": "application/json"
       },
-      body: "404 Page not found: " + pagename
+      body: "404 Page group not found: " + groupname
     };
     return response;
   }

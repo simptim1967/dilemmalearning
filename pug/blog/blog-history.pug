@@ -23,10 +23,11 @@ html(lang='en-GB')
         span.blog-year
           | &nbsp;#{year}&nbsp;
     mixin PAGE_LIKE_LIST_ITEM(pageName)
-      .hidden(id="like"+pageName)
-        |  
+      span.hidden(id="like"+pageName)
+        | &nbsp;
         img.img-thumbnail(src="/images/like.svg" width="22" height="22" style="margin-bottom: 3px")
-        small(id= pageName)
+        | &nbsp;
+        small(id= pageName, style="color:silver")
     include ../includes/page_menu.pug
     include ../includes/page_header.pug
     main
@@ -62,210 +63,212 @@ html(lang='en-GB')
                     td
                       h2
                         a(href="starters-and-finishers.html", title="Starters And Finishers") Starters And Finishers
+                        +PAGE_LIKE_LIST_ITEM("starters-and-finishers")
                       p
                         | Over the years I’ve noticed that people often fall distinctly into one
                         | of two categories, namely that of either “starters” or “finishers”. What's the difference
                         | and why are both necessary?
-                        +PAGE_LIKE_LIST_ITEM("starters-and-finishers")
                   tr
                     td
                       +BLOG_DATE("16","AUG","2019")
                     td
                       h2
                         a(href="almost-likable.html", title="Almost Likable") Almost Likable
+                        +PAGE_LIKE_LIST_ITEM("almost-likable")
                       p
                         | Page like functionality is making progress albeit not actually visible to end users yet.
                         | Continuous progress is the secret to successful learning. Those who make time to make
                         | things happen on their learning journey are ultimately the ones who succeed.
-                        +PAGE_LIKE_LIST_ITEM("almost-likable")
                   tr
                     td
                       +BLOG_DATE("09","AUG","2019")
                     td
                       h2
                         a(href="wanting-to-be-liked.html", title="Wanting To Be Liked") Wanting To Be Liked
+                        +PAGE_LIKE_LIST_ITEM("wanting-to-be-liked")
                       p
                         | The ambition and quest to add "page like" functionality to DilemmaLearning.com
                         | and how pet projects can drive personal learning.
-                        +PAGE_LIKE_LIST_ITEM("wanting-to-be-liked")
                   tr
                     td
                       +BLOG_DATE("02","AUG","2019")
                     td
                       h2
                         a(href="out-learn-the-competition.html", title="Out-Learn The Competition") Out-Learn The Competition
+                        +PAGE_LIKE_LIST_ITEM("out-learn-the-competition")
                       p
                         | Lean Thinking embraces the mantra “out-learn the competition”.
                         | Do you see yourself and your organisation doing that?
-                        +PAGE_LIKE_LIST_ITEM("out-learn-the-competition")
                   tr
                     td
                       +BLOG_DATE("26","JUL","2019")
                     td
                       h2
                         a(href="blast-off-from-the-past.html", title="Blast Off From The Past") Blast Off From The Past
+                        +PAGE_LIKE_LIST_ITEM("blast-off-from-the-past")
                       p
                         | The 50th anniversary of the first moon landing got me all nostalgic.
                         | I can’t even begin to imagine the sheer complexity of building such a technical solution.
-                        +PAGE_LIKE_LIST_ITEM("blast-off-from-the-past")
                   tr
                     td
                       +BLOG_DATE("19","JUL","2019")
                     td
                       h2
                         a(href="continuous-curiosity.html", title="Continuous Curiosity") Continuous Curiosity
+                        +PAGE_LIKE_LIST_ITEM("continuous-curiosity")
                       p
                         | I am forever hearing about new tools and technologies. This is not anything new,
                         | in fact it happens all the time. The question is, how do you deal with it?
-                        +PAGE_LIKE_LIST_ITEM("continuous-curiosity")
                   tr
                     td
                       +BLOG_DATE("11","JUL","2019")
                     td
                       h2
                         a(href="opening-new-doors-to-new-possibilities.html", title="Opening New Doors To New Possibilities") Opening New Doors To New Possibilities
+                        +PAGE_LIKE_LIST_ITEM("opening-new-doors-to-new-possibilities")
                       p
                         | Training about theory and the different technology choices available are just a
                         | sample taste of the possibilities of how technologies might be combined and used
                         | for constructing solutions.
-                        +PAGE_LIKE_LIST_ITEM("opening-new-doors-to-new-possibilities")
                   tr
                     td
                       +BLOG_DATE("04","JUL","2019")
                     td
                       h2
                         a(href="a-time-to-reflect.html", title="A Time To Reflect") A Time To Reflect
+                        +PAGE_LIKE_LIST_ITEM("a-time-to-reflect")
                       p
                         | H2 is here already! Where did the last six months go? I stopped to reflect
                         | and made some changes to my personal development plan. 
-                        +PAGE_LIKE_LIST_ITEM("a-time-to-reflect")
                   tr
                     td
                       +BLOG_DATE("28","JUN","2019")
                     td
                       h2
                         a(href="a-big-mistake-about-learning.html", title="A Big Mistake About Learning") A Big Mistake About Learning
+                        +PAGE_LIKE_LIST_ITEM("a-big-mistake-about-learning")
                       p
                         | A big mistake that people make about learning is to think that learning is not work. 
                         | Why learning should be treated as a part of normal, daily work.
-                        +PAGE_LIKE_LIST_ITEM("a-big-mistake-about-learning")
                   tr
                     td
                       +BLOG_DATE("21","JUN","2019")
                     td
                       h2
                         a(href="birmingham-meetup-18062019.html", title="Birmingham Digital & DevOps Meetup 18th June 2019") Birmingham Digital &amp; DevOps Meetup - 18th June 2019
+                        +PAGE_LIKE_LIST_ITEM("birmingham-meetup-18062019")
                       p
                         | The Birmingham Digital &amp; DevOps Meetup was the first public outing of my
                         | "Continuous Learning Dilemma" presentation and also proved a great opportunity for
                         | social learning.
-                        +PAGE_LIKE_LIST_ITEM("birmingham-meetup-18062019")
                   tr
                     td
                       +BLOG_DATE("14","JUN","2019")
                     td
                       h2
                         a(href="how-does-a-successful-manager-act.html", title="How Does A Successful Manager Act To Develop Their Staff?") How Does A Successful Manager Act To Develop Their Staff?
+                        +PAGE_LIKE_LIST_ITEM("how-does-a-successful-manager-act")
                       p
                         | In my research I stumbled upon an interesting booklet by The Campaign For Learning
                         | called "Leading on Learning". In part 2 of my analysis, here's what they had to say about
                         | how a successful manager acts to develop their staff.
-                        +PAGE_LIKE_LIST_ITEM("how-does-a-successful-manager-act")
                   tr
                     td
                       +BLOG_DATE("07","JUN","2019")
                     td
                       h2
                         a(href="beyond-training.html", title="Beyond Training") Beyond Training
+                        +PAGE_LIKE_LIST_ITEM("beyond-training")
                       p
                         | Training and learning are not the same thing.  
                         | Existing training budgets will prove too limiting in the world of continuous learning
                         | and so organisations need to seriously consider how they will invest in growing 
                         | their own talent or face falling further behind.
-                        +PAGE_LIKE_LIST_ITEM("beyond-training")
                   tr
                     td
                       +BLOG_DATE("31","MAY","2019")
                     td
                       h2
                         a(href="crazy-busy.html", title="Crazy Busy") Crazy Busy
+                        +PAGE_LIKE_LIST_ITEM("crazy-busy")
                       p
                         | "Crazy Busy" is the enemy of continuous learning.  
                         | Find out how to step out of the whirlwind of "crazy busy" and regain control of your time and work.
-                        +PAGE_LIKE_LIST_ITEM("crazy-busy")
                   tr
                     td
                       +BLOG_DATE("17","MAY","2019")
                     td
                       h2
                         a(href="pluralsight-live-europe-2019.html", title="Pluralsight Live Europe 2019") Pluralsight Live Europe 2019
+                        +PAGE_LIKE_LIST_ITEM("pluralsight-live-europe-2019")
                       p
                         | It was great to attend Pluralsight Live Europe 2019 in London this week.  
                         | Find out what I hoped to learn and what I actually learned.
-                        +PAGE_LIKE_LIST_ITEM("pluralsight-live-europe-2019")
                   tr
                     td
                       +BLOG_DATE("03","MAY","2019")
                     td
                       h2
                         a(href="overcoming-obstacles-to-build-a-learning-culture.html", title="Overcoming Obstacles To Build A Learning Culture") Overcoming Obstacles To Build A Learning Culture
+                        +PAGE_LIKE_LIST_ITEM("overcoming-obstacles-to-build-a-learning-culture")
                       p
                         | In my research I stumbled upon an interesting booklet by The Campaign For Learning
                         | called "Leading on Learning". In part 1 of my analysis, here's what they had to say about overcoming obstacles
                         | to build a learning culture.
-                        +PAGE_LIKE_LIST_ITEM("overcoming-obstacles-to-build-a-learning-culture")
                   tr
                     td
                       +BLOG_DATE("26","APR","2019")
                     td
                       h2
                         a(href="continuous-learning-initiatives-technical-communities.html", title="Continuous Learning Initiatives - Technical Communities") Continuous Learning Initiatives - Technical Communities
+                        +PAGE_LIKE_LIST_ITEM("continuous-learning-initiatives-technical-communities")
                       p
                         | How we use Technical Communities as one way to achieve knowledge sharing so that
                         | people can grow their desired skills to the right depth at the right time whilst
                         | staying abreast of emerging industry technologies and trends in a safe learning
                         | environment.
-                        +PAGE_LIKE_LIST_ITEM("continuous-learning-initiatives-technical-communities")
                   tr
                     td
                       +BLOG_DATE("18","APR","2019")
                     td
                       h2
                         a(href="continuous-learning-initiatives-learning-vehicles.html", title="Continuous Learning Initiatives - Learning Vehicles") Continuous Learning Initiatives - Learning Vehicles
+                        +PAGE_LIKE_LIST_ITEM("continuous-learning-initiatives-learning-vehicles")
                       p
                         | The Learning Vehicles initiative really lays the foundations for the other
                         | initiatives to build on downstream. Explains how our office is equipped for
                         | learning and the ways of learning we make available.
-                        +PAGE_LIKE_LIST_ITEM("continuous-learning-initiatives-learning-vehicles")
                   tr
                     td
                       +BLOG_DATE("12","APR","2019")
                     td
                       h2
                         a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                        +PAGE_LIKE_LIST_ITEM("rising-to-the-challenge-of-continuous-learning")
                       p
                         | Formulating the approach to rise up and attack the continuous learning dilemma.
                         | Introduction to the continuous learning spectrum and the early initiatives I planned.
-                        +PAGE_LIKE_LIST_ITEM("rising-to-the-challenge-of-continuous-learning")
                   tr
                     td
                       +BLOG_DATE("05","APR","2019")
                     td
                       h2
-                        a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                        a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma")
+                          | The Continuous Learning Dilemma
+                        +PAGE_LIKE_LIST_ITEM("the-continuous-learning-dilemma")
                       p
                         | Explanation of what I mean by the term "the continuous learning dilemma" that
                         | I believe IT people and organisations are facing today. It's no small challenge!
-                        +PAGE_LIKE_LIST_ITEM("the-continuous-learning-dilemma")
                   tr
                     td
                       +BLOG_DATE("29","MAR","2019")
                     td
                       h2
-                        a(href="prologue.html", title="Prologue") Prologue
+                        a(href="prologue.html", title="Prologue")
+                          | Prologue
+                        +PAGE_LIKE_LIST_ITEM("prologue")
                       p
                         | About me, who I work for and how this blog came about.
-                        +PAGE_LIKE_LIST_ITEM("prologue")
             
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

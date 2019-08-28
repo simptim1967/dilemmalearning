@@ -13,13 +13,13 @@ exports.handler = async (event, context) => {
   // Extract required page name
   let pagename = event.queryStringParameters.pagename;
   
-  // Check if page name has any invalid characters such as space or any of ?{}[]+_!()%*,
-  // Must match a-z0-9 and "-" characters only
+  // Check if page name has invlid characters such as space or any of ?{}[]+_!()%*,
+  // Must match a-z0-9 and "-"
   // TODO !!!
 
   // Check that page name was specified
   if (pagename === undefined) {
-    console.log("GetPageLikeCount pagename URL parameter not specified.");
+    console.log("IncrementPageLikeCount pagename URL parameter not specified.");
     // throw a 400 bad request if pagename is not defined
     const response = {
       statusCode: 400,
@@ -33,20 +33,18 @@ exports.handler = async (event, context) => {
   }
 
   console.log("event: " + JSON.stringify(event));
-  console.log("GetPageLikeCount selected page name: " + pagename);
+  console.log("IncrementPageLikeCount selected page name: " + pagename);
 
-  // construct sql statement
-  let sql = "select pagename, likecount from pagelike where pagename = ?;"
+  // Attempt to incrment page ike count
+  let updatesql = "update pagelike set likecount=likecount+1 where pagename=?;"
+  let results = await mysql.query(updatesql, pagename)
 
-  // list get page name and like count
-  let results = await mysql.query(sql, pagename)
+  console.log(results.affectedRows + " record(s) updated");
 
-  // Run clean up function
-  await mysql.end()
-
+  // Was the page like count actually updated
   // throw a 404 page not found if results empty
-  if (!results.length) {
-    console.log("404 GetPageLikeCount page not found: " + pagename);
+  if (results.affectedRows < 1) {
+    console.log("404 IncrementPageLikeCount page not found: " + pagename);
     // throw a 404 page not found if no results returned
     const response = {
       statusCode: 404,
@@ -59,6 +57,15 @@ exports.handler = async (event, context) => {
     return response;
   }
   
+  // construct sql statement
+  let sql = "select pagename, likecount from pagelike where pagename = ?;"
+
+  // get page name and updated like count
+  results = await mysql.query(sql, pagename)
+
+  // Run clean up function
+  await mysql.end()
+
   console.log("Results: " + JSON.stringify(results))
   let responsebody = results;
 
