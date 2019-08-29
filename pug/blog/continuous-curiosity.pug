@@ -108,8 +108,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-                p
-                  a.btn.btn-lg.btn-primary(href='blast-off-from-the-past.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("opening-new-doors-to-new-possibilities.html","blast-off-from-the-past.html")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

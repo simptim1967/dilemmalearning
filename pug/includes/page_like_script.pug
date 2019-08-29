@@ -8,12 +8,10 @@ mixin PAGE_LIKE_INIT(target)
   -if (target==="page") {
   script.
     // Invoke the get page like count when the page has loaded so the like button shows the current like count
-    // TODO !!! re-enable this call to switch on page like functionality
-    //getPageLikeCount();
+    getPageLikeCount();
   -}
   -else {
   script.
     // Invoke the get page group like counts when the page has loaded so the like counts can be shown for each page link
-    // TODO !!! re-enable this call to switch on page like functionality
-    //getPageGroupLikeCounts("#{target}");
+    getPageLikeCounters("#{target}");
   -}

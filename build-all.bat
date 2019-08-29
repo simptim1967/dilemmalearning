@@ -22,5 +22,7 @@ copy .\robots.txt ..\live
 copy .\favicon.ico ..\live
 
 echo Running bootlint against HTML files ...
+echo Lint about.html
 call bootlint ..\live\about.html
+echo Lint index.html
 call bootlint ..\live\index.html

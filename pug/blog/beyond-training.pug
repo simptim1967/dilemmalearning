@@ -200,8 +200,9 @@ html(lang='en-GB')
               p
                 | I take my hat off to all those creative people who learn by doing.  
 
-              p
-                a.btn.btn-lg.btn-primary(href='how-does-a-successful-manager-act.html', role='button') Next Blog Post »
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("crazy-busy.html","how-does-a-successful-manager-act.html")
             
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

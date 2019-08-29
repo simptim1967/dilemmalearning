@@ -25,7 +25,7 @@ html(lang='en-GB')
           // Main content block
           .col-md-9
             article
-              h1 A Time of Reflection
+              h1 A Time To Reflect
               hr.featurette-divider
 
               h2 H2 Is Here Already!
@@ -140,8 +140,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-                p
-                  a.btn.btn-lg.btn-primary(href='opening-new-doors-to-new-possibilities.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("a-big-mistake-about-learning.html","opening-new-doors-to-new-possibilities.html")
 
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

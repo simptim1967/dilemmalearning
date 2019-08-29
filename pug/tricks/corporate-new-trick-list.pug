@@ -17,10 +17,11 @@ html(lang='en-GB')
     include ../includes/page_menu.pug
     include ../includes/page_header.pug
     mixin PAGE_LIKE_LIST_ITEM(pageName)
-      .hidden(id="like"+pageName)
-        |  
+      span.hidden(id="like"+pageName)
+        | &nbsp;
         img.img-thumbnail(src="/images/like.svg" width="22" height="22" style="margin-bottom: 3px")
-        small(id= pageName)
+        | &nbsp;
+        small(id= pageName, style="color:silver")
     main
       //
         Main content
@@ -52,11 +53,11 @@ html(lang='en-GB')
                           | #01
                         |  
                         a(href="corporate/01-technical-skills-are-strategic.html", title="Technical Skills Are Strategic") Technical Skills Are Strategic
+                        +PAGE_LIKE_LIST_ITEM("01-technical-skills-are-strategic")
                       p
                         | Today, every company is a "Tech Company" and what differentiates them is their
                         | business agility based on their ability to learn and embrace new skills in order
                         | to innovate. 
-                        +PAGE_LIKE_LIST_ITEM("01-technical-skills-are-strategic")
                   tr
                     td
                       h2
@@ -64,10 +65,10 @@ html(lang='en-GB')
                           | #02
                         |  
                         a(href="corporate/02-make-time-for-corporate-learning.html", title="Make Time For Corporate Learning") Make Time For Corporate Learning
+                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-corporate-learning")
                       p
                         | Failing to make time for corporate learning is like planning to fail. Make learning
                         | a priority by enabling your staff to make a regular time commitment for it. 
-                        +PAGE_LIKE_LIST_ITEM("02-make-time-for-corporate-learning")
               
               h2 Notifications
 

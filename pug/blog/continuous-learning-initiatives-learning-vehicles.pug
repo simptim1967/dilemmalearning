@@ -244,8 +244,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-              p
-                a.btn.btn-lg.btn-primary(href='continuous-learning-initiatives-technical-communities.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("rising-to-the-challenge-of-continuous-learning.html","continuous-learning-initiatives-technical-communities.html")
             
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg

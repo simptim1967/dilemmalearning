@@ -340,8 +340,8 @@ html(lang='en-GB')
                 br 
                 span.badge.hashtag #LifeAtCapgemini
 
-              p
-                a.btn.btn-lg.btn-primary(href='continuous-learning-initiatives-learning-vehicles.html', role='button') Next Blog Post »
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("the-continuous-learning-dilemma.html","continuous-learning-initiatives-learning-vehicles.html")
             
           .col-md-3.hidden-print
             hr.featurette-divider.hidden-md.hidden-lg
