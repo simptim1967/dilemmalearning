@@ -1,0 +1,83 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="About Dilemma Learning. Learn about the continuous learning dilemma facing the IT industry.")
+    title Cookie Policy for DilemmaLearning.com
+    // Bootstrap
+    link(href='../live/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../live/css/site.css', rel='stylesheet')
+    //
+    //=======================================================
+    // Delete when live (JavaScript plugins included in the footer)
+    //=======================================================
+    //
+    //- script(src='../dilemmalearning/script/bootstrap.min.js')
+    //- script(src='../dilemmalearning/script/jquery-1.12.4.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+  
+    include ../includes/page_menu.pug
+    //==== Cookies ====
+    include cookie_popup.pug
+    //=================
+    include ../includes/page_header.pug
+  
+    main
+      //
+        Main contents
+        ==================================================
+      .container
+        .row
+          // Main content block
+          #about.col-md-9
+            article
+              h1 Dilemma Learning Cookie Policy
+              hr.featurette-divider
+      
+              p
+                |
+              p
+                | We use Google Analytics to measure how you use the website so we can improve it based on user needs.
+                | Google Analytics sets cookies that store anonymised information about:
+                ul
+                  li how you got to the site
+                  li the pages you visit on Dilemma Learning and how long you spend on each page
+                  li what you click on while you're visiting the site
+              p
+                | The website also collects cookies to determine if you agreed with the consent popup.
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 News
+
+                h4 24th July, 2019 
+                p
+                  | Switched website hosting to use AWS CloudFront and https.
+                  | Even added a browser favicosn.
+
+                h4 4th June, 2019 
+                p
+                  | Added Google Analytics to the website.  
+
+                h4 29th May, 2019 
+                p
+                  | Moved from my free blog host to a static website (www.dilemmalearning.com) in the AWS cloud.  
+
+                h4 29th March, 2019 
+                p
+                  | Joined Twitter and published first weekly blog article entitled "Prologue".  
+                // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug
