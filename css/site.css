@@ -129,7 +129,7 @@ td p {
     margin-right: auto;
 }
 
-#mugshot {
+.mugshot {
     margin-left: 5px;
     margin-bottom: 3px;
     float: right;

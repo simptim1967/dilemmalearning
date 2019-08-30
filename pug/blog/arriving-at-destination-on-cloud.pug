@@ -1,0 +1,325 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='debugging, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="The highs and lows and lessons learned implementing page like functionality for DilemmaLearning.com.")
+    title Arriving At Destination ... On Cloud
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Arriving At Destination ... On Cloud
+              hr.featurette-divider
+
+              h2 A Sense Of Achievement
+
+              img.mugshot.img-thumbnail.img-responsive(src='../images/chequered-flag.jpg', alt='Arriving At Destination - Chequered Flag', title='Arriving At Destination - Chequered Flag')
+
+              p
+                | Earlier this month I described the intention to implement “page like” functionality for
+                | DilemmaLearning.com and gave a progress update the following week. The former sparkle in
+                | my eye has now been achieved (yay!) so I want to share some of the highs and lows and
+                | what I learned from doing this.
+
+              p
+                | I’d decided to use a MySQL database (hosted by AWS RDS) to store the page like data and
+                | that this would be read and updated directly from the client-side browser using JavaScript
+                | to make API calls to back-end AWS Lambda functions (NodeJS fronted by AWS API Gateway). This was
+                | all new stuff to me and an irresistible opportunity to delve into the technologies and
+                | learn by doing.
+
+              p
+                | Forgive all the specific technologies named. This article is about what I learned from
+                | the experience and really not at all about the actual technologies. They are named
+                | purely for context.
+
+              h2 Timeless Skills
+
+              p
+                | Debugging is a timeless skill and well worth any investment you make in learning how
+                | to do it well.
+
+              p
+                | There were several situations where a lack of old-fashioned “policing” (code reviews,
+                | asserts, error handling code and debug info logging) led to far too much wasted time and “wild goose
+                | chases”, including blaming AWS for bugs in their Lambda proxy integration code. (Sorry
+                | AWS, but even the code I cut and paste is almost always perfect like the rest of my
+                | code. 😊)
+
+              p
+                | For example, following the best practice of putting configuration into environment
+                | variables caused me to
+                | make a spelling mistake in the name of the environment variable used to hold
+                | the RDS database user password. This meant the Lambda function would never be able
+                | to connect successfully to the database to do anything. It took me ages to find that
+                | simple typo bug. Doh!
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Assert your environment variables aren't null. (Lots of people make environment typos.)
+
+              p
+                | However, my code wasn’t even getting that far due to a network problem where Lambda
+                | couldn’t talk to my RDS instance. When I reviewed my network setup and permissions policies (copied of
+                | course) they were totally wrong (pointing at logs in a region my code wasn’t running in and granting
+                | access to a Dynamo database that I wasn’t using). 
+
+              p
+                | I would have found the bugs much sooner if I’d known which logs to look in on AWS and
+                | the monitoring facilities available but this was all new territory and I hadn’t taken
+                | any time to find out or ask anyone about what was available or where to look.
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Use the right tools.
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Always get expert help to review your network setup and permissions.
+
+              p
+                | In my opinion, the AWS console encourages newbies like me into bad habits (like hack and
+                | slash Lambda coding and manual configuration practices). I think I found that out the hard
+                | way when I tried to fix a CORS problem and “accidentally” deleted an API call from my API
+                | Gateway shortly after go live. Ouch!
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Stick to your favourite code editor and write robust code with automated deployment
+                | from your source repo and iterate rapidly.
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Never do anything manually in the cloud!
+                | (Using tools like CloudFormation will enable you
+                | to rapidly create and re-create AWS resources through automation.)
+
+              h2 Early Learning
+
+              p
+                | As “early learners” we often find ourselves cutting and pasting example code or following
+                | instructions verbatim from others. This is all part of the learning by doing journey when
+                | unaccompanied. 
+
+              p
+                | It won’t surprise you to know that not everything we stumble across on the internet is best of
+                | breed (or even working) code and it’s even more frustrating when the instructions you follow turn
+                | out to be out of date or wrong. (I now regularly ignore cloud articles more than a year old.)
+
+              h2 Gung Ho With Mis-Guided Trust
+
+              img.mugshot.img-thumbnail.img-responsive(src='../images/warning-sign.svg', alt='Warning Sign', title='Warning Sign', width="120" height="120")
+
+              p
+                | We are more prone than ever to trust and use the first thing we find when we encounter a significant
+                | lack of understanding in what we are doing. Knowing we do that should really trigger some kind of
+                | warning or fear about what we are about to do! 
+
+              p
+                | I’m just experimenting with technology building a blog site – pretty harmless – but someone else
+                | might be using the same approach to re-work the code for an aircraft or a nuclear reactor etc. Whoa!  
+
+              p
+                | This is the 
+                a(href="https://blog.hubspot.com/marketing/dunning-kruger", title="Dunning-Kruger Effect", target="_blank") Dunning-Kruger Effect
+                |  at work (thanks again for sharing that with me @andyburgin). 
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Admit it to yourself and be wary of falling into the trap of thinking that your short term exposure
+                | and success has made you an expert at what you are doing. (It hasn’t. Not yet anyway.)
+
+              h2 Not Always Expert Help
+
+              p
+                | I admit I did my share of cut and paste and following tutorials blindly as part of this work –
+                | some of it from highly esteemed websites known for helping people get answers to their problems
+                | or for helping people get started with web technologies. 
+
+              p
+                | Some of the sample code I copied worked the first time but subsequent executions failed repeatably
+                | because the code was poorly written and didn’t manage connection closure properly.
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Websites are often just quick-starts for your journey and are not handing you the
+                | actual solution so remember that you cut and paste and follow their advice at your peril.
+
+              h2 Others Sharing The Same Pain Does Not Help
+
+              p
+                | Along the way I noticed lots of people encountering the same problems as me who were presumably
+                | making the same mistakes as me and possibly even using the same code snippets, tutorials and
+                | articles for guidance after typing the same search phrases into their search engine as me. 
+
+              p
+                | I rarely go beyond the first page of search results before trying a different search and like
+                | most people I pride myself in always knowing the best keywords to include in my searches – yeah right!
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Seeing lots of similarly worded problems with no answers is often a clue that you may be
+                | barking up the wrong tree or heading down a blind alley.  
+
+              h2 Blind Alleys And Rabbit Holes
+
+              p
+                | Problem situations are notorious for taking us down blind alleys (some people call them “rabbit
+                | holes” these days) where we waste a lot of time trying to solve one problem after another because
+                | we should never have gone there in the first place. 
+
+              p
+                | That’s often what happens when you cut and paste “amateur code” when trying to short-cut a learning
+                | curve. It happened to me with some NodeJS asynchronous JavaScript. Luckily (and thankfully) I found
+                | a better library of sample code.
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Realise when you have gone down a blind alley (or are about to) and turn back.
+
+              h2 Don’t Follow A Lost Sheep
+
+              p
+                | I stumbled across an article where someone described in great detail how they and their team spent
+                | two weeks to not get something working and eventually blamed it on a bug in someone else’s library.
+                | Wow! I’d rather find a solution myself and wouldn’t want to wait anywhere near two weeks to find it.
+                | Two days would even be too long. Two hours would kind of be okay. 😊 
+
+              p
+                | They say “a problem shared is a
+                | problem halved”. That’s often true but it’s always true if you go to an expert!
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  If you find yourself searching over and over for different articles to find a solution to
+                | your problem then stop, go find someone else (preferably a SME) and get some expert help! Keep looking
+                | until you find someone who can actually help (not just willing).
+
+              h2 The Map Is Not The Terrain
+
+              p
+                | Component testing boosts your confidence but it’s not a replacement for a full end-to-end test.
+                | I encountered situations where my Lambda functions worked perfectly in the AWS console hitting the
+                | “Test” button for the few test cases I defined but then my full end-to-end tests from the browser
+                | would fail miserably.
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Having asserts, error handling and debug info logging in place for every step of the journey from the
+                | outset allows you to quickly identify and fix points of failure along the way by getting you
+                | immediately to the crime scene rather than guessing from a distance.  
+
+              .alert.alert-info(role="alert")
+                img.img-thumbnail(src="/images/pointing-right.svg" width="30" height="30")
+                | &nbsp;
+                b
+                  u
+                   | Lesson:
+                |  Hindsight is wonderful but learning from your mistakes is even better!
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 30th August, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("starters-and-finishers.html","")
+
+          .col-md-3.hidden-print
+            hr.featurette-divider.hidden-md.hidden-lg
+            aside
+              .rightsidebar
+                // <rightsidebar>
+                h3 See Also
+
+                h4 
+                  a(href="../tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
+                p
+                  | Hints and tips to help with personal and corporate learning.  
+
+                h4 
+                  a(href="prologue.html", title="Prologue") Prologue
+                p
+                  | About me, who I work for and how this blog came about.  
+
+                h4 
+                  a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
+                p
+                  | The biggest problem facing the IT industry today, namely continuous learning.  
+
+                h4 
+                  a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
+                p
+                  | Formulating the approach to rise up and attack the continuous learning dilemma.
+                  | Introduction to the continuous learning spectrum.
+              // </rightsidebar>
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
