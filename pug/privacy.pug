@@ -1,0 +1,79 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Privacy statement for DilemmaLearning.com.")
+    title Privacy
+    // Bootstrap
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/site.css', rel='stylesheet')
+    //Google analytics
+    include ./includes/google-analytics.pug
+  body()
+    include ./includes/page_menu.pug
+    include ./includes/page_header.pug
+  
+    main
+      //
+        Main contents
+        ==================================================
+      .container
+        .row
+          // Main content block
+          #about.col-md-9
+            article
+              h1 Privacy Statement
+              hr.featurette-divider
+
+              h2 Privacy Policy
+
+              p
+                | This privacy policy applies to DilemmaLearning.com only and does not apply to any websites that this
+                | website may link to.
+      
+              h2 Cookies On DilemmaLearning.com
+
+              p
+                | DilemmaLearning.com uses cookies which are stored on your browser. You can usually modify your browser
+                | settings to prevent this happening. However, by disabling cookies, or certain types of cookie, you
+                | may hinder your user experience on this and other websites, or prevent them from working entirely.
+
+              p
+                | DilemmaLearning.com uses Google Analytics to measure how you use the website so we can improve
+                | it based on user needs. Google Analytics sets cookies that store anonymised information about:
+                ul
+                  li How you got to the site.
+                  li The pages you visit and how long you spend on each page.
+                  li What you click on while you're visiting the site.
+
+              p
+                | By continuing to use this website without adjusting your browser's cookie settings, you agree
+                | that we can place these cookies on your device.
+
+              h2 Web Logging
+
+              p
+                | As is true with most websites, DilemmaLearning.com will automatically log data regarding each visit such
+                | as your IP address, browser type, referring/exit pages, and operating system. We may use this
+                | information to monitor server errors, server administration or to monitor visitor behaviour.
+                
+              p
+                | It is not possible for logging to be disabled on a per-user basis so you must leave this website
+                | (and the Internet entirely) if you do not agree to this happening.
+
+
+              h2 Copyright
+
+              p
+                | All material presented on DilemmaLearning.com is copyright DilemmaLearning.com unless specifically
+                | stated otherwise and may not be reproduced without permission.
+
+          .col-md-3.hidden-print
+            include includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include includes/page_footer.pug
