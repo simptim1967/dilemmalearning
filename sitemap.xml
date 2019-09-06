@@ -19,6 +19,12 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://dilemmalearning.com/privacy.html</loc>
+        <lastmod>2019-09-02T12:38:18+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.60</priority>
+    </url>
+    <url>
         <loc>https://dilemmalearning.com/blog/blog-history.html</loc>
         <lastmod>2019-05-31T12:38:18+00:00</lastmod>
         <changefreq>weekly</changefreq>
