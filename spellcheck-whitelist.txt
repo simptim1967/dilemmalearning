@@ -8,6 +8,7 @@ benefitted
 bootlint
 catalogue
 centre
+centred
 codebase
 categorised
 counselling
@@ -50,6 +51,7 @@ prioritise
 programme
 programmes
 publicise
+publicised
 psjacques
 podcasts
 realise

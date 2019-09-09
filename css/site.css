@@ -1,4 +1,5 @@
 /* site.css */
+
 .blog-day  {
     color: silver;
     background-color: gray;
@@ -424,4 +425,28 @@ p {
     border-bottom-style: dotted; 
     border-bottom-width: 2px; 
     border-bottom-color:purple
+}
+
+.good-smell {
+    background-color: rgb(168,208,141);
+    color:black;
+    width: 40%;
+}
+
+.bad-smell {
+    background-color:  rgb(237,125,49);
+    color:black;
+    width: 40%;
+}
+
+.good-smell-item {
+    background-color: rgb(226,239,217);
+    color:black;
+    padding: 10px;
+}
+
+.bad-smell-item {
+    background-color:rgb(251,228,213);
+    color:black;
+    padding: 10px;
 }

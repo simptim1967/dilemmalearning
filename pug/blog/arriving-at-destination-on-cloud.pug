@@ -288,36 +288,10 @@ html(lang='en-GB')
                 span.badge.hashtag #LifeAtCapgemini
 
               include ../includes/page_blog_navigate.pug
-              +BLOG_NAVIGATE("starters-and-finishers.html","")
+              +BLOG_NAVIGATE("starters-and-finishers.html","capability-smells.html")
 
           .col-md-3.hidden-print
-            hr.featurette-divider.hidden-md.hidden-lg
-            aside
-              .rightsidebar
-                // <rightsidebar>
-                h3 See Also
-
-                h4 
-                  a(href="../tricks/old-dog-new-tricks.html" title="Old Dog New Tricks") Old Dog New Tricks 
-                p
-                  | Hints and tips to help with personal and corporate learning.  
-
-                h4 
-                  a(href="prologue.html", title="Prologue") Prologue
-                p
-                  | About me, who I work for and how this blog came about.  
-
-                h4 
-                  a(href="the-continuous-learning-dilemma.html", title="The Continuous Learning Dilemma") The Continuous Learning Dilemma
-                p
-                  | The biggest problem facing the IT industry today, namely continuous learning.  
-
-                h4 
-                  a(href="rising-to-the-challenge-of-continuous-learning.html", title="Rising To The Challenge Of Continuous Learning") Rising To The Challenge Of Continuous Learning
-                p
-                  | Formulating the approach to rise up and attack the continuous learning dilemma.
-                  | Introduction to the continuous learning spectrum.
-              // </rightsidebar>
+            include ../includes/page_blog_sidebar.pug
         // /row
       // /container
     include ../includes/page_footer.pug

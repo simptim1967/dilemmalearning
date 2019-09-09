@@ -11,10 +11,24 @@ footer.footer
         br
       a(href='/privacy.html')
         small Privacy Statement
-      
+
+  .container(id="cookie_directive_container", style="display: none;")
+    nav.navbar-fixed-bottom
+      .container.text-center(id="cookie_accept", style="background-color: silver;")
+        p.text-muted
+          | By using this website you are consenting to the use of cookies in accordance
+          | with our 
+          a(href="/privacy.html") Privacy Statement
+          | . 
+          a.btn-sm.btn-default.pull-right(href="#") Close
+
 //
   jQuery (necessary for Bootstrap's JavaScript plugins)
   originally from: https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 script(src='/script/jquery-1.12.4.min.js')
 // Include all compiled plugins (below), or include individual files as needed
 script(src='/script/bootstrap.min.js')
+
+// Cookie banner
+script(src='/script/cookie.js')
+

@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
   var sql = "INSERT INTO pagelike (pagename, pagegroup, likecount) VALUES ?";
 
   // Insert blog page names into pagelike table
-  //var values = [
+//  var values = [
   //   ['a-big-mistake-about-learning', 'blog', 0],
   //   ['a-time-to-reflect', 'blog', 0],
   //   ['almost-likable', 'blog', 0],
@@ -39,9 +39,10 @@ exports.handler = async (event, context) => {
   //   ['starters-and-finishers', 'blog', 0],
   //   ['the-continuous-learning-dilemma', 'blog', 0],
   //   ['wanting-to-be-liked', 'blog', 0],
-  //   ['arriving-at-destination-on-cloud', 'blog', 0]
-  //];
-  //let output = await mysql.query(sql, [values])
+  //   ['arriving-at-destination-on-cloud', 'blog', 0],
+  //   ['capability-smells', 'blog', 0]
+//];
+//  let output = await mysql.query(sql, [values])
   
   // Insert personal learning trick page names into pagelike table
   // var values = [

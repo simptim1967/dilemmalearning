@@ -1,0 +1,348 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='xxx, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="xxx")
+    title Capbility Smells
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Capbility Smells
+              hr.featurette-divider
+
+              h2 Sense Of Smell
+
+              p
+                | One of our lead developers recently presented a session entitled “Agile Smells” in our TechHub and it got me
+                | thinking along the same lines about capabilities. So what are the good and bad “smells” around capabilities?
+                | How is your sense of smell?
+
+              p
+                | Consider the following table as possible examples of good and bad smells regarding the treatment of capability
+                | building within an organisation.
+
+              table.table.table-bordered
+                thead(style="background-color: steelblue;")
+                  th Item
+                  th Topic
+                  th.good-smell
+                    .text-center
+                      | Good Smell
+                  th.bad-smell
+                    .text-center
+                      | Bad Smell
+                tbody(style="background-color: darkslategray;")
+                  tr
+                    td
+                      .text-center 1
+                    td
+                      | Learning
+                    td.good-smell-item
+                      ul
+                        li Treated as a part of normal everyday work.
+                        li Treated differently and separately to training.
+                    td.bad-smell-item
+                      ul
+                        li Not considered part of everyday work.
+                        li Treated the same as training i.e. as an infrequent, planned and separately costed activity.
+                  tr
+                    td
+                      .text-center 2
+                    td
+                      | Learning Time
+                    td.good-smell-item
+                      ul
+                        li Learning time is baked into everyday work.
+                    td.bad-smell-item
+                      ul
+                        li Utilisation levels do not leave or include any time for learning.
+                  tr
+                    td
+                      .text-center 3
+                    td
+                      | Learning Environment
+                    td.good-smell-item
+                      ul
+                        li Designated spaces available for learning.
+                        li Different ways of learning available.
+                        li Co-located team members are easily able to learn from and help each other.
+                        li Environment is conducive to both work and learning.
+                        li Caters for all knowledge and ability levels from beginner to expert.
+                    td.bad-smell-item
+                      ul
+                        li No designated spaces ear-marked for learning.
+                        li Limited ways of learning on offer.
+                        li Team members not easily able to learn from or help each other.
+                        li Environment is not conducive to both work and learning.
+                        li Do not cater for different knowledge and skill levels.
+                  tr
+                    td
+                      .text-center 4
+                    td
+                      | Learning Opportunities
+                    td.good-smell-item
+                      ul
+                        li Learning opportunities are open to all.
+                        li Publicised widely so easy for everyone to find out.	
+                        li Central mechanism for anyone to create and notify people about learning opportunities and to measure interest and uptake.
+                        li Learning activities repeated allowing everyone opportunity to participate.
+                    td.bad-smell-item
+                      ul
+                        li Opportunities for learning are restricted.
+                        li Learning opportunities not publicised widely.
+                        li No central mechanism for arranging and notifying people about learning opportunities or to measure interest and uptake.
+                        li Learning activities not repeated to the benefit of all.
+                  tr
+                    td
+                      .text-center 5
+                    td
+                      | Training
+                    td.good-smell-item
+                      ul
+                        li Viewed as a necessary, formal, planned and costed activity.
+                        li Training budget extends to all employees.
+                    td.bad-smell-item
+                      ul
+                        li Viewed as sometimes necessary.
+                        li Training budget limited (possibly shrinking due to lack of use).
+                  tr
+                    td
+                      .text-center 6
+                    td
+                      | Training Utilisation
+                    td.good-smell-item
+                      ul
+                        li Individuals fully utilise their annual training allocation.
+                    td.bad-smell-item
+                      ul
+                        li Individuals don’t have or use their annual training allocation.
+                  tr
+                    td
+                      .text-center 7
+                    td
+                      | Department
+                    td.good-smell-item
+                      ul
+                        li Departmental learning charter in place.
+                        li Protected corporate learning time in place.
+                        li Learning achievements are recognised, rewarded and celebrated.
+                    td.bad-smell-item
+                      ul
+                        li No departmental learning charter in place.
+                        li No designated time for corporate learning in place.
+                        li Learning achievements not recognised, rewarded or celebrated.
+                  tr
+                    td
+                      .text-center 8
+                    td
+                      | Managers
+                    td.good-smell-item
+                      ul
+                        li Recognise that building capabilities is important and necessary.
+                        li Focus equally on building people and delivering results.
+                        li Lead by example.
+                        li Are seen to regularly participate in learning activities.
+                        li Support and pro-actively encourage personal learning and development.
+                        li Managers are supportive of communities and attendance.
+                        li Identify and publicise learning opportunities and encourage their staff to participate.
+                        li Share their personal learning.
+                    td.bad-smell-item
+                      ul
+                        li Do not see building capabilities as important.
+                        li Do not focus equally on building people and delivering results.
+                        li Do not lead by example.
+                        li Not seen participating in learning activities.
+                        li Not supportive or encouraging of personal learning and development.
+                        li Managers not supportive of communities or attendance.
+                        li Don’t identify and publicise learning opportunities nor encourage their staff to participate.
+                        li Do not share personal learning.
+                  tr
+                    td
+                      .text-center 9
+                    td
+                      | Desired Outcomes
+                    td.good-smell-item
+                      ul
+                        li Leaders communicate business objectives effectively to staff and explain what needs to be learned and why.
+                        li Staff understand company strategy and buy into the vision of what new skills need to be learned.
+                    td.bad-smell-item
+                      ul
+                        li Leaders do not communicate business objectives sufficiently to explain what needs to be learned and why.
+                        li Staff don’t understand company strategy and therefore don’t buy into the vision or the need to learn new skills.
+                  tr
+                    td
+                      .text-center 10
+                    td
+                      | Staff Engagement
+                    td.good-smell-item
+                      ul
+                        li Managers meet regularly with staff 1:1 to discuss personal development.
+                        li Managers help their staff to feel good about themselves and their work.
+                        li Managers encourage and enable their staff to maximise their potential.
+                    td.bad-smell-item
+                      ul
+                        li Managers do not meet regularly 1:1 with staff to discuss personal development.
+                        li Managers do not help their staff to feel good about themselves or their work.
+                        li Managers don’t encourage or enable their staff to maximise their potential.
+                  tr
+                    td
+                      .text-center 11
+                    td
+                      | Individuals
+                    td.good-smell-item
+                      ul
+                        li Personal development plan in place.
+                        li Keep track of personal learning using a learning diary.
+                        li Make time for learning.
+                        li Take full advantage of the different ways of learning available.
+                        li Healthy curiosity leads to learning.
+                    td.bad-smell-item
+                      ul
+                        li No personal development plan in place.
+                        li No learning diary or learning not tracked.
+                        li Don’t make time for learning.
+                        li Don’t take advantage of the different ways of learning available.
+                        li Are not curious to learn new things.
+                  tr
+                    td
+                      .text-center 12
+                    td
+                      | Technical Communities
+                    td.good-smell-item
+                      ul
+                        li Seen as important vehicles for sharing knowledge, supporting projects and building people.
+                        li Formed around varied areas of interest where anyone can attend.
+                        li Hold frequent events.
+                        li Best practices and emerging industry trends are discussed.
+                        li Aid and support career progression.
+                        li Arriving late means you won’t get a seat.
+                        li Great vibe.
+                    td.bad-smell-item
+                      ul
+                        li Not regarded as important so not supportive of knowledge sharing, projects or building people.
+                        li Non-existent or centred only around roles.
+                        li Infrequent (eventually die out).
+                        li Best practices and emerging industry trends are not discussed.
+                        li Not supportive of career progression.
+                        li Not well attended.
+                        li No vibe!
+                  tr
+                    td
+                      .text-center 13
+                    td
+                      | Conference Attendance
+                    td.good-smell-item
+                      ul
+                        li Conference attendance is considered valuable and essential to stay in touch with industry trends and best practices.
+                        li People are encouraged to attend conferences and bring back learnings.
+                        li Treated as an investment rather than a cost.
+                    td.bad-smell-item
+                      ul
+                        li Managers don’t trust staff sufficiently to allow conference attendance.
+                        li Conferences are seen only for experts or as a reward to some people.
+                        li Cost is an issue.
+                  tr
+                    td
+                      .text-center 14
+                    td
+                      | Retrospectives
+                    td.good-smell-item
+                      ul
+                        li Frequently conducted to confirm what works, identify lessons learned and opportunities for improvement. 
+                        li Teams regularly make time for retrospectives. 
+                        li Considered best practice.
+                        li Teams prepare well prior to retrospective events.
+                        li Retrospectives are documented.
+                        li Regularly identify opportunities for improvements.
+                        li Identified improvements are implemented.
+                        li Teams learn from mistakes.
+                    td.bad-smell-item
+                      ul
+                        li Not conducted regularly or have become low value, “tick box” events.
+                        li Teams “don’t have time” for retrospectives.
+                        li Recognised as a best practice but not fully embraced.
+                        li Teams do not suitably prepare for retrospectives.
+                        li Retrospectives are not documented.
+                        li Fail to identify actionable improvements or opportunities for improvement not sought.
+                        li Identified improvements get overlooked or forgotten.
+                        li Teams fail to learn from mistakes.
+                  tr
+                    td
+                      .text-center 15
+                    td
+                      | Knowledge Sharing
+                    td.good-smell-item
+                      ul
+                        li Knowledge sharing is a routine behaviour.
+                        li Lessons learned are identified and frequently shared.
+                        li Mistakes and inefficiencies are avoided and not repeated.
+                        li SMEs frequently share best practices and demonstrate skills.
+                    td.bad-smell-item
+                      ul
+                        li Knowledge sharing sometimes happens but is not routine.
+                        li Lessons go unlearned.
+                        li Others repeat the same inefficiencies or mistakes.
+                        li SMEs don’t share their knowledge and skills to the benefit of others.
+                  tr
+                    td
+                      .text-center 16
+                    td
+                      | Culture
+                    td.good-smell-item
+                      ul
+                        li Continuous learning is pervasive.
+                        li Retrospectives, lessons learned and knowledge sharing are routine practices.
+                        li Learning is captured.
+                        li There is a healthy curiosity to learn new things and embrace new ways of working.
+                        li People rise to and enjoy the challenge of learning new skills.
+                    td.bad-smell-item
+                      ul
+                        li Learning is infrequent and has little visibility.
+                        li Retrospectives, lessons learned and knowledge sharing are not routine.
+                        li Learning is lost.
+                        li People are not curious or looking to embrace new ways of working.
+                        li People are challenged by learning and rarely learn new skills.
+
+              p
+                | How does your organisation measure up? In which areas is there room for improvement?
+
+              p
+                | Are you smelling success?
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 6th September, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("arriving-at-destination-on-cloud.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
