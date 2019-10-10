@@ -1,0 +1,94 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='email lists, continuous curiosity, learning environment, learning preferences, learning approaches, learning styles, personal learning, IT industry, old dog new tricks')
+    meta(name='description', content="Join a mailing list.")
+    title Join A Mailing List
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+
+    h2.text-center
+      a(href="../personal-new-trick-list.html", title="New Tricks For Personal Learning") New Tricks For Personal Learning
+    
+    include ../../includes/page_header.pug
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 #09 Join A Mailing List
+              hr.featurette-divider
+
+              h2 Avoiding Endless Searching
+
+              p
+                | As an architect I need to be aware of lots of tools, techniques and technologies
+                | in order to stay up-to-date. But because these are changing all the time I can't afford
+                | to go looking for all of these for myself. I need someone to do it for me.
+              
+              h2 Find Helpful Websites
+
+              p
+                | Fortunately there are plenty of really good websites out there which offer mailing
+                | lists that will let you sign up for notifications.
+
+              p
+                | It's way better to have information come directly to you than to go looking
+                | for it yourself all the time. This approach makes the Internet work for you
+                | and can save you a lot of time.
+
+              h2 Not All Mail Is Junk Mail
+
+              p
+                | Even after decades of use I'm still not sure if email is a good idea, especially when
+                | I hear what percentage of traffic is spam and when I think about phishing attacks
+                | and how much time I spend on it.
+
+              p
+                | However, in this situation I'm happy to review my inbox every day looking for the odd
+                | diamond in the rough.
+
+              h2 Kill Chatty Subscriptions
+
+              p
+                | If your mailing list turns out to be too chatty then you can simply unsubscribe.
+
+              p
+                | You should also unsubscribe if content is no longer proving valuable to you. 
+              
+              h2 Forward Useful Content To Your Colleagues
+
+              p
+                | When reviewing content I like to recognise and forward items of interest to colleagues.
+                | I see it as something that works both ways as some of the best materials I've found have
+                | often been sent or pointed out to me by others.
+
+              p
+                | This is one way of maximising the value of information and reducing the cost of finding it.
+                
+              include ../../includes/page_like_button.pug
+              include ../../includes/page_trick_sign_off.pug
+
+              p
+                a.btn.btn-lg.btn-primary(href='08-join-a-community.html', role='button') &laquo; Previous Trick
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

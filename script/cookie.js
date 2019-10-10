@@ -33,5 +33,6 @@
       }
       $("#cookie_accept a").click(function(){
           setCookie_eu("cookies_consent", "ack", 100);
+          return false;
       });
   });

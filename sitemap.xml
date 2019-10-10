@@ -175,6 +175,12 @@ https://dilemmalearning.com/blog/pluralsight-live-europe-2019.html
         <priority>0.64</priority>
     </url>
     <url>
+        <loc>https://dilemmalearning.com/blog/building-people-then-products.html</loc>
+        <lastmod>2019-10-10T12:38:18+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
+    </url>
+    <url>
         <loc>
 https://dilemmalearning.com/tricks/old-dog-new-tricks.html
         </loc>
@@ -259,6 +265,14 @@ https://dilemmalearning.com/tricks/personal/07-find-ways-of-learning-that-work-f
 https://dilemmalearning.com/tricks/personal/08-join-a-community.html
         </loc>
         <lastmod>2019-08-06T12:40:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>
+https://dilemmalearning.com/tricks/personal/09-join-a-mailing-list.html
+        </loc>
+        <lastmod>2019-10-10T12:40:53+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.64</priority>
     </url>

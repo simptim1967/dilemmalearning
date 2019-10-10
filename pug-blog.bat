@@ -23,4 +23,5 @@ call Pug .\pug\blog\almost-likable.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\starters-and-finishers.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\arriving-at-destination-on-cloud.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\capability-smells.pug --pretty --out ..\live\blog
+call Pug .\pug\blog\building-people-then-products.pug --pretty --out ..\live\blog
 rem call Pug .\pug\blog\xxx.pug --pretty --out ..\live\blog

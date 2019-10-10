@@ -40,12 +40,13 @@ exports.handler = async (event, context) => {
   //   ['the-continuous-learning-dilemma', 'blog', 0],
   //   ['wanting-to-be-liked', 'blog', 0],
   //   ['arriving-at-destination-on-cloud', 'blog', 0],
-  //   ['capability-smells', 'blog', 0]
+  //   ['capability-smells', 'blog', 0],
+  //   ['building-people-then-products', 'blog', 0]
 //];
 //  let output = await mysql.query(sql, [values])
   
   // Insert personal learning trick page names into pagelike table
-  // var values = [
+//   var values = [
   //   ['01-decide-what-to-learn', 'personal', 0],
   //   ['02-make-time-for-personal-learning', 'personal', 0],
   //   ['03-hide-away-change-the-scenery', 'personal', 0],
@@ -53,9 +54,10 @@ exports.handler = async (event, context) => {
   //   ['05-create-a-personal-development-plan', 'personal', 0],
   //   ['06-learn-to-manage-your-time-well', 'personal', 0],
   //   ['07-find-ways-of-learning-that-work-for-you', 'personal', 0],
-  //   ['08-join-a-community', 'personal', 0]
-  // ];
-  // let output = await mysql.query(sql, [values])
+  //   ['08-join-a-community', 'personal', 0],
+  //   ['09-join-a-mailing-list', 'personal', 0]
+//   ];
+//   let output = await mysql.query(sql, [values])
   
   // // Insert corporate learning trick page names into pagelike table
   // var values = [
