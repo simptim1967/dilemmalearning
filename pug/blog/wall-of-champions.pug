@@ -1,0 +1,154 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='recognition, achievement, SME network, technical communities, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="How recognising achievement can be a great way of motivating your staff and help to build a SME network to drive technical communities, share knowledge and build people.")
+    title Wall of Champions
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Wall of Champions
+              hr.featurette-divider
+
+              h2 Ulterior Motive
+
+              p
+                | Let me start by being totally honest. The "Wall Of Champions" initiative started out with
+                | an ulterior motive. It's
+                | goal was to help identify people who "knew stuff" so that we could pounce on them
+                | and force them to share their knowledge at a technical community event. Subtle huh? 😊
+              
+              p
+                | The reason for this subtle approach was that technical communities without content (i.e. speakers)
+                | don't really work or make it easy to build people so we needed a way to find speakers to get
+                | our targeted technical communities rolling.
+
+              p
+                | Let me explain how we went about this initiative, how it worked out and where it finally landed.
+
+              h2 The Three Lists: Tools, Techniques and Technologies
+
+              p
+                | To start the ball rolling we created three lists. One for "Tools" (e.g. Jira) and the others for
+                | "Techniques" (e.g. Scrum) and "Technologies" (e.g. HTML) - all excluding version numbers. We then
+                | asked people to help us populate and review the lists and add their name against any item
+                | if they felt themselves to be an expert on that topic. 
+
+              p
+                | We also sought to assign a status for each department within the Digital Delivery
+                | Group (DDG) against each tool / technique / technology as to whether an item was either not used,
+                | in use, starting use or deliberately not used or stopping use by that department.
+
+              p
+                | We also flagged items as "Top Skills" for the items that had been identified as part of our
+                | strategy at the start of the year as skills we wanted to grow in order for our business 
+                | to meet growing customer demands and emerging markets.
+
+              p
+                | Just imagine ... at the end of this we would know that status of all the tools, techniques and
+                | technologies used across the whole DDG and who the experts are for each of them. What's not to like!
+              
+              h2 A Bridge Too Far
+
+              p
+                | Many things start out with good intentions (or ulterior motives) but end up failing because they
+                | are asking too much, unrealistic or simply impractical. We hit all three of these and so the
+                | initiative started to fizzle out before it really got started. You could even hear people quietly
+                | saying "good luck with that" as they side-stepped the initiative.
+
+              P
+                | Expecting to populate and maintain our three lists was simply unrealistic.😒
+
+              p
+                | I wasn't overly concerned about the failed initiative as there wasn't much I could do about it.
+                | I looked at it as one of the many plates that I was spinning knowing that some would break and 
+                | therefore this must just be one of them.
+
+              h2 The Quest For Community Speakers
+
+              p
+                | The most effective way I have found of helping technical communities to find speakers is
+                | to operate a simple hierarchy.
+
+              p
+                | In my case, I work with community owners and their deputies. I work across the communities to
+                | encourage each of them to build up a backlog of ideas for future meetings whilst arranging short term
+                | events and seeking to achieve our agreed community goals. 
+              p
+                | In turn, each community owner and their deputy works with their group of community leaders 
+                | (usually 4) to plan
+                | and drive meetings. They are the ones who identify the speakers although 
+                | I also approach individuals directly myself and
+                | ask them to speak at events.
+                | Some speakers take more encouraging than others - especially busy "goto" people.
+
+
+              p
+                | Once communities become well established they pretty much drive themselves in terms of people
+                | wanting to present.
+                
+              h2 Wall Of Champions Re-born
+
+              p
+                | The goal of technical communities "building people" in a tangible way proved to be the saving
+                | grace for the "Wall Of Champions" concept.
+
+              p
+                | As we ran study squads to allow people to study together for exam certifications we spotted an
+                | opportunity to publicly recognise success for people achieving certifications (over and above
+                | our standard reward and recognition systems). 
+
+              p
+                | Our "Top Skillz" initiative (yes that's how it's spelled after re-branding) asked communities to list courses
+                | on community team sites that people could take to further their skills. Some team sites went on to
+                | provide links to various other resources too, including sample exams for certifications. 
+
+              p
+                | As a result of certification success, we decided to add a "Wall Of Champions" page to each
+                | community team site. This lists the certifications sought by the community along with a list of names of those
+                | who have attained them (in alphabetical order to show no bias).
+
+              p
+                | The "Wall Of Champions" concept was thus successfully re-born and now serves to celebrate the success
+                | of certified individuals and demonstrate the tangible success of our communities to build 
+                | people. This also acts as a motivation to others to get their name added to the Wall Of
+                | Champions and also satisfies the ulterior motive of identifying a list of SMEs to potentially
+                | speak at future community events. Yay! 😊
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 18th October, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("building-people-then-products.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
