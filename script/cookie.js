@@ -1,5 +1,5 @@
   jQuery(function($) {
-      checkCookie_eu();
+      if (window.location.protocol != "file:") checkCookie_eu();
       function checkCookie_eu()
       {
           var consent = getCookie_eu("cookies_consent");

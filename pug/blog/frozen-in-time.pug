@@ -1,0 +1,155 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='frozen in time, fatal hesitation, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Don't get frozen in the past by a fatal hesitation in these times of permanent change.")
+    title Frozen In Time
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Frozen In Time
+              hr.featurette-divider
+
+              h2 Change Demands Change
+
+              p
+                | In these times of "
+                a(href="the-continuous-learning-dilemma.html#permanentchange", title="Permanent Change") permanent change
+                | " in which we live we must recognise that change demands
+                | change.
+              
+              p
+                | Whilst anyone could be forgiven for freezing in a moment of panic (perhaps until the adrenaline
+                | kicks in) no organisation can afford to ignore or resist change or be caught out by allowing 
+                a(href="the-continuous-learning-dilemma.html#corporatedilemma", title="The Corporate Learning Dilemma") the corporate learning dilemma
+                |  to turn into a fatal hesitation.
+
+              p
+                | Are you still using the same tools, techniques and technologies?
+                | The same business processes and procedures?
+                | Is your organisation frozen in time in a state of business rigidity?
+                | Or are you experiencing and embracing change?
+
+              h2 Change Shows No Mercy
+
+              p
+                | One thing is clear, those who do not embrace change will be swept away by it.
+                | Nothing lasts forever and change shows no mercy. 
+                | Failure to change inevitably
+                | leads to extinction unless we bow to the demands of change and meet them head on, however difficult
+                | that might be.
+
+              h2 The Land That Time Forgot
+
+              p
+                | We all interact with different organisations as part of our everyday lives but sometimes when dealing
+                | with them I can't help but wonder if electricity has yet to be invented for some of them! Are
+                | they sharpening their quills before they write my request onto parchment to be delivered by hand to
+                | an already overflowing in-tray? 
+
+              p
+                | This might go some way to explaining why I'm forced to telephone, wait ages, authenticate multiple times,
+                | speak to someone who has
+                | no knowledge of my previous interactions (or my decades of loyalty) before telling me it will take several 
+                | weeks to action my request.
+
+              p
+                | Why would I ever go there again? Glaciers move quicker! Why don't I just switch my custom and leave such
+                | organisations in the land that time forgot? (It has been known to happen! 😊)  
+
+              h2 Same Old Same Old
+
+              p
+                | How organisations end up in the land that time forgot is simple - they assume that what made them successful
+                | in the past will continue to make them successful in the future. You can just imagine them saying "we are making
+                | good money doing this so if it ain't broke, don't fix it". The result is that "same old same old" prevails
+                | and the big freeze sets in until the mighty oak begins to topple.
+
+              p
+                | Often our biggest competitor is our current way of working and our reluctance to change it. Some people
+                | have to be dragged kicking and screaming into the future before they'll admit it's better! Others act like
+                | their feet are set in concrete and refuse to budge - these are the change resistors. Either way, time marches on.
+
+              p
+                | (By the way, I love it when a change resistor becomes an advocate for change. I quietly smile at their change of heart
+                | and force myself never to mention the U-turn they took. 😊)
+
+              h2 What Really Motivates Us
+
+              p
+                | Most people want to come to work with a sense of purpose and leave with a sense of achievement. They want to
+                | feel part of a shared goal and good about their work and workplace. They want interesting and challenging work
+                | and recognition for doing a good job.
+                
+              p
+                | It's actually surprising what really motivates
+                | people and there's an interesting 
+                a(href="https://www.youtube.com/watch?v=u6XAPnuFjJc", title="What Really Motivates Us", target="_blank") animated video on a talk by Dan Pink
+                |  on the subject.
+
+              h2 New Age Managers
+
+              p
+                | Imagine a herd of new age managers, sweeping across the open plan, who are not driven solely by financial targets,
+                | not in competition, not clambering over each other in a fight to get to the top but instead lovers of teamwork and
+                | seeing their staff achieve their full potential.
+
+              p
+                | People who make time to listen to problems, work related or not. People who know that their
+                | own success directly relates to the well being and capabilities of their staff and will be boosted
+                | by their personal investment in people to build relationship and trust.
+
+              p
+                | Hey, stop imagining, the new age starts with you.
+
+              h2 Turn Up The Heat
+
+              p
+                | The only way to avoid the big freeze is to turn up the heat by embracing the demands of change.
+
+              p
+                | It means looking at your business and the market place, listening to your customers, taking
+                | the odd risk, experimenting with different tools, technologies and techniques, making time
+                | for people and learning. 
+
+              p
+                | Above all, it means each of us avoiding
+                | those comfortable ruts of "same old same old" and ushering in "change", one step at a time.
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 25th October, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("wall-of-champions.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
