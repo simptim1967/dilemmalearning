@@ -26,4 +26,5 @@ call Pug .\pug\blog\capability-smells.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\building-people-then-products.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\wall-of-champions.pug --pretty --out ..\live\blog
 call Pug .\pug\blog\frozen-in-time.pug --pretty --out ..\live\blog
+call Pug .\pug\blog\creativity-on-demand.pug --pretty --out ..\live\blog
 rem call Pug .\pug\blog\xxx.pug --pretty --out ..\live\blog

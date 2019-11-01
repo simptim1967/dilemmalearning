@@ -1,0 +1,144 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='creativity, mental blocks, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Even in this modern world, creativity is not something we can just call up on demand.")
+    title Creativity On Demand
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Creativity On Demand
+              hr.featurette-divider
+
+              h2 Taekwondo Lesson
+
+              p
+                img.mugshot.img-thumbnail.img-responsive(src='/images/good-idea-plan.jpg', alt='Good Idea Schedule', title='Good Idea Schedule')
+                | Last month I went to watch a friend teach his weekly Taekwondo class. A couple of the younger students
+                | were talking when they shouldn't have been and were singled out and asked to do ten press-ups
+                | each for not paying attention. After immediately doing the press-ups focus was restored
+                | and the class instruction resumed.
+
+              p
+                | It struck me at the time that whilst I might be able to do ten press-ups on demand, I can't just
+                | go and have ten good ideas on demand.
+
+              p
+                | Even in this modern world, creativity is not something we
+                | can just call up on demand. We wish! 😊
+
+              h2 The Speed Of Creativity
+
+              p
+                | There are all sorts of things that we marvel at. Whether it's a film, art, a piece of music or perhaps
+                | even nature, all these things take time to emerge but we never really find out just how much time
+                | really went into something or how many failed prototypes or how much re-work or how far the finished thing
+                | ended up being from the original idea.
+
+              p
+                | No sooner have we started to marvel at or ponder something then the next thing comes along and
+                | our thoughts are taken elsewhere.
+
+              P
+                | It seems to me that creativity takes way longer than any of us would really care to admit whether
+                | we like it or not. Creativity is often the culmination of many things over time.
+
+              h2 Mental Blocks
+
+              p
+                | Mental blocks are like road blocks to our creative thoughts. They take ideas that are waiting
+                | to be born into an elusive place as if forcing us to endure yet another lesson in patience.
+
+              p
+                | As an architect I have plenty of opportunities to be creative but I do find myself often needing
+                | time and space to think and some things require much more thought than others.
+
+              p
+                | Even if I 
+                a(href="/tricks/personal/03-hide-away-change-the-scenery.html", title="HIde Away And Change The Scenery") hide away and change the scenery
+                |  and 
+                a(href="/tricks/personal/04-avoid-distractions-and-occasional-interruptions.html", title="Avoid Distractions And Occasional Interruptions") avoid distractions and occasional interruptions
+                |  those mental blocks can still stop me in my tracks like I'm waste deep in treacle.
+
+              h2 Falling Into The Limitations Trap
+
+              p
+                | Mental blocks can be cruel and throwing thinking time at them doesn't always help, especially
+                | when the reason is because you've fallen into the personal limitations trap!
+                | When you realise you might actually be the blocker then it's time to get help.
+
+              p
+                | Bouncing your 
+                | ideas off people can be really helpful and cause you to start seeing things from different angles
+                | or to think about things you hadn't yet considered.
+                | Asking multiple people may give you different views but don't expect everyone to immediately
+                | be on page or as excited about things as you are.
+                
+              p
+                | Even just beginning to explain things to someone can be a big help and may
+                | trigger the "Eureka!" moment you've been striving for.
+
+              h2 Getting The Creative Juices Flowing
+
+              p
+                | So how do you get those creative juices flowing? Not sure I have all the answers to this one so
+                | here are a few tips my friendly search engine offered up that I'm working through:
+                ul
+                  li Relax
+                  li Get some sleep
+                  li Take a walk (dogs optional)
+                  li Change your workspace
+                  li Get some exercise
+                  li Change your routine
+                  li Take regular breaks to avoid burnout
+                  li Don't repeat going over and over the same thing 
+                  li Try to work to a plan
+                  li Spend some time with a notepad: draw pictures and write notes
+                  li Invent personas and use story boards
+                  li Don't go it alone
+                  li Talk to people
+                  li Surround yourself with inspiration
+                  li Don't just think about it - do or build something
+                  li Imagine what the future might look like (send yourself an email from the future)
+
+              p
+                | If creativity is just the culmination of effort, skill and teamwork over time then
+                | just persist. You'll get there eventually! Smugness will then be yours. 😊
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 1st November, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("frozen-in-time.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
