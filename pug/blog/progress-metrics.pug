@@ -1,0 +1,174 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='progress metrics, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Progress metrics are essential for keeping projects on track and apply equally to learning projects.")
+    title Progress Metrics
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Progress Metrics
+              hr.featurette-divider
+
+              h2 Walking The Line
+
+              p
+                | Attempting to walk in a straight line is a quick test for a drunk driver
+                | whose lack of coordination soon betrays them.
+
+              p
+                | I'm a fan of burn-down charts. Every day on my current project we "walk
+                | the line" charting our progress and knowing whether we are on track,
+                | ahead or behind.
+
+              p
+                | Having the line permanently on display is a great reminder to stay on
+                | track and is part of the transparency mature project teams exhibit.
+
+              h2 A Compass On The Open Sea
+
+              img.img-thumbnail.img-responsive(src='/images/lost-at-sea.jpg', alt='Lost At Sea', title='Lost At Sea')
+              p
+                | Out on the open sea the horizon looks the same in every direction. On a
+                | cloudy day you may not even have the sun or stars as a point of reference.
+
+              p
+                | It would be foolish to set off without any means of knowing which direction
+                | you are heading and whether or not you are making the progress you expect.
+                | You might soon end up all adrift and lost at sea. 
+
+              p  
+                | Having tools that allow you to quickly find out whether or not you are on
+                | track or off course is a great benefit. Such tools are highly valued by
+                | mature project teams who gladly invest the effort in creating the necessary
+                | data to support the tools in their revelation of truth so that they can 
+                | course correct as necessary and keep the customer informed.  
+
+              h2 Sooner Rather Than Later
+
+              p
+                | Tracking progress is an on-going activity. It isn't something to be left as an
+                | occasional thing in case you find out you are significantly off course far too
+                | late in a project to correct it. Frequent checking with occasional correction
+                | is usually the order of the day.
+
+              p
+                | Teams that check their progress late in the day often find out they are behind
+                | schedule at a time went they least want to hear it!
+
+              h2 Not Rocket Science
+
+              p
+                | Progress calculations often don't look like rocket science, they are often easy
+                | to compute.
+
+              p
+                | For example, if you have approximately 100 items to migrate over a 
+                | 5 month period then you might expect to see 20 items migrated a month which
+                | is approximately 5 items a week. Simple math and simple progress milestones.
+
+              h2 Learning Projects
+
+              p
+                | Learning needs to be treated as a project in itself but often isn't.
+
+              p
+                | Just as we need to plan and track our progress on IT projects to make sure we are 
+                | delivering value and staying on schedule and budget to keep both the customer
+                | and our organisation happy, so we should plan and track our learning projects to make
+                | sure we are achieving our desired learning outcomes.
+
+              p
+                | We set revenue and profit targets, so we should set learning targets too. 
+
+              h2 Good Intentions 
+
+              p
+                | It is not enough to say something like "we need to embrace cloud technologies" if we are to compete 
+                | in future markets. There has to be a project behind the intention if the outcome is to
+                | be achieved. Otherwise, it's another example of where "failing to plan is planning to fail".
+
+              h2 Learning Projects
+
+              p
+                | Learning projects based on a strategic intention take into account the different needs and roles
+                | of people in an organisation.
+
+              p  
+                | Some people will need hands-on skills backed by support from SMEs. Others will need a thorough
+                | high level understanding whilst some will need just a basic understanding.
+
+              p
+                | Learning needs to be geared so that all of the right people achieve their learning to the
+                | appropriate level at
+                | the right time. This can feel counter-intuitive as SMEs take time to grow and training courses
+                | are usually not enough to equip hands-on practitioners. Sales personnel and architects are often closer 
+                | and earlier to emerging customer expectations.
+
+              h2 Learning Metrics
+
+              p
+                | How exactly do you identify and measure progress metrics for learning?
+                | This is part of 
+                a(href="the-continuous-learning-dilemma.html#corporatedilemma", title="The Corporate Learning Dilemma") the corporate learning dilemma
+                |  and something to be taken seriously if strategic objectives are to be achieved 
+                | rather than relegated to good intentions at best.
+
+              p
+                | Some of the metrics you might consider as part of your learning project could include
+                | statistics related to:
+                ul
+                  li Training courses
+                  li Conferences
+                  li Certifications
+                  li On-line training
+                  li Technical briefings
+                  li Personal development objectives
+                  li Projects 
+                  li Bids
+
+              p
+                | The good news is that there are tools to help with this problem such as 
+                a(href="https://www.pluralsight.com", title="Pluralsight", target="_blank") Pluralsight
+                |  for example.
+
+              p
+                | Perhaps the most serious metric you can consider is how many learning projects you are running. 😊
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 8th November, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("creativity-on-demand.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

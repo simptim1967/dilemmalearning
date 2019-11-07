@@ -45,9 +45,10 @@ exports.handler = async (event, context) => {
   //   ['wall-of-champions', 'blog', 0],
   //   ['frozen-in-time', 'blog', 0],
   //   ['creativity-on-demand', 'blog', 0],
+  //   ['progress-metrics', 'blog', 0],
   //   ['xxx', 'blog', 0]
 ];
-//  let output = await mysql.query(sql, [values])
+  //let output = await mysql.query(sql, [values])
   
   // Insert personal learning trick page names into pagelike table
 //   var values = [
