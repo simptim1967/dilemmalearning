@@ -1,0 +1,91 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='procrastination, time wasting, day dreaming')
+    meta(name='description', content="Stop procrastinating and start getting things done.")
+    title Stop Procrastinating
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+
+    h2.text-center
+      a(href="../personal-new-trick-list.html", title="New Tricks For Personal Learning") New Tricks For Personal Learning
+    
+    include ../../includes/page_header.pug
+    main
+      //
+        Main content
+        ==================================================
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 #10 Stop Procrastinating
+              hr.featurette-divider
+
+              h2 Moving Sideways
+
+              p
+                | Procrastination is a psychological habit of self-defeating behaviour, favouring short term
+                | benefits with long term costs. Multi-tasking contributes to procrastination.
+                | It's a vicious and unproductive cycle that can lead to stress. 😒
+
+              p
+                | We sometimes get into a state of randomly starting small unimportant things and then switching to something
+                | else before we've really achieved anything and before we know it we've passed some
+                | time but have nothing much to show for it. (The big important things still need doing.)
+
+              p
+                | We might be anxious and continually checking our email or social media, wondering why no one
+                | has liked or responded to a recent post, or distracted by texts, instant messages or notifications
+                | demanding our attention.
+
+              p
+                | Or we may just spend time endlessly thinking about what we should be doing because there are so many
+                | things we need to do and want to achieve but alas, where to start?
+
+              p
+                | Whatever the reason, it's time to stop procrastinating and start getting things done!
+
+              h2 Breaking Free From Procrastination
+
+              p
+                | Here are some simple steps you can take to break the chains of procrastination that are holding you back:
+                ul
+                  li Stop trying to do too many things (limit your work)
+                  li Stop being so ambitious and trying to achieve perfection (start simple and build up)
+                  li Break big tasks down into smaller tasks
+                  li Prioritise tasks
+                  li Make a plan at the start of each day (schedule your work for the day)
+                  li Time box your effort (remember to include variety and breaks)
+                  li Execute your plan (stick to it)
+                  li Reward yourself for getting things done (Yay! 😊)
+
+              p
+                | For more detailed help and advice see personal learning trick 
+                a(href="06-learn-to-manage-your-time-well.html", title="Learn To Manage Your Time Well")
+                  | #06 Learn To Manage Your Time Well
+                | .
+
+              include ../../includes/page_like_button.pug
+              include ../../includes/page_trick_sign_off.pug
+
+              p
+                a.btn.btn-lg.btn-primary(href='09-join-a-mailing-list.html', role='button') &laquo; Previous Trick
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
