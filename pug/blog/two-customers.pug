@@ -1,0 +1,132 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='ROI, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="It's not just your customer looking for ROI from a project, your own organisation wants it too.")
+    title Two Customers
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Two Customers
+              hr.featurette-divider
+
+              h2 The Other Customer
+
+              p
+                | On projects we often talk about "the customer" as if there were only one of them for our project.
+                | However, it's good to remember that there are always at least two customers for every project: the customer 
+                | that we are doing the work for and also the other customer, our own organisation. 
+                | It's not just our customer looking for ROI from a project, our employer wants it too.
+                | Both have expectations of what's
+                | in it for them!
+
+              p
+                | What does your organisation hope to gain from the current project you are working on that's over
+                | and above getting paid for it? 
+
+              h2 Strategic (Or Missed) Opportunity
+
+              p
+                | Every project is an opportunity for driving organisational (and departmental) strategic objectives forward.
+                | These don't have to be giant leaps but no one wants to miss the opportunity a project provides. Agile 
+                | iterations make it easy to plan-do-check-act on your strategic objectives.
+
+              h2 What's New?
+
+              p
+                | A good question to ask is "What's new?" about the way we are working. It doesn't need to apply at
+                | project or team level, you could even ask yourself this question as an individual.
+
+              p
+                | If you can't easily answer the question about what's new or different about how you are working
+                | then chances are you about to become 
+                a(href="frozen-in-time.html", title="Frozen In Time") frozen in time
+                |  and eventually slip into the land that time forgot. 
+
+              h2 Shadowing Opportunity
+
+              p
+                | Projects are great opportunities to build people and this should be a part of your strategy for every
+                | iteration. Perhaps a junior person shadowing a more senior 
+                | person with some on-the-job coaching will be your approach or maybe you'll try assigning a task
+                | that will deliberately stretch
+                | someone beyond their comfort zone "forcing them" to learn new skills. Either approach will grow the
+                | experience and skills of your people.
+
+              h2 Technical Debt / Cost Of Delay
+
+              p
+                | Most hold the view that technical debt is basically stuff that you did that you need to put right
+                | in some way but we also incur loss through cost of delay.
+                | Failing to automate is a cost of delay and so ultimately is
+                | failure to adapt.
+              
+              h2 The Other Customer Has A Voice
+
+              p
+                | Your organisation is continually telling you what it wants and you may well be listening but
+                | unless you channel those demands into the every day work that you do then those demands
+                | will go unmet.
+
+              p
+                | Organisations that spend too much time delivering business value to their customers and no
+                | strategic value for themselves suffer a slow death. Failure to adapt in an ever-changing world
+                | is a simple recipe for disaster.
+
+              h2 People: The Problem And The Solution
+
+              p
+                | It's all down to people. People can often be both the problem and the solution. Staying in our
+                | comfort zone with a reluctance to change prevents the necessary adaption we need to survive.
+
+              p
+                | All of the technology, tools and techniques are easy compared to managing people to achieve
+                | their full potential. I'm reminded of this each time I join a new team and have to build trust
+                | and relationship all over again - it's a problem that comes when working in a large organisation
+                | where you can't always know everyone and where you are frequently working with different organisations
+                | as part of the same project.
+
+              h2 The Battle For Hearts And Minds
+
+              p
+                | The real battle is the one for hearts and minds, to challenge people to embrace change and new
+                | ways of working that deliver both business value to customers and strategic value to employers.
+                | ❤️
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 15th November, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("progress-metrics.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
