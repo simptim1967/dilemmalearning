@@ -1,0 +1,166 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='strategic learning, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Running a strategic learning project like a well-oiled marketing campaign.")
+    title Driving Strategic Learning
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Driving Strategic Learning
+              hr.featurette-divider
+
+              h2 Targeted Learning Has Its Place
+
+              img.img-thumbnail.img-responsive(src='/images/arrows-in-archery-target.jpg', alt='Targeted Learning Has Its Place', title='Targeted Learning Has Its Place')
+
+              p
+                | If you believe that technical skills are essential to on-going business success then
+                | learning has to be a significant part of your strategy. This is especially true for big IT
+                | companies like Capgemini.
+
+              p  
+                | You'll need to make time for your employees to learn, 
+                | you'll need to give direction as to what needs to be learned and who by (and to explain why)
+                | and you'll need to decide when by and make sure this learning takes place. 
+              
+              p
+                | None of this is going to happen by itself or happen overnight.
+
+              p 
+                | You'll need a plan and to execute it just like a project.
+                
+              p  
+                | Treating learning as a project
+                | means gathering and monitoring 
+                a(href="progress-metrics.html", title="Progress Metrics") progress metrics
+                |  and course-correcting as necessary to stay on target.
+
+              p
+                | Learning projects are like painting the Forth Rail Bridge, by the time you've finished you'll
+                | need to start all over again. 😊
+              
+              h2 Who Needs To Learn What
+
+              p
+                | You could leave people to their own devices in terms of what they choose to learn and to
+                | what depth. There are times when this approach has its merits but if learning is to
+                | be strategic then you'll need to identify and give direction as to who needs to learn what
+                | and preferably when by.
+
+              p
+                | For example, embracing "agile techniques" may be essential for the whole organisation
+                | whilst "containerisation"
+                | might be specific to only certain teams, roles and departments.
+
+
+              h2 Pyramid Learning Levels
+
+              p
+                | Different people in different roles will require different levels of learning
+                | for each given subject. They will mostly need entry-level knowledge of many things
+                | and expert-level knowledge of a few things. (Capgemini sees this as building "T-shaped"
+                | people.)
+
+              p
+                | Learning levels typically follow a top-down pyramid shape. A few SMEs, more advanced practitioners,
+                | even more with intermediate subject knowledge and the rest with entry-level knowledge. The
+                | subjects and the numbers in the pyramid levels will vary between different teams and departments
+                | based on the nature of the work that they perform.
+
+              h2 Legislating For The Majority
+
+              p
+                | There should be a strong emphasis and wider provision for the entry-level knowledge
+                | required by the majority
+                | with a tapering off as subject matter becomes more advanced. This should align
+                | directly with the needs of departments and teams. Training from basic to advanced should
+                | work in the same way as should plans to gain certifications.
+
+              p
+                | Learning materials need to be easily accessible to all and well publicised in terms of
+                | how and where to find them as well as why and who they need to be used by.
+
+              p
+                | I find our weekly Learning Cinema is an excellent way of introducing the masses to entry-level
+                | knowledge for strategic subjects.
+
+              h2 Scheduled Learning
+
+              p
+                | Just as you would schedule and track completion of project work you should also schedule
+                | and track completion of learning activities.
+
+              p
+                | Recommending learning to people without a deadline or the ability to track who has completed
+                | that learning is like sailing without a rudder: you'll end up somewhere but probably not 
+                | where you intended.
+
+              p
+                | Scheduled learning and progress tracking is essential for learning project success.
+
+              h2 Putting SMEs On Pedestals And On Show
+
+              p
+                | SMEs are special. They are highly skilled individuals requiring continuous investment to
+                | keep them up-to-date with the latest and greatest in their subject. This investment may
+                | come in the form of certification, training, conference attendance (sometimes in exotic locations 😊) or
+                | even as equipment or time on proof-of-concept projects.
+
+              p
+                | We all know that every once in a while a SME will save the day (earning their pedestal)
+                | but in the mean time they need to be "on show" contributing to pre-sales, proposals, projects, governance
+                | and building people through technical communities and coaching.  
+
+              h2 Proof Of Learning
+
+              p
+                | Proof of learning is a great differentiator in the market place.
+                
+              p
+                | It's not just bragging about
+                | the size of your training budget or the number of hours logged on training to date but rather about
+                | the more tangible aspects of proof such as the number of certifications attained, SMEs
+                | engaged as conference speakers
+                | and ultimately project successes and customer references. 
+
+              p
+                | Today we exist in a very much more "show me, don't tell me" world so be ready with your credentials!
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 29th November, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("two-customers.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
