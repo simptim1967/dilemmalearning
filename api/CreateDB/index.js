@@ -48,6 +48,7 @@ exports.handler = async (event, context) => {
   //   ['progress-metrics', 'blog', 0],
   //   ['two-customers', 'blog', 0],
   //   ['driving-strategic-learning', 'blog', 0],
+  //   ['forced-to-change', 'blog', 0],
   //   ['xxx', 'blog', 0]
 ];
   //let output = await mysql.query(sql, [values])

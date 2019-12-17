@@ -1,0 +1,152 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='inevitable change, continuous learning dilemma, learning culture, always learning, up-skilling, re-skilling, lifelong learning, IT industry, old dog new tricks, Life at Capgemini')
+    meta(name='description', content="Avoiding the inevitability of change is futile.")
+    title Forced To Change
+    // Bootstrap
+    link(href='../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../includes/google-analytics.pug
+  body()
+    include ../includes/page_menu.pug
+    include ../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Forced To Change
+              hr.featurette-divider
+
+              h2 Best Laid Plans
+
+              p
+                | The thought that my car had several thousands of miles left in it before I would eventually need to trade it 
+                | was brought to an abrupt end one dark and rainy night this November when someone drove into the side of me
+                | writing my car off in less time than it took for my passenger-side airbags to deploy. 😒
+              
+              p
+                | It was all a bit of a shock. Fortunately no one was hurt.
+
+              p
+                | At the time I was half way through a building project at home and this was the least convenient time for this
+                | to happen to say the least!
+
+              p
+                | Sometimes change is forced upon us before we'll admit to the inevitability of it.
+                | Resisting change is futile (ready or not) but it's far better when you are ready and have planned for it 
+                | on your own terms. 
+
+              h2 From Service Schedules To End Of Life
+
+              p
+                | After nine years of ownership I'd got my car maintenance expectations down to a tee. I had accepted that
+                | as my car aged I would have to replace the odd part
+                | as it wore out as well as replacing the usual durable components like tyres, windscreen
+                | wipers, oil, brake fluid etc. The costs all seemed good value, quite manageable and par for the course.
+              
+              p
+                | Little was I to know that
+                | I'd soon be seeing my crumpled prized asset driven away on the back of a transporter heading for the crusher. 
+
+              h2 Legacy Systems 
+
+              p
+                | These days I work with a lot of "legacy" systems. I find the term "legacy system" somewhat amusing as many of these
+                | systems take on more and more traffic each year and perform millions of business transactions worth billions
+                | of pounds. So how come they're tagged as "legacy" systems?
+
+              p
+                | Some systems become legacy when technical strategy changes and they no longer fit.
+
+              p
+                | For others, legacy can creep in like a reluctant vehicle repair that you choose to put off for a while.
+                | Such decisions turn into "technical debt". For example, choosing not to upgrade the OS or the version of
+                | middleware, or choosing to stay on old hardware because
+                | it's always been reliable (so far that is) will put you at risk and on borrowed time.
+
+              p
+                | Big organisations with large IT estates have hard decisions to make about how they spend their IT budgets.
+                | The once green field has become a brown field and it's no easy task to balance the budget investing
+                | in new technology versus maintaining existing solutions.
+                | I imagine it sometimes requires the judgement of Solomon, especially when it's so key to business success.
+
+              h2 Prized Assets Destined For The Crusher
+
+              p
+                | Seeing systems as prized assets can change the way we think about them but ultimately it doesn't change
+                | their destiny.
+                | Just as parts on a car wear out and need replacing so systems wear out and need replacing. Don't wait
+                | until you're forced to change them.
+
+              p
+                | Maintenance might mean adding more memory or storage
+                | or upgrading to the latest security protocol but even doing this won't stop your prized asset becoming
+                | obsolete as the hardware ages (or fails) and the software components go out of support.
+
+              h2 Version &lt;&lt;Next&gt;&gt;
+
+              p
+                | Planning for your next car usually starts fairly soon after you get a new one. There's a "must have"
+                | feature list that you won't compromise on next time. (For me it was heated seats and a built-in sat-nav this
+                | time around.)
+
+              p  
+                | We need to look at prized application assets the same way. A project may introduce
+                | something new or take something to a new level but it's far from the end of the story. What's next?
+
+              p
+                | Microsoft founder Bill Gates had a whole list of what he wanted to do next with his products and spent decades
+                | fulfilling those plans and doing quite well for himself along the way. 😊
+
+              h2 Recognising The Half Life Of Software And Hardware Assets
+
+              p
+                | Things have changed radically in the IT world in recent years and the idea of "renting your hardware"
+                | (which is really what Cloud Computing is about) when combined with containerisation puts a whole new
+                | spin on how you plan and manage your prized application assets.
+
+              p
+                | You no longer have to wring every last penny of
+                | value out of your hardware assets to recoup your capital expenditure. You're no longer tied to lengthy
+                | contracts. Now you only need to pay for what you use and you have the freedom to scale up or down with demand
+                | instead of sizing your hardware for peaks that don't happen most of the time.
+
+              p
+                | You can now start thinking about the next incarnations of your applications and what they might look like.
+                | After all, someone else is taking the risk with their capital expenditure! 
+                | You are free to decide when, where and how and can welcome change on your own terms.
+                | Only the laggards who resist change will be forced to change when they least want or expect to.
+
+              p
+                | Merry Christmas!
+
+              include ../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 20th December, 2019
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("driving-strategic-learning.html","")
+
+          .col-md-3.hidden-print
+            include ../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../includes/page_footer.pug
+    include ../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
