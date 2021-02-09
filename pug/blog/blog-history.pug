@@ -43,14 +43,34 @@ html(lang='en-GB')
               hr.featurette-divider
 
               p
-                | Through this blog I hope to give you a flavour of my working life at Capgemini, both as an architect
-                | and as Capabilities Lead for our Digital Delivery Group on the HMRC account. I trust you will find
+                | Through this blog I hope to give you a flavour of my working life at Capgemini on the HMRC account,
+                | both as an architect
+                | and as an agile practitioner. I trust you will find
                 | it informative and helpful.
 
               p.text-right
                 b Tim Simpson
                 br 
                 span.badge.hashtag #LifeAtCapgemini
+
+              h2 2021
+
+              table.table
+                thead
+                  th Date
+                  th Title / Description
+                tbody
+                  tr
+                    td
+                      +BLOG_DATE("09","FEB","2020")
+                    td
+                      h2
+                        a(href="/blog/2021/31-designing-for-time-travel.html", title="Designing For Time Travel") Designing For Time Travel
+                        +PAGE_LIKE_LIST_ITEM("31-designing-for-time-travel")
+                      p
+                        | One of the requirements in designing software for testability is the ability to "time travel" during testing.
+
+              h2 2019 [DDG Capabilities Lead]
 
               table.table
                 thead

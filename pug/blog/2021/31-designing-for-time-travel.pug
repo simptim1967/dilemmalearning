@@ -1,0 +1,115 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='time travel testing, testability, agile architecture, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="One of the requirements in designing for testability is the ability to 'time travel' during testing.")
+    title Designing For Time Travel
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Designing For Time Travel
+              hr.featurette-divider
+
+              h2 The Need To "Time Travel" In Software Testing
+
+              p
+                | Some software functionality is specific to date/time i.e. functions differently according to the current date/time.
+
+              p
+                | For example, it might be valid to book a ticket before an event but invalid after the event has occured and
+                | therefore event booking software would need to validate bookings based on the current date/time each time
+                | a booking is made for an event.
+
+              p
+                | As we want to test all aspects of functionality in advance of shipping our software, we need a means to change
+                | the current date/time during testing so that we can test before and after scenarios. We refer to this dynamic 
+                | date-time test capability as "time travel".
+              
+              h2 Implementing Time Travel
+
+              p
+                | If "time travel" was not designed into your software product from the start of your project then you
+                | may well have to re-engineer your existing software to enable it. Depending on the complexity of your 
+                | product this may not be a trivial task.
+
+              p
+                | "Time travel" is typically implemented by encapsulating the mechanism by which an application accesses the
+                | current date/time and the way in which date/time information is encoded into, or derived from, application data. 
+                | Such functionality might be implemented in a common library shared by all your application components.
+              
+              p
+                | Application configuration settings can be used to determine whether an application should use the real system
+                | date/time or whether an adjustment should be applied or if a different date/time should be used instead.
+
+              h2 Things Which Hinder Time Travel
+
+              p
+                | Anything falling outside the boundaries of your application will not honour your "time travel" configuration.
+                | This may be things such as file system timestamps, external data sources or messages from interfacing systems.
+
+              p 
+                | Database inserts/updates that apply date/time information to records via queries based on the database server
+                | date/time may also hinder your "time travel". You may choose to design around this by allowing only your application
+                | to set timestamp values and not the database itself.
+              
+              p
+                | However, use of a consistent coding pattern
+                | for date/time handling, combined with a configurable offset used to adjust all date/time values accordingly, can
+                | help overcome the aboce problems.
+
+              p
+                | Holding date/times in inconsistent locales or storage formats is not such an easy problem to overcome and really
+                | should be corrected.
+
+              p
+                | Lack of code reviews and consistent coding standards enforcement around how code handles date/time information will
+                | also likely hinder your "time travel" capability.
+
+              h2 Regression Testing
+
+              p
+                | The ability to change the "time tavel" configuration settings on the fly during an automated regression test
+                | without the need to stop or re-start application components is extremely helpful as this allows many different
+                | scenarios to be tested as part of a single regression test. You may need to change how your application accesses
+                | configurations settings in order to achieve this but the effort will be worth it. 
+
+              p
+                | Happy time travelling!
+                
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 9th February, 2021
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/forced-to-change.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
