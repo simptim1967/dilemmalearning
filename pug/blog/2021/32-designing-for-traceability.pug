@@ -1,0 +1,157 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='time travel testing, testability, agile architecture, Life at Capgemini, #LifeAtCapgemini, software regression testing')
+    meta(name='description', content="One of the requirements in designing for testability is the ability to 'time travel' during testing.")
+    title Designing For Traceability
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Designing For Traceability
+              hr.featurette-divider
+
+              img.mugshot.img-thumbnail.img-responsive(src='/images/bloodhound-search-and-rescue.jpg', alt='Bloodhound Search And Rescue', title='Bloodhound Search And Rescue')
+
+              h2 The Need For Traceability 
+
+              p
+                | When working with complex micro-services, which typically (by design) have no graphical user interface,
+                | just agreed API definitions and service levels, there is a need to provide traceability so that technical
+                | support queries can easily be answered and system behaviour can be understood.
+
+              p 
+                | Designing for traceability from the outset enables the journey of individual service requests to be fully traced
+                | through the various nested micro-service calls and/or asynchronous processes that may ensue to determine the overall
+                | outcome of requests.
+
+              p 
+                | While successful outcomes rarely generate technical support queries, unsuccessful outcomes or delays may well do 
+                | so and therefore it's helpful to understand exactly what happened to a request or, more often, where and why something
+                | went wrong.    
+
+              p 
+                | Trace data makes it easier to debug deployments, integration issues and performance bottlenecks and also helps 
+                | improve the design of processes to make them more robust, self-healing and performant as well as answer
+                | "search and rescue" queries from technical support. 
+
+              h2 Implementing Traceability 
+
+              img.mugshot.img-thumbnail.img-responsive(src='/images/radar-screen.jpg', width="30%", height="30%", alt='Sonar Radar Screen', title='Sonar Radar Screen')
+
+              p 
+                | Traceability doesn't happen by accident. You need a common strategy for how your different components and services 
+                | will log their various activities and interactions and allow those disparate interactions to be linked together 
+                | across nested calls and/or asynchronous processes.
+
+              p 
+                | Processing may involve calling into external services that you don't own but whose outcome you need to understand.
+                | The outcome of synchronous calls are easily understood but the outcome of asynchronous callbacks for example may
+                | not be so easy to determine or link back together.
+                
+              p 
+                | Some requests may "go off the radar" to later re-surface downstream somewhere else and you will need to design
+                | for this if you are to have full traceability of end-to-end 
+                | asynchronous business processes across distributed systems and services. 
+
+              p 
+                | Fortunately today there are a number of Open Source products that you can use to log, consolidate and visualise 
+                | trace data.
+
+              h2 Linking Interactions
+
+              p 
+                | A common way of linking interactions is to use a unique correlation id (typically a GUID) which is 
+                | generated and attached (typically as an additional HTTP header) at the start of the journey when 
+                | a request first arrives at your API gateway.
+
+              p 
+                | As long as each part of the journey continues to pass and log the correlation id then you will be 
+                | able to trace the entire journey once trace data is consolidated. 
+
+              p 
+                | When a journey breaks to enter an external system that you don't own, to potentially await a callback
+                | event of some kind, then you will need to design a mechanism to re-establish the conversation correlation id
+                | on re-entry when the callback is invoked.
+
+              h2 Tagging Requests 
+
+              p 
+                | Having linked all your various system interactions together for a request via a correlation id you can 
+                | further annotate requests by tagging them with useful identifiers such as a customer id or session id
+                | that will allow you an alternative means of querying your trace data. You may well find this is a 
+                | requirement in order to deal with support queries where the correlation id is not known or when you 
+                | need to analyse multiple interactions related to a specific customer or business journey.
+
+              h2 Trace Data Consolidation 
+
+              p 
+                | In order to make trace data searchable it must first be consolidated centrally and indexed. You may 
+                | or may not have a requirement for this to be done in near real time but it is essential that logging 
+                | of trace data is robust so that no data is lost. Extra effort to prove that trace data is not lost 
+                | under peak loads or when services fail and re-start is always time well spent. 
+
+              h2 Trace House-Keeping 
+
+              p 
+                | If your micro-services are handling millions of requests then your trace data can quickly mount up
+                | and you will need to put house-keeping procedures in place to purge or further consolidate it periodically. 
+
+              p  
+                | It's always helpful to understand the nature of the trace data that is generated and so performance and volume
+                | testing should be undertaken to understand the exact volumes of data that will be created and to identify 
+                | any bottlenecks or potential issues in the shipping, consolidation and indexing processes when operating 
+                | under peak loads. You may need to provision additional storage capacity.
+
+              p 
+                | Some trace data can be very verbose and you may wish to only retain the full detail for an agreed period of time 
+                | before stripping excess content and then finally purging the trace data. Deciding what to retain and for how 
+                | long should be part of your traceability strategy. You may need to convert verbose trace to summary details 
+                | to reduce storage costs whilst retaining data for compliance reasons.
+
+              h2 Operational Testing 
+
+              p 
+                | Operational testing should be performed to prove that your trace strategy is correctly in place for all 
+                | system interactions and that business processes can be fully traced from beginning to end. The data itself 
+                | can be very revealing and help you to understand how your systems are actually behaving.
+
+              p 
+                | Don't let requests to your micro-services come and go without a trace!
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 5th March, 2021
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2021/31-designing-for-time-travel.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

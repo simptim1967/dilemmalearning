@@ -1,4 +1,5 @@
 admin
+analyse
 analysing
 andyburgin
 baps
@@ -72,6 +73,7 @@ recognising
 repo
 roadmap
 rgee
+searchable
 spam
 specialised
 timeline

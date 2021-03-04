@@ -3,7 +3,8 @@ echo Rendering pug blog files ...
 call Pug .\pug\blog\blog-history.pug --pretty --out ..\live\blog
 
 rem 2021
-rem call Pug .\pug\blog\2021\32-xxx.pug --pretty --out ..\live\blog\2021
+rem call Pug .\pug\blog\2021\33-xxx.pug --pretty --out ..\live\blog\2021
+call Pug .\pug\blog\2021\32-designing-for-traceability.pug --pretty --out ..\live\blog\2021
 call Pug .\pug\blog\2021\31-designing-for-time-travel.pug --pretty --out ..\live\blog\2021
 
 rem 2019
