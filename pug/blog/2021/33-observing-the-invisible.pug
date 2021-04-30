@@ -1,0 +1,187 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='dashboards, system metrics, system monitoring, system alerting, agile architecture, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="Log, harvest and consolidate system metrics so that you can gain intimate knowledge of your systems.")
+    title Observing The Invisible
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Observing The Invisible
+              hr.featurette-divider
+
+              h2 The Need For Visibility 
+
+              p
+                | When working with complex micro-services, that typically (by design) have no graphical user interface,
+                | just agreed API definitions and service levels, there is a need to provide visibility to understand exactly
+                | how they are performing and behaving, both from a business and operations viewpoint.
+
+              p 
+                | Capturing additional system metrics allows you to observe what might otherwise be invisible,
+                | enabling you to understand the detailed
+                | performance and behaviour of your systems such as peak usage patterns, data growth rates, average
+                | response times etc. as well as problematic scenarios and when systems are operating outside of
+                | normal tolerances. 
+
+              p 
+                | Designing for visibility from the outset enables you to pro-actively manage and support systems and ensure 
+                | that they continue to meet their agreed service levels and deliver business value.
+
+              h2 Implementing Visibility 
+
+              img.mugshot.img-thumbnail.img-responsive(src='/images/dashboard.jpg', width="50%", height="50%", alt='Operational Dashboard', title='Operational Dashboard')
+
+              p 
+                | Like traceability, visibility doesn't happen by accident. You need a common strategy for how your different
+                | components and services will log, harvest and consolidate system metrics so that you can gain intimate knowledge 
+                | of your systems.
+
+              p 
+                | It's important to determine exactly what metrics you need to know about your systems and so you will need 
+                | to consult with various stakeholders to understand their needs. 
+
+              p 
+                | Having a good handle on business and operational metrics will likely excite your customer and prompt
+                | further investment in your development team.
+                
+              h3 Business Metrics 
+              
+              img.mugshot.img-thumbnail.img-responsive(src='/images/business-report.jpg', width="50%", height="50%", alt='Business Report', title='Business Report')
+
+              p
+                | Business metrics are often viewed in the form of
+                | reports and may be daily, weekly, monthly etc. Each report will focus on specific data with a specific  
+                | viewpoint and so understanding exactly what your business stakeholders need to know will help 
+                | you determine what to capture and how to stitch it all together.
+
+              p  
+                | Be sure to determine exactly what metrics your stakeholders actually
+                | "need" as this may be very different to what they initially said they "want" and
+                | significantly impact how much effort that would
+                | take to achieve. 
+
+              h3 Operational Metrics 
+
+              p 
+                | Operational metrics will relate not only to services and components but also to the platform technologies and servers
+                | hosting them. Such metrics may be captured and viewed in near real time
+                | on dashboards with the ability to go back in time and drill-down into specific services and components. 
+
+              p 
+                | Platform technology metrics such as container orchestration tooling will likely be entirely separate from your
+                | services and components as will metrics from the servers or virtual machines hosting your components but you 
+                | will need to be able to link these together to fully understand your system performance and behaviours. This may 
+                | prove to be no small challenge!
+
+              h2 Dashboard / Report Design 
+
+              p 
+                | Dashboards and reports aren't there to look "pretty"; their purpose is to inform.
+                | Throwing a dashboard or report together without 
+                | consulting stakeholders in advance will end up with the dashboard or report not being used or being re-designed to show 
+                | meaningful content. The same is equally true with regard to your dashboard visual design or report layout so take the time to 
+                | prototype and get feedback on different designs. 
+
+              p 
+                | Screen sizes are limited so it's often necessary to design summary displays that users can navigate to drill 
+                | down into more specific detail. Creative use of colour can be helpful although bear in mind some people are colour blind 
+                | to certain colours.
+
+              p 
+                | It's often not enough to just quote numbers. You should expect to compare values and show differences and sometimes
+                | show trends and the direction and magnitude of change. Sometimes tabular data is required whilst some data is best shown 
+                | as graphs or pie charts.
+              
+              h2 Keep Your Dependencies Close 
+
+              p 
+                | Micro-services are often dependent on other systems which may not be under the control of your development team
+                | yet have a direct bearing on the outcome of your micro-services. For this reason, it's important to capture metrics
+                | for your dependencies such as response times, error rates, availability etc. and understand how these change over 
+                | time.
+
+              p 
+                | Some dependencies may offer limited availability or bandwidth and may need to be throttled. Capturing system 
+                | metrics will help you to understand such limits.    
+
+              p 
+                | You may want to create a dependencies dashboard so that you can pro-actively monitor and react to issues 
+                | that will impact your own services if not addressed.
+
+              h2 Metrics Proving 
+
+              p 
+                | Testing should be performed to prove that your metrics strategy is correctly in place for all 
+                | system components. The metrics data itself also needs to be cross-validated and verified to prove that the
+                | figures you report and visualise on dashboards are correct.
+                
+              p
+                | Don't underestimate the importance of validating all of your reports and dashboards. It's not unusual
+                | to find bugs in them!
+                
+              p
+                | Dashboards and reports must be accurate and reliable.
+                | Prove that your calculations are correct by sampling the data.
+                | Ensure that the correct scales and units always displayed (seconds, milliseconds etc.) on reports and dashboards.
+
+              h2 Knowing What Normal Looks Like 
+
+              p
+                | What "normal" looks like for your systems can vary depending on the time of day, week or month etc.
+                | but a good reporting and visualisation strategy can help put things into context in a way that helps 
+                | you understand whether what you are looking at is "normal" or not, or whether it is good or bad or 
+                | out of tolerance with usual behaviour. 
+
+              p 
+                | I can think of numerous occasions when I've been scrutinising systems and the support team have told 
+                | me not to worry because that's normal behaviour for this time of day.
+
+              h2 Acting On Metrics 
+
+              p 
+                | Have detailed system metrics helps to predict future needs such as storage and compute capacity which can help 
+                | you manage your costs more efficiently. They can also help you design your performance and volume tests 
+                | more accurately.
+
+              p 
+                | I'm sure that you'll find that all of the effort you put into your system metrics strategy will prove
+                | increasingly worthwhile and allow you to gain valuable operational and business insights.
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 30th April, 2021
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2021/32-designing-for-traceability.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
