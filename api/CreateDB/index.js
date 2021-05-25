@@ -49,9 +49,16 @@ exports.handler = async (event, context) => {
   //   ['two-customers', 'blog', 0],
   //   ['driving-strategic-learning', 'blog', 0],
   //   ['forced-to-change', 'blog', 0],
-  //   ['xxx', 'blog', 0]
+  //   ['31-designing-for-time-travel', 'blog', 0],
+  //   ['32-designing-for-traceability', 'blog', 0],
+  //   ['33-observing-the-invisible', 'blog', 0],
+  //   ['34-defect-analysis', 'blog', 0]
 ];
   //let output = await mysql.query(sql, [values])
+  
+  // Delete page xxx
+  // var sqlDelete = "DELETE FROM pagelike WHERE pagename = 'xxx';"
+  // let output = await mysql.query(sqlDelete, [values])
   
   // Insert personal learning trick page names into pagelike table
    var values = [
@@ -77,7 +84,7 @@ exports.handler = async (event, context) => {
   // let output2 = await mysql.query(sql, [values])
   
   // list page names and like counts
-  let results = await mysql.query("select pagename, pagegroup, likecount from pagelike order by likecount desc;")
+  let results = await mysql.query("select pagename, pagegroup, likecount from pagelike order by pagegroup, pagename;")
 
   // Run clean up function
   await mysql.end()

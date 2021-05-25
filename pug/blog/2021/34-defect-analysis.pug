@@ -1,0 +1,112 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='defect analysis, orthogonal defect classification, agile architecture, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="Defect analysis can provide a vast wealth of information to help you focus your improvements.")
+    title Defect Analysis
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Defect Analysis
+              hr.featurette-divider
+
+              h2 Learning From Defects 
+
+              p
+                | Defect analysis can provide a vast wealth of information to help you focus your improvements 
+                | in not just the area of software quality but also in areas such as your development process
+                | and developer training.
+
+              h2 Root Cause Analysis 
+
+              p 
+                | It's always good to not just understand a defect but to know how and why it was introduced as the 
+                | on-going desire is always focused on defect prevention rather than mitigation. 
+
+              p 
+                | You might choose to use the Lean "5 Whys" approach as a means of determining the root cause but 
+                | however you go about doing that it will always prove a valuable exercise as this is the means by 
+                | which you will likely identify a future avoidance or early detection mechanism.
+
+              h2 Orthogonal Defect Classification 
+
+              p 
+                | Orthogonal Defect Classification (ODC) is a rather grand sounding name for the technique of 
+                | classifying defects into distinct categories so that you can count them in order to prioritise 
+                | how and where to focus your improvement/prevention efforts.
+
+              p 
+                | ODC can be used for both in-flight and retrospective project analysis. You can even use it for 
+                | comparing projects if the nature of the project domains is not too dissimilar.
+
+              h2 Defect Hotspots 
+
+              p 
+                | The location of a defect (perhaps which software component the defect was detected in) is a simple
+                | means of classification in itself. 
+
+              p 
+                | When counting your defects you may notice that particular types of defect always occur in particular areas or 
+                | locations and therefore stand out as hotspots. Recurring themes may begin to emerge and root cause analysis 
+                | should enable you to eliminate such problems via a simple process change, an additional review on your checklist,
+                | developer training, alternative tooling etc.
+
+              h2 Improving Testability 
+
+              p 
+                | Some defects repeatedly creep in because of a lack of testability and so your mitigation should be to 
+                | re-architect your design to improve testability and thereby enable earlier detection and remediation
+                | when you can't do anything to avoid such defects.
+
+              h2 Definition Of Done 
+
+              p 
+                | To simplify the process of analysing defects you might want to ensure your definition of done includes 
+                | tasks such as root cause analysis and orthogonal defect classification. That way, when you come to 
+                | analyse your defects, perhaps at the end of an iteration or mid-way through a development phase, you
+                | will already have much 
+                | of the valuable data you need to act upon.   
+
+              p 
+                | Making time to analyse defects is always time well spent and hopefully you won't have too many to analyse.😒
+
+              p 
+                | What are your defects trying to tell you?
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 25th May, 2021
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2021/33-observing-the-invisible.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")

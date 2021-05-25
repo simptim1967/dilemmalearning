@@ -34,6 +34,7 @@ fuelled
 fulfil
 github
 honour
+hotspots
 inbox
 incentivise
 itemise
