@@ -1,0 +1,280 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='sprint review, sprint demo, agile health check, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="Defect analysis can provide a vast wealth of information to help you focus your improvements.")
+    title Spicing Up Sprint Reviews
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Spicing Up Sprint Reviews
+              hr.featurette-divider
+
+              h2 Finishing Well 
+
+              p
+                | After all of the hard work that the team has put into delivering the next product increment it's 
+                | important to keep up the good work and finish well.
+
+              p 
+                | The Sprint Review, or "Sprint Demo" as we usually refer to it, will be the team's opportunity to demonstrate
+                | everything they've accomplished this sprint
+                | so that the Product Owner and their fellow stakeholders can assess the outcome and start to collaborate on 
+                | what to do next.
+
+              p 
+                | Hopefully it will be a time to celebrate success and hand out a few accolades and not a time to hang our heads 
+                | in shame after failing to deliver on our commitments or to customer expectations.
+
+              p 
+                | In order to finish well the team still has some work to do. 
+
+              h2 Golden Opportunity
+
+              p 
+                | We consider all time with the customer to be "golden".
+
+              p
+                | Not only is it an important opportunity to demonstrate 
+                | to the customer that they are getting value for money and that you are making good progress towards their product and
+                | project goals
+                | but it is also a time to ask questions and listen to their needs, priorities, challenges and concerns. 
+
+              p 
+                | It's a good idea to designate a "Scribe" to capture matters
+                | that arise during the meeting as well as any feedback given by the Product Owner or stakeholders - especially
+                | if there is an agreed action, unanswered question or any contradiction or ambiguity. The whole team should 
+                | share this responsibility throughout the meeting to help ensure the Scribe doesn't get swamped and miss something.
+
+              p
+                | Note: Recording on-line meetings can help but this may not always be possible.
+
+              h2 Understanding And Adjusting To Your Your Audience 
+
+              p 
+                | Recognise that not everyone in your audience may be technical, or have a full grasp of the requirements that 
+                | you have lived and breathed for the last sprint. Some may also be unaware of the full functionality
+                | of the product you are building or the systems that interface with it.
+                
+              p  
+                | Your demonstration needs to be mostly non-technical and be easy to follow and understand.
+                | You should aim to 
+                | provide proof of understanding requirements and demonstrate the quality of what you built.
+
+              p 
+                | If you are demonstrating to a remote audience then you won't easily be able to tell who is paying attention 
+                | or anyone who is looking confused. In such situations it's good to occasionally ask and check that everything is
+                | making sense.
+
+              h2 Sprint Review Preparation 
+
+              p 
+                | Preparation for the Sprint Review is essential and should feature in Sprint Planning accordingly.
+                | The greater the importance, the greater the level of planning and preparation.
+
+              p 
+                | Mixing it up in terms of the people involved can also help although it may take some people out of their 
+                | comfort zone until they get used to it. We insist each team demonstrates specifically what they built but 
+                | leave it to the teams themselves to decide who exactly will do that.
+
+              p 
+                | Having a script helps: 
+                ul 
+                  li Understand the running order.
+                  li Know who is doing what (Host, Scribe, feature X, feature Y ...).
+                  li Ensure nothing gets missed.
+                  li Understand likely timings.
+
+              p 
+                | Again, depending on the importance, you may wish to rehearse your demonstrations.
+
+              h2 Turning Something Dull Into Something Shiny 
+
+              p 
+                | Sometimes functionality is just plain dull and needs to be mode more interesting to demonstrate.
+                | On some occasions it may also be quite challenging to demonstrate features, especially when there are no 
+                | user interface aspects to the functionality or when error situations have to be contrived.
+
+              p 
+                | Creating supporting content can help: 
+                ul 
+                  li Provide a pre-amble explanation of each feature prior to demonstrating it.
+                  li Explain the specific test scenario and data values used.
+                  li Add to the fun and make it more interesting or thought provoking.  
+
+              p 
+                | Using a test harness can help:
+                ul 
+                  li Add a visual element to non-visual features. 
+                  li Make it easy to customise your test scenarios during a demonstration.
+
+              p 
+                | We introduced a test harness to demonstrate our tax calculations to make it easier for the customer 
+                | to see calculation inputs and outputs instead of squinting at raw JSON data structures. This also enabled us 
+                | to prepare different scenarios in advance that could then be rapidly called up during the review.
+
+              h2 Presenting The Finished Work
+
+              p 
+                | The aim is to provide a seamless, ordered demonstration of everything that has been built during the 
+                | sprint that will be a positive experience for all involved. Having a designated meeting host can help
+                | the meeting run smoothly and keep timings on track.
+
+              p
+                | However, things don't always go to plan, especially in remote demonstrations and you may
+                | need to have some kind of contingency plan and be flexible in the order of presentation to enable recovery
+                | from unexpected problems.
+
+              p  
+                | If you know that you have some non-technical participants and someone from your team rattles out a whole load of 
+                | techno-babble then you may want to chip in and explain what was just said to ensure you don't lose any of your 
+                | audience along the way. 
+
+              p 
+                | Make sure any questions that arise are suitably answered and that any agreed follow-up actions are
+                | recorded as necessary.
+
+              p 
+                | Beware going off-piste during a demonstration unless the customer encourages you to do so.
+                | You may win a friend (😊) or gain a bug report (😒). Whatever you do, don't de-rail the meeting!
+                
+              h2 Provoking Feedback And Knowledge Exchange
+
+              p 
+                | Teams thrive on feedback so your sprint reviews should be provocative. Don't be afraid to directly 
+                | ask for feedback and be prepared to receive negative feedback.
+
+              p 
+                | Encourage positive feedback from the customer by delivering positive feedback and accolades of your own. 
+                | Sprint reviews are a great opportunity to honour people who have done great work during the sprint.
+
+              p 
+                | Sprint reviews are not just about feedback, they are also an opportunity to share knowledge so that
+                | both the team and customer can engage to exchange valuable knowledge.
+
+              h2 Variety 
+
+              p 
+                | However you go about spicing up your sprint reviews, remember that variety is the spice of life!
+
+              h2 Agile Health Check - Sprint Review 
+
+              p 
+                | Why not take the opportunity to give your Sprint Reviews an Agile health check?
+
+              p.text-right
+                span.badge.hashtag #AgileHealthCheck
+
+              table.table.table-bordered
+                thead()
+                  th.good-smell
+                    .text-center
+                      | Healthy
+                tbody(style="background-color: darkslategray;")
+                  tr
+                    td.good-smell-item
+                      ul
+                        li Whole team involved.
+                        li Sprint review preparation activities feature in sprint planning.
+                        li Team has sufficient time and prepares properly for the event.
+                        li All sprint work has been successfully completed to the "Definition of Done" prior to the sprint review.
+                        li Time with the customer is treated as "golden" by the team.
+                        li Customer is correctly represented (Product Owner and stakeholders).
+                        li Meeting host assigned to oversee the running of the meeting.
+                        li Responsibilities vary each sprint review so all team members get to demonstrate features.
+                        li Script in place with running order and who is doing what understood.
+                        li Important sprint review demonstrations are rehearsed. 
+                        li Target audience is understood with all content aimed and presented at the right level.
+                        li Supporting content helps to correctly explain what is being demonstrated during the meeting.
+                        li Demonstration is easy to understand and follow.
+                        li Sprint metrics are discussed to explain what has and has not (if anything) been achieved.
+                        li Meeting runs smoothly and all completed features are demonstrated and discussed successfully.
+                        li Product Owner and stakeholders attentive and actively contribute to proceedings.
+                        li Team attentive to customer needs, priorities, challenges and concerns throughout the meeting.
+                        li Detailed customer feedback captured by Scribe (supported by team).
+                        li Both the team and customer exchange and gain useful knowledge and feedback. 
+                        li Product Owner and stakeholders happy that the Sprint Goal has been successfully achieved.
+                        li Team and stakeholders collaborate on what to do next.
+                        li Accolades voiced to honour those who went more than the extra mile to achieve sprint success.   
+                        li Team successfully met / exceeded customer expectations.
+                        li Product Owner and stakeholders have confidence in the team.
+                        li Team and stakeholders celebrate success.
+                        li All customer questions suitably answered with agreed follow-up actions captured.
+                        li All agree that the sprint review was a good and valuable experience for all involved.
+                        li On-line meeting recorded (if possible).
+                        li End of sprint documentation and agreed follow-up action plan communicated to Product Owner. 
+                thead(style="background-color: darkslategray;")
+                  th.bad-smell
+                    .text-center
+                      | Unhealthy
+                tbody
+                  tr
+                    td.bad-smell-item
+                      ul
+                        li Not all of the team involved.
+                        li Sprint review preparation activities do not feature in sprint planning.
+                        li Team has insufficient time to prepare properly for the event.
+                        li Not all sprint work has been successfully completed prior to the sprint review.
+                        li Time with the customer is not regarded as "golden" by the team.
+                        li Customer is not fully represented (Product Owner and/or some stakeholders missing).
+                        li No meeting host assigned to oversee the running of the meeting.
+                        li Same people demonstrate features each sprint.
+                        li Script not in place to define running order or confirm who is doing what.
+                        li Important sprint review demonstrations are not rehearsed. 
+                        li Target audience is not well understood with content sometimes presented at the wrong level.
+                        li Supporting content not used to explain what is being demonstrated during the meeting.
+                        li Demonstration is not always easy to understand or follow.
+                        li Sprint metrics are not fully discussed to explain what has or has not been achieved.
+                        li Meeting does not run smoothly and not all completed features are demonstrated or discussed.
+                        li Product Owner and/or stakeholders unattentive or do not actively contribute to proceedings.
+                        li Team unattentive to customer needs, priorities, challenges and concerns during the meeting.
+                        li Detailed customer feedback not captured.
+                        li Both the team and customer fail to exchange or gain useful knowledge or feedback. 
+                        li Product Owner and stakeholders not happy or convinced that the Sprint Goal has been achieved.
+                        li Team and stakeholders do not collaborate on what to do next.
+                        li No accolades voiced to honour those who went more than the extra mile to achieve sprint success.   
+                        li Team failed to meet customer expectations.
+                        li Product Owner and stakeholders lack confidence in the team.
+                        li Team and stakeholders not able to celebrate success.
+                        li Not all customer questions suitably answered or agreed follow-up actions captured.
+                        li Sprint review was not an enjoyable experience for those involved.
+                        li On-line meeting not recorded (if possible).
+                        li No end of sprint documentation or follow-up action plan communicated to Product Owner. 
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 30th June, 2021
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2021/34-defect-analysis.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
