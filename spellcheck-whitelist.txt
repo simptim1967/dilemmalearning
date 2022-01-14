@@ -51,6 +51,7 @@ middleware
 mixin
 mixins
 nirvanahq
+organise
 organisation
 organisations
 organisational
@@ -59,6 +60,7 @@ phishing
 pluralsight
 prioritisation
 prioritise
+prioritising
 programme
 programmes
 publicise

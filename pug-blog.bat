@@ -2,8 +2,14 @@
 echo Rendering pug blog files ...
 call Pug .\pug\blog\blog-history.pug --pretty --out ..\live\blog
 
+rem 2022
+rem call Pug .\pug\blog\2022\37-xxx.pug --pretty --out ..\live\blog\2022
+call Pug .\pug\blog\2022\36-gaining-value-from-sprint-retrospectives.pug --pretty --out ..\live\blog\2022
+
 rem 2021
-rem call Pug .\pug\blog\2021\33-xxx.pug --pretty --out ..\live\blog\2021
+call Pug .\pug\blog\2021\35-spicing-up-sprint-reviews.pug --pretty --out ..\live\blog\2021
+call Pug .\pug\blog\2021\34-defect-analysis.pug --pretty --out ..\live\blog\2021
+call Pug .\pug\blog\2021\33-observing-the-invisible.pug --pretty --out ..\live\blog\2021
 call Pug .\pug\blog\2021\32-designing-for-traceability.pug --pretty --out ..\live\blog\2021
 call Pug .\pug\blog\2021\31-designing-for-time-travel.pug --pretty --out ..\live\blog\2021
 
