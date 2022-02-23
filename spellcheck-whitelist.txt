@@ -25,6 +25,7 @@ doddle
 dilemmalearning
 energise
 energised
+favour
 favourite
 favouring
 fika
@@ -60,6 +61,7 @@ phishing
 pluralsight
 prioritisation
 prioritise
+prioritised
 prioritising
 programme
 programmes

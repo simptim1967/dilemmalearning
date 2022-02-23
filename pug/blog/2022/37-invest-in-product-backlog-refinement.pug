@@ -1,0 +1,356 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='INVEST, product backlog refinement, agile health check, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="xxx")
+    title INVEST In Product Backlog Refinement
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 INVEST In Product Backlog Refinement
+              hr.featurette-divider
+
+              h2 Agile Requirements 
+
+              p 
+                | Agile requirements are typically written as user stories and held in a Product Backlog that
+                | is continually being updated to add, amend or remove user stories. Defects 
+                | may also be included in the Product Backlog. This on-going work, known as Product Backlog Refinement,
+                | is led by the Product Owner, supported by their 
+                | business colleagues and stakeholders, as well as by project team business analysts and architects.
+                | This work occurs up-stream of development activities to fuel a pipeline of work for development.
+              
+              p
+                | The Product Owner, deemed to be the formal owner of the Product Backlog, is responsible for ranking
+                | the Product Backlog items in priority order of value, the most valuable coming first, least 
+                | valuable last.
+              
+              h2 Populating The Sprint Backlog 
+
+              p 
+                | Scrum teams take their work at the start of a sprint from the top of the Product Backlog
+                | into the Sprint Backlog.
+                | The Sprint Planning activity determines how many items can reasonably be moved 
+                | into the Sprint Backlog that the development team can confidently commit to implement within the sprint.
+
+              p
+                | It is good Scrum etiquette to 
+                | cease from amending the user stories in question once they have moved into the Sprint Backlog
+                | although most teams will accommodate minor changes, at least up until the point that work actually
+                | starts on an item, if the changes do not materially impact on the earlier Sprint Planning.
+
+              h2 Story Readiness 
+
+              p 
+                | At any time, the Product Backlog will likely contain user stories in a variety of states of readiness.
+                | Some may be well defined and ready for implementation (meeting the development team's Definition of Ready), others
+                | may be vague and in need of further refinement by the Product Owner and/or development team.
+
+              p
+                | The just-in-time philosophy of Agile means that only the user stories ranked towards the top end of the
+                | Product Backlog truly need to be in a state of readiness as lower ranked stories may never actually be
+                | implemented due to changing business needs or priorities.
+
+              p
+                | We try to have a least two sprints worth of stories in a state of readiness at any time which gives us 
+                | some buffer space when requirements are delayed, perhaps awaiting discussion and pending business decisions.  
+
+              h2 Definition Of Ready 
+
+              p 
+                | Maintaining and applying a "Definition of Ready" by which the development team can evaluate and determine
+                | if a user story is 
+                | ready for implementation or not is a recommended best practice and should be considered a "must have"
+                | by development teams.
+
+              p 
+                | It is essential that development teams evaluate and work to advance story readiness before taking stories
+                | into a sprint. Some degree of iteration between the up-stream Product Owner, business analysts and architects 
+                | and the down-stream development team to further refine, clarify and break down requirements is to be expected before
+                | stories will eventually achieve the "ready" status.
+
+              p 
+                | For this reason, the development team should also perform Product Backlog Refinement, not just to confirm 
+                | story readiness but to further breakdown user stories into smaller pieces of work where necessary and to
+                | clarify understanding and identify any potential issues from a development perspective
+                | prior to implementation.
+
+              h2 Development Team Product Backlog Refinement 
+
+              p
+                | Product Backlog Refinement is an on-going activity for development teams alongside other sprint activities.
+                | The extent to which you invest in the process can have a massive impact on your work, especially when 
+                | you architect for success and choose to apply the INVEST acronym to validate your user stories as part
+                | of your Definition Of Ready.  
+
+              p
+                | Teams should typically expect to spend around 10% of their time on Product Backlog Refinement per sprint.
+                | Each of our scrum teams typically performs three refinement sessions per two-week sprint, two in the
+                | first week and the other in the second week as we close out the sprint. Note this occurs after the 
+                | up-stream Product Owner, business analysts and architects hand over stories that they believe are now ready
+                | to be evaluated by
+                | the development team.
+
+              p  
+                | Insufficient refinement by the development team can lead to inadequately defined user stories entering a sprint.
+                | (Under such circumstances, if you 
+                | are lucky, you may be able to reduce the scope of your sprint and recover but if not, you may
+                | impact delivery timescales and the quality of your product. 😒)
+
+              p 
+                | Including Product Backlog Refinement activities in your Sprint Plan can help ensure that sufficient time is 
+                | allocated for the development team to ensure this important process does not get overlooked. 😊
+
+              h2 I.N.V.E.S.T.
+              
+              p 
+                | A further enhancement to your Product Backlog Refinement activities is to apply the INVEST acronym 
+                | to each user story as part of your process which acts as a helpful reminder of the guidelines for writing
+                | effective user stories. (Many teams incorporate this technique as part of their Definition Of Ready.)
+
+              p
+                | According to the INVEST acronym, a good user story is: 
+                | Independent, Negotiable, Valuable, Estimable, Small and Testable.
+                | (You can read about INVEST and find tips on writing effective user stories 
+                a(href="https://www.kaizenko.com/6-attributes-of-effective-user-stories-invest/", target="_blank") here
+                | .)
+
+              h3 Independent
+              p
+                | It is desirable for user stories to be independent of each other so that they can be implemented 
+                | in any order. 
+                | Dependencies between user stories (or on other teams), especially if discovered late,
+                | can de-rail your sprint
+                | and therefore need to be identified early and either avoided or carefully managed.
+                | (Product Backlog Refinement is the likely time that a dependency will be discovered.)
+
+              h3 Negotiable  
+              p 
+                | The scope of a user story should be negotiable between the developers and the customer
+                | so as to prevent unrealistic constraints on the feature or functionality. 
+
+              h3 Valuable 
+              p 
+                | User stories should deliver something valuable to the customer or end users. The "so that" portion of
+                | the high level user story statement typically expresses the business value in an easy to understand way.
+                | If the business value cannot be clearly expressed then the story may need to be relegated in favour of 
+                | something clearly more valuable.   
+
+              h3 Estimable 
+              p 
+                | A good story can be estimated. If a story is not suitably understood, the size of the story
+                | and the likely effort to implement and test it will be indeterminate, making it challenging to 
+                | schedule. The development team thus need to be sufficiently happy with their understanding of a user story 
+                | in order to perform Planning Poker to obtain a story point estimate for the story which is often one
+                | of the requirements to meet the Definition Of Ready.
+
+              h3 Small - Splitting Large User Stories 
+              p
+                | Although the definition of a user story (as compared to an epic user story) means it must be small enough to
+                | implement within a single sprint, 
+                | it can be advantageous to further split a user story into even smaller stories in order to ensure all 
+                | functional and non-functional 
+                | aspects of your product features can be fully addressed individually without undue time pressures.
+                | (This is helpful so long as the approach does not prevent the development team from creating a
+                | Potentionally Shippable Product Increment at the end of each sprint.)    
+
+              p 
+                | A helpful rule of thumb is that no story should be bigger than half a sprint.
+
+              h3 Testable 
+              p 
+                | A good story can be tested. Sufficient consideration must be applied to understand exactly how a 
+                | story will be tested and the likely supporting activities involved in order to do so. Different 
+                | approaches may be considered depending on the functional and non-functional nature of the story under test. 
+
+              h2 Asserting Architectural Influence 
+
+              p.text-right 
+                span.badge.agilearchitecture #AgileArchitecture
+
+              p
+                | It's important for architects to be actively involved in the Product Backlog Refinement process, 
+                | both in the early / on-going
+                | stages with the Product Owner (and business stakeholders) and in the latter stages with the development team.
+
+              p 
+                | Product Backlog Refinement sessions should be the regular haunt of Agile Architectss which present an 
+                | essential opportunity to understand business objectives and to discuss and agree non-functional requirements
+                | that might otherwise not be prioritised or implemented.
+
+              p 
+                | Working this way, architects are able to create user stories to drive out the intentional architecture
+                | of the product prior to implementation, as well as guide the emerging architecture as the product is built 
+                | incrementally through each iteration.
+
+              p 
+                | Architects should actively support the development team with technical design and in the identification
+                | of test approaches and test
+                | scenarios to ensure both functional and non-functional requirements are met and to also ensure that the
+                | emerging architecture is 
+                | in alignment with the intentional architecture.  
+
+              p  
+                | Without the up-stream knowledge of requirements (including key business objectives and concerns), it's impossible
+                | to plan ahead in terms of architecture. It's also impossible to shape the technical design "on the ground" with 
+                | the development team without being involved in their Product Backlog Refinement sessions and daily work.
+
+              p 
+                | Architectural involvement often leads to the identification of spike activities for the development team
+                | which help lay the groundwork (what SAFe calls the "architectural runway") for the unfolding 
+                | product architecture.
+
+              p 
+                | Architects also work with the development team to plan and execute proving activities such as 
+                | performance and volume testing and security vulnerability assessments for example, to mitigate risks.
+                | (Such proving activities and technical spikes both start off as requirements on the Product Backlog.) 
+              
+              p
+                | Along the way, the aim is to create just enough documentation to describe the key business objectives and
+                | the design decisions addressed by the architecture. This is "living documentation" that evolves, usually with
+                | lots of diagrams, that also includes details of risks / issues, assumptions, constraints and principles, 
+                | that helps explain the rationale for the architecture with traceability back to the business objectives
+                | and the project vision.
+
+              p 
+                | The architecture documentation also describes key architectural concepts for the product that explain the
+                | "what and why of things" to assist new team members on-boarding onto your project.
+
+              p 
+                | Architecture is, and always has been, a key factor in the success of Agile projects and you can learn 
+                | about Capgemini's approach to Agile IT Architecture known as the  
+                a(href="https://www.capgemini.com/wp-content/uploads/2022/01/AGILE-IT-ARCHITECTURE_PoV.pdf", target="_blank") JIT JEA Way Of Working
+                |.
+
+              h2 Reaping What You Sow 
+
+              p 
+                | Ensuring the development team has a good understanding of the requirements for a sprint from the outset 
+                | is common sense and the way to achieve that is through regular Product Backlog Refinement sessions prior
+                | to the sprinting of user stories.
+
+              p 
+                | Performing Product Backlog Refinement as an up-front process will help the team identify issues early 
+                | and gain valuable clarification of requirements. It will also enable a more detailed understanding of 
+                | the likely work involved to implement them ahead of sprints starting.
+
+              p 
+                | Applying the INVEST acronym as part of the team's Definition Of Ready can help ensure all aspects of a
+                | story are fully assessed before a sprint leading to more accurate estimation and planning. 
+
+              p 
+                | From my own experience with teams, Product Backlog Refinement sessions present a great opportunity to
+                | improve productivity and product quality, which both suffer when insufficient time is spent on this activity.
+
+              p
+                | We witnessed a significant improvement in productivity over a three month period when we made Product Backlog
+                | Refinement so much more intentional for our scrum teams and adopted use of the INVEST acronym within our 
+                | Definition Of Ready.
+
+              h2 Agile Health Check - Product Backlog Refinement 
+
+              p 
+                | Why not take the opportunity to give your Product Backlog Refinement an Agile health check?
+
+              p.text-right
+                span.badge.agilehealth #AgileHealthCheck
+
+              table.table.table-bordered
+                thead()
+                  th.good-smell
+                    .text-center
+                      | Healthy
+                tbody(style="background-color: darkslategray;")
+                  tr
+                    td.good-smell-item
+                      ul
+                        // Performs reguarly PBR alongside sprint work and plans for it
+                        // Before the event
+                        li Product Backlog Refinement sessions occur regularly with the Product Owner.
+                        li The development team regularly performs Product Backlog Refinement for user stories ahead of sprints.
+                        li Product Backlog Refinement activities feature in Sprint Planning.
+                        li Sufficient time is allocated for Product Backlog Refinement activities.
+                        // Architecture
+                        li Architects use Product Backlog Refinement sessions to shape the intentional product architecture.
+                        li Architects use Product Backlog Refinement sessions to drive out and prioritise non-functional requirements and proving activities.
+                        li Spike activities are performed to lay the groundwork for product architecture.
+                        li Architects participate in development team Product Backlog Refinement sessions to agree and shape the technical design and testing.  
+                        li Architects work with the development team to ensure the emerging architecture aligns with the intentional product architecture.  
+                        // Definition of ready
+                        li The development team has and maintains a Definition Of Ready.
+                        li The Definition Of Ready is applied to user stories to determine their sprint readiness status.
+                        li Only user stories that are in a "ready" state may be taken into a sprint.
+                        li The INVEST acronym is employed to validate user stories.
+                        li Planning Poker is performed by the development team for a user story after it meets the Definition Of Ready.
+                        li The development team has a high level of understanding about each user story entering a sprint.
+                        li The development team has a high degree of confidence in their sprint planning based on their understanding of user stories.
+                        li Estimates rarely differ from actuals for user stories.
+                        li Scope, timescales and quality are not compromised as a result of inadequately formed requirements.
+                thead(style="background-color: darkslategray;")
+                  th.bad-smell
+                    .text-center
+                      | Unhealthy
+                tbody
+                  tr
+                    td.bad-smell-item
+                      ul
+                        // Performs reguarly PBR alongside sprint work and plans for it
+                        // Before the event
+                        li Product Backlog Refinement sessions do not occur regularly with the Product Owner.
+                        li The development team sometimes performs Product Backlog Refinement for user stories ahead of sprints.
+                        li Product Backlog Refinement activities do not feature in Sprint Planning.
+                        li Time is not specifically allocated for Product Backlog Refinement activities.
+                        // Architecture
+                        li Architects do not use Product Backlog Refinement sessions to shape the intentional product architecture.
+                        li Architects do not use Product Backlog Refinement sessions to drive out and prioritise non-functional requirements and proving activities.
+                        li Spike activities are not specifically performed to lay the groundwork for product architecture.
+                        li Architects do not participate in development team Product Backlog Refinement sessions to agree and shape the technical design and testing.  
+                        li Architects do not work with the development team to align the emerging architecture with the intentional product architecture.  
+                        // Definition of ready
+                        li The development team does not have or maintains a Definition Of Ready.
+                        li A Definition Of Ready is not applied to user stories to determine their sprint readiness status.
+                        li User stories in varying states of readiness may be taken into a sprint.
+                        li The INVEST acronym is not employed to validate user stories.
+                        li Planning Poker is performed by the development team regardless of the readiness status of user stories.
+                        li The development team has a varied level of understanding about each user story entering a sprint.
+                        li The development team has an uncertain degree of confidence in their sprint planning based on their varied understanding of user stories.
+                        li Estimates often differ from actuals for user stories.
+                        li Scope, timescales and quality are sometimes compromised as a result of inadequately formed requirements.
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 25th February, 2022
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2022/36-gaining-value-from-sprint-retrospectives.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
