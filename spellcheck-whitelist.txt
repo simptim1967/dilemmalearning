@@ -75,6 +75,7 @@ realised
 realising
 recognise
 recognised
+recognises
 recognising
 repo
 roadmap

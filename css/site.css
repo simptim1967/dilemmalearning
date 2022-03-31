@@ -406,6 +406,14 @@ p {
     font-size: 1rem;
 }
 
+.agileleadership {
+    background-color: purple;
+    color: violet;
+    /* used monospaced font size for A-Z link buttons */
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 1rem;
+}
+
 .agilehealth {
     background-color: rgba(98, 209, 25, 0.801);
     color: purple;
