@@ -41,6 +41,7 @@ inbox
 incentivise
 itemise
 judgement
+labour
 labours
 learnt
 lifecycle
@@ -83,13 +84,15 @@ rgee
 scrutinising
 searchable
 spam
+specialisation
 specialised
 timeline
 timesheet
 timestamp
 travelling
 tyres
-unattentive 
+unattentive
+unestimated
 unsubscribe
 utilise
 utilisation

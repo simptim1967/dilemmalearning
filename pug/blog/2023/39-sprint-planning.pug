@@ -1,0 +1,240 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='sprint planning, sprint capacity, agile maturity, agile health check, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="Agiles teams that are good at Sprint Planning tend to be high performing teams that deliver successful outcomes.")
+    title The Sprint Planning Differentiator
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 The Sprint Planning Differentiator
+              hr.featurette-divider
+
+              h2 Sprint Planning 
+
+              p
+                | I've yet to meet a project team that enjoys any kind of planning activity but what I have noticed over 
+                | the years is a clear "Sprint Planning Differentiator" i.e. teams who show dexterity in Sprint Planning
+                | often prove to be mature agile teams
+                | whilst teams who fail to plan sprints well often struggle with lots of other problems as a consequence.
+
+              p 
+                | Mastering Sprint Planning is often a remedy to many other side-effect problems on agile projects and 
+                | need I mention that "failing to plan is planning to fail"?
+
+              h2 Task Breakdown 
+
+              p 
+                | Once the initial prioritised Product Backlog is in place alongside the Sprint / Product goal, 
+                | the project team is ready to commence Sprint Planning at the start of a sprint. 
+
+              p  
+                | At this stage, it is uncertain exactly how many of the ranked stories can be completed and so 
+                | task breakdown of each story (in priority order) will allow estimates of the work to be calculated in 
+                | hours. (Some teams have a maximum task duration of two hours with anything larger requiring further
+                | task breakdown.)     
+
+              p 
+                | Tasks should be meaningful with descriptions making it clear what is to be done. Time spent thinking 
+                | about the actual work will reveal further tasks that might otherwise not be envisaged until work 
+                | starts leading to additional unplanned work needing to be done that wasn't estimated or considered as part of the 
+                | team's available capacity. Meaningful task descriptions also help others to pick up tasks when 
+                | the person originally planned to do the work is not available to do it.
+
+              p 
+                | The Product Backlog Refinement activities performed by the project team prior to the sprint should have
+                | identified and resolved any ambiguities in the requirements whilst also allowing relevant design 
+                | discussions and story point estimation. (See previous blog post 
+                a(href="/blog/2022/37-invest-in-product-backlog-refinement.html", title="INVEST In Product Backlog Refinement") INVEST In Product Backlog Refinement
+                |.)
+
+              p 
+                | The task breakdown and estimates are usually made by the individuals expected to perform the work
+                | with oversight and advice from other team members.
+
+              h2 From Story Points To Hours 
+
+              p 
+                | Story points are arbitrary units which are helpful for quick estimates when making relative comparisons
+                | of user stories during Planning Poker but it is the process of Sprint Planning that reveals the likely
+                | size of the work in units of time (typically hours)
+                | that gives the first realisation of what might realistically be achieved by the sprint when viewed in the 
+                | light of the project team's sprint capacity. 
+
+              h2 Sprint Capacity 
+
+              p
+                | Prior to the sprint, the project team's sprint capacity is calculated in hours based on the availability
+                | of project team members to participate in the sprint. (As well as an overarching total we also compute sub-totals by
+                | resource type which is often helpful.)
+
+              h2 Sprint Progress Metrics 
+
+              p 
+                | One of the major benefits of task breakdown combined with an understanding of sprint capacity is the ability 
+                | to use burn-down charts to monitor sprint progress. 
+
+              p 
+                | Application Lifecycle Management (ALM) tools make it easy to record details of task breakdown including 
+                | initial estimates and then actuals as tasks are worked on and completed by team members during a sprint. 
+              
+              p
+                | Without a knowledge of the total amount of expected 
+                | work to be completed during a sprint as well as the team's daily available capacity and task completion details
+                | it would not be possible 
+                | to understand how work is progressing during a sprint and to determine whether pro-active course correction
+                | is required or not. 
+
+              p  
+                | Burn-down charts are a good way of identifying early whether you are on track to deliver on your commitments or not
+                | for a sprint.
+
+              h2 Undocumented Sprint Planning 
+
+              h3 Business Versus Strategic Work
+
+              p 
+                | Once the sprint capacity is known, you may make a decision to partition that time between business and 
+                | strategic work. We typically split our sprints on a 90:10 basis and therefore anticipate 10% strategic work 
+                | to be achieved alongside the 90% business value but this approach is varied depending on the nature of the
+                | project team and work involved. 
+
+              p 
+                | Strategic work is typically about spending time to save time. It might be implementing an improvement to 
+                | your build process or embracing something that will improve quality. It could be about tackling technical 
+                | debt of some kind or addressing non-functional requirements.
+              
+              h3 Contingency Buffer Time
+              
+              p 
+                | Knowing your sprint capacity and how closely your time estimates for the user stories selected from the Product
+                | Backlog fit into that time it is often a good idea to allow some contingency buffer time in
+                | case of any unexpected issues arising during the sprint.
+
+              p
+                | Buffer time might be more or less than 10% of your sprint capacity depending on the risks associated 
+                | with the sprint but should allow the project team to feel comfortable to commit to the user stories 
+                | agreed for inclusion in the sprint.
+
+              h3 Making Workload Scalable
+
+              p 
+                | Planning for multiple scrum teams can be challenging depending on how you have structured your team to work
+                | on your project assets. Breaking your product down into separate components can help divide the work more 
+                | easily and allow specialisation of labour but the user stories selected for a sprint may not always lend
+                | themselves so kindly to that end and the Product Owner may need to be persuaded to change priorities to 
+                | aid work allocation.
+
+              p  
+                | Alternatively, treating all code as shared code that anyone can change can help feature teams deliver across the whole 
+                | product architecture and avoid bottlenecks with specific component teams.
+
+              h2 Agile Health Check - Sprint Planning
+
+              p 
+                | Why not take the opportunity to give your Sprint Planning an Agile health check?
+
+              p.text-right
+                span.badge.agilehealth #AgileHealthCheck
+
+              table.table.table-bordered
+                thead()
+                  th.good-smell
+                    .text-center
+                      | Healthy
+                tbody(style="background-color: darkslategray;")
+                  tr
+                    td.good-smell-item
+                      ul
+                        li
+                          | The Product Owner agrees the Sprint / Product Goal prior to the start of the sprint.
+                        li 
+                          | The Product Owner provides the team with a prioritised Product Backlog.
+                        li Sprint Planning occurs at the beginning of every sprint.
+                        li The whole team participates in Sprint Planning.
+                        li Sufficient time is allocated and spent on Sprint Planning by the team.
+                        li The team's sprint capacity (in hours) is known at the start of the sprint.
+                        li A portion of the team's sprint capacity has been allocated to strategic work.
+                        li Detailed task breakdown is performed for each user story in Product Backlog priority order.
+                        li Task descriptions are meaningful making it clear exactly what work is to be done.
+                        li Task durations are estimated in hours by the people most likely to perform them.
+                        li
+                          | The project team ensures no task is longer than 2 hours to ensure individual work items are
+                          | sufficiently well understood. 
+                        li Work is allocated evenly across all project team members.
+                        li The time estimated for tasks fits comfortably into the project team's available sprint capacity.
+                        li Contingency buffer time has been allocated in case of unexpected issues arising during the sprint. 
+                        li Sprint Planning results in a plan describing all of the work to be done by the team during the sprint.
+                        li The team confirms to the Product Owner exactly which user stories are expected to be completed by the sprint.
+                        li The team is confident and able to commit to the delivery of the agreed user stories.
+                        li The team may agree some additional "stretch tasks" to be performed if work completes early leaving some free capacity.
+                        li Sufficient data has been identified to allow usage of sprint burn-down charts to track progress during the sprint.  
+                thead(style="background-color: darkslategray;")
+                  th.bad-smell
+                    .text-center
+                      | Unhealthy
+                tbody
+                  tr
+                    td.bad-smell-item
+                      ul
+                        li
+                          | The Product Owner fails to define the Sprint / Product Goal prior to the start of the sprint.
+                        li 
+                          | The Product Owner fails to provide the team with a prioritised Product Backlog.
+                        li Sprint Planning does not necessarily occur at the beginning of every sprint.
+                        li Not all of the team participates in Sprint Planning.
+                        li Insufficient time is allocated and spent on Sprint Planning by the team.
+                        li The team's sprint capacity (in hours) is unknown at the start of the sprint.
+                        li None of the team's sprint capacity has been allocated to strategic work.
+                        li Insufficient or no task breakdown is performed for each user story in Product Backlog priority order.
+                        li Task descriptions are not meaningful making it unclear exactly what work is to be done.
+                        li Task durations are left unestimated or not made by the people most likely to perform them.
+                        li
+                          | The project team doesn't enforce a maximum task duration to ensure individual work items are sufficiently
+                          | well understood. 
+                        li Work is not allocated evenly across all project team members.
+                        li The time estimated for tasks is unknown or doesn't fit comfortably into the project team's available sprint capacity.
+                        li No contingency buffer time has been allocated in case of unexpected issues arising during the sprint. 
+                        li Sprint Planning does not result in a plan describing all of the work to be done by the team during the sprint.
+                        li The team fails to confirm to the Product Owner exactly which user stories are expected to be completed by the sprint.
+                        li The team is not confident and unable to commit to the delivery of the agreed user stories.
+                        li The team doesn't agree any additional "stretch tasks" to be performed if work completes early leaving some free capacity.
+                        li Insufficient data has been identified to allow usage of sprint burn-down charts to track progress during the sprint.  
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 16th February, 2023
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2022/38-recognise-and-prioritise.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
