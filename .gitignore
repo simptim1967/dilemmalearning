@@ -8,3 +8,4 @@ api/GetPageLikeCounters/package-lock.json
 api/IncrementPageLikeCount/node_modules
 api/IncrementPageLikeCount/package-lock.json
 aws/
+logs/

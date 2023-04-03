@@ -1,0 +1,152 @@
+doctype html
+html(lang='en-GB')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='keywords', content='hands-on, putting theory into practice, mitigating technology risks, Life at Capgemini, #LifeAtCapgemini')
+    meta(name='description', content="To grow your expertise, you have to get hands-on with technology.")
+    title Getting Hands-On With Technology
+    // Bootstrap
+    link(href='../../css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../css/site.css', rel='stylesheet')
+    //Google analytics
+    include ../../includes/google-analytics.pug
+  body()
+    include ../../includes/page_menu.pug
+    include ../../includes/page_header.pug
+    //
+      Main content
+      ==================================================
+    main
+      .container
+        .row
+          // Main content block
+          .col-md-9
+            article
+              h1 Getting "Hands-On" With Technology
+              hr.featurette-divider
+
+              h2 Beyond The Hype 
+
+              p
+                | Products are continually being introduced or updated offering new capabilities or resolving 
+                | known issues that enable the creation of faster, better and cheaper solutions.   
+                | Some claims may turn out to be nothing more than hype but for others there might well be some benefits, 
+                | albeit with possible side effects, that merit further investigation.
+
+              p 
+                | When, for example, a claim is made that a new product is ten times quicker or simpler to use than a well known product
+                | that you currently use heavily, you can't help but want to take a look to see if it's true, especially if it might improve 
+                | quality or speed delivery. It's time to get hands-on.
+
+              p 
+                | Upgrading open source libraries can also introduce unexpected changes if you don't read the small print on the 
+                | release notes carefully. I remember one particular library 
+                | that introduced a new encryption mechanism on configuration data that dramatically impacted on performance
+                | taking us outside of our customer Service Level Agreement (SLA).
+
+              h2 Growing Your Capability 
+
+              p
+                | As a Technical Architect, it's really important to keep up with industry trends and technologies
+                | (however self-indulgent or challenging that might be 😊). 
+                | It's also desirable to go deep into some of those technologies in order to 
+                | gain real expertise and earn / retain your SME (Subject Matter Expert) status. 
+              
+              p
+                | There's only so much reading around that you can do before you have to roll
+                | up your sleeves in order to put
+                | theory into practice to see if it actually delivers on what it promises. It's time to get hands-on.
+
+              p 
+                | There's nothing like getting hands-on to really get a good understanding of how something actually works
+                | and it may not at all line up to your original thinking based on what you read about the technology.
+
+              p
+                | Time spent with the "hood up" can often take you to 
+                | a far deeper technical level of the technology in question and cause you to potentially re-think your design approach.
+                | It can cause you to read up on some related areas of technology that you've not looked at before but now 
+                | recognise as relevant to your design considerations. This happened to me when I was trying to improve my 
+                | AWS CloudFront cache-hit ratio for this website.
+
+              h2 Innovation Opportunity: Show Me, Don't Tell Me
+
+              p 
+                | New products and capabilities offer opportunities for innovation. It's one thing to talk about what might be 
+                | done but it's another thing to demonstrate it. In my career I've seen a number of working prototypes turn into 
+                | real product offerings and win big business as a result. The customer awards the prize to the one who can
+                | "show me, don't tell me". 😊
+                | (See my previous blog article entitled 
+                a(href="opening-new-doors-to-new-possibilities.html", title="Opening New Doors To New Possibilities") Opening New Doors To New Possibilities
+                =".)"
+
+              p  
+                | Dare to dream what technology might do! It's time to get hands-on.
+
+              h2 Mitigating Risk Early
+
+              p 
+                | Whilst Project Managers are often highly risk averse, most architects fall into the "Risk Explorer"
+                | category. That's because risk is an up-front consideration when selecting building blocks for solutions
+                | and for proving that emergent designs meet the intentional architecture.
+
+              p
+                | Only proven building blocks will ever be considered but that doesn't prevent projects from exploring
+                | different options by including proving activities in advance of building block selection.
+
+              p 
+                | Spike activities on Agile projects allow up-front proving of technologies. The Scaled Agile Framework (SAFe)
+                | differentiates between 
+                u features
+                |  (things the customer wants) and 
+                u enablers
+                |  (things that enable developers to deliver the features that the customer wants) and
+                | refers to this approach as "building the architectural runway". It's time to get hands-on.
+
+              p 
+                | The SAFe approach is advantageous because the architectural runway concept in effect supports up-front 
+                | design (via a dedicated programme increment for the enabler functionality that will support implementation of
+                | the new features in the
+                | following programme increment) that might otherwise not be so successful when relying on purely emergent architecture.
+
+              h2 IT Life Blood 
+
+              p 
+                | It's not enough to keep up with the conversation, you also need to stay in the game. 
+
+              p 
+                | Getting hands-on with technology is the life blood of any IT company. Failing to get hands-on
+                | sees that life blood drain away and will ultimately cause the death of any IT company. 
+
+              p 
+                | Some people are just naturally wired to play with new technology and are often the first to lose interest 
+                | when those technologies become business-as-usual. Such individuals are to be encouraged to explore new products
+                | and share their learning.
+                | (See my previous blog article entitled 
+                a(href="/blog/starters-and-finishers.html", title="Starters And Finishers") Starters And Finishers
+                =".)"
+
+              p  
+                | What time is it? Oh yeah, it's time to get hands-on!
+
+              include ../../includes/page_like_button.pug
+
+              p.text-right
+                b Tim Simpson
+                br 
+                | 31st March, 2023
+                br 
+                span.badge.hashtag #LifeAtCapgemini
+
+              include ../../includes/page_blog_navigate.pug
+              +BLOG_NAVIGATE("/blog/2023/39-sprint-planning.html","")
+
+          .col-md-3.hidden-print
+            include ../../includes/page_blog_sidebar.pug
+        // /row
+      // /container
+    include ../../includes/page_footer.pug
+    include ../../includes/page_like_script.pug
+    +PAGE_LIKE_INIT("page")
